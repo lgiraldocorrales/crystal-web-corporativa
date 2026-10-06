@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs && node scripts/theme-check.mjs && node scripts/design-check.mjs"
   },
   "dependencies": {
     "@fontsource-variable/raleway": "5.3.0",
