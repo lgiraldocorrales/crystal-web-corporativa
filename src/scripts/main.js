@@ -25,24 +25,27 @@
     const brand = loader.querySelector(".loader-brand");
     const emblem = loader.querySelector(".loader-emblem");
     const centerEmblem = () => Math.max(0, (brand.offsetWidth - emblem.offsetWidth) / 2);
-    gsap.set(emblem, { x: centerEmblem });
-    gsap.set(".loader-word span", { x: -18, opacity: 0 });
+    gsap.set(emblem, { x: centerEmblem, scale: .92, opacity: 0 });
+    gsap.set(".loader-letter", { x: -22, opacity: 0 });
+    gsap.set(".loader-stitch__thread", { strokeDasharray: 160, strokeDashoffset: 160 });
+    gsap.set(".loader-stitch__needle,.loader-stitch__eye", { y: -58, opacity: 0 });
     gsap.set(".loader-origin", { y: 8, opacity: 0 });
     gsap.set(".warp i", { scaleY: 0 });
     gsap.set(".weft i", { scaleX: 0 });
-    gsap.set(".loader-needle", { xPercent: -70, opacity: 0 });
-    gsap.set(".loader-thread", { width: 0 });
+    gsap.set(".loader-weave-thread path", { strokeDasharray: 1100, strokeDashoffset: 1100 });
     gsap.set(".home-hero__copy .word", { yPercent: 115 });
     gsap.set(".home-hero__copy [data-reveal]", { y: 18, opacity: 0 });
 
     gsap.timeline({ defaults: { ease: "power3.out" } })
-      .to(emblem, { x: 0, duration: .65, ease: "power4.inOut" })
-      .to(".loader-word span", { x: 0, opacity: 1, duration: .48, stagger: .065 }, "-=.2")
+      .to(emblem, { scale: 1, opacity: 1, duration: .48 })
+      .to(emblem, { x: 0, duration: .72, ease: "power4.inOut" }, "+=.12")
+      .to(".loader-letter", { x: 0, opacity: 1, duration: .48, stagger: .07 }, "-=.32")
+      .to(".loader-stitch__needle,.loader-stitch__eye", { y: 0, opacity: 1, duration: .5, ease: "power2.inOut" }, "-=.22")
+      .to(".loader-stitch__thread", { strokeDashoffset: 0, duration: .55, ease: "power2.inOut" }, "-=.36")
       .to(".loader-origin", { y: 0, opacity: 1, duration: .3 }, "-=.2")
-      .to(".warp i", { scaleY: 1, duration: .42, stagger: { each: .025, from: "center" } }, "-=.1")
+      .to(".warp i", { scaleY: 1, duration: .42, stagger: { each: .025, from: "center" } }, "-=.05")
       .to(".weft i", { scaleX: 1, duration: .48, stagger: .04, ease: "power2.inOut" }, "-=.25")
-      .to(".loader-needle", { xPercent: 690, opacity: 1, duration: .72, ease: "power2.inOut" }, "-=.18")
-      .to(".loader-thread", { width: "91%", duration: .72, ease: "power2.inOut" }, "<")
+      .to(".loader-weave-thread path", { strokeDashoffset: 0, duration: .78, ease: "power2.inOut" }, "-=.28")
       .to(".loader-stage", { opacity: 0, duration: .32, delay: .18 })
       .to(".loader-curtain", { scaleX: 1, duration: .48, ease: "power4.inOut" }, "-=.05")
       .add(() => { document.body.classList.remove("is-loading"); })
