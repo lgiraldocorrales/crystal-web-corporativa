@@ -7,18 +7,25 @@ function loader(locale, pageKey) {
   if (pageKey !== "home") return "";
   const label = locale.id === "es" ? "Cargando sitio de Crystal" : "Loading Crystal website";
   return `<div class="site-loader" data-loader role="status" aria-label="${label}">
-    <div class="loader-weave" aria-hidden="true">
-      <div class="warp">${Array.from({ length: 17 }, () => "<i></i>").join("")}</div>
-      <div class="weft">${Array.from({ length: 9 }, () => "<i></i>").join("")}</div>
-      <span class="loader-needle"></span><span class="loader-thread"></span>
+    <div class="loader-stage" aria-hidden="true">
+      <div class="loader-brand">
+        <span class="loader-emblem"><img src="/favicon.svg" alt="" width="76" height="76"></span>
+        <strong class="loader-word">${[..."Crystal"].map((letter) => `<span>${letter}</span>`).join("")}</strong>
+      </div>
+      <span class="loader-origin">1938 / Medellín / Colombia</span>
+      <div class="loader-weave">
+        <div class="warp">${Array.from({ length: 17 }, () => "<i></i>").join("")}</div>
+        <div class="weft">${Array.from({ length: 7 }, () => "<i></i>").join("")}</div>
+        <span class="loader-needle"></span><span class="loader-thread"></span>
+      </div>
     </div>
-    <div class="loader-signature" aria-hidden="true"><strong>CRYSTAL</strong><span>1938 / COLOMBIA</span></div>
     <div class="loader-curtain loader-curtain--a"></div><div class="loader-curtain loader-curtain--b"></div>
   </div>`;
 }
 
 function header(locale, pageKey) {
   const items = ["company", "purpose", "business", "sustainability"];
+  const menuItems = ["home", "company", "purpose", "business", "brands", "locations", "sustainability", "compliance", "contact"];
   const themeLabel = locale.id === "es" ? "Cambiar tema de color" : "Change color theme";
   return `<header class="site-header" data-header>
     <a class="brand" href="${pathFor(locale, "home")}" aria-label="Crystal — Home"><img src="${shared.logo}" alt="Crystal" width="166" height="52"></a>
@@ -33,7 +40,7 @@ function header(locale, pageKey) {
     </div>
     <div class="site-menu" id="site-menu" data-mobile-menu hidden>
       <div class="menu-top"><img src="${shared.logo}" alt="" width="166" height="52"><button type="button" data-menu-close>${locale.close} <span>×</span></button></div>
-      <nav aria-label="${locale.menu}">${["home", ...items, "contact"].map((key, i) => `<a href="${pathFor(locale, key)}" ${pageKey === key ? 'aria-current="page"' : ""}><span>${String(i + 1).padStart(2, "0")}</span><strong>${key === "home" ? (locale.id === "es" ? "Inicio" : "Home") : locale.nav[key]}</strong><i>↗</i></a>`).join("")}</nav>
+      <nav aria-label="${locale.menu}">${menuItems.map((key, i) => `<a href="${pathFor(locale, key)}" ${pageKey === key ? 'aria-current="page"' : ""}><span>${String(i + 1).padStart(2, "0")}</span><strong>${key === "home" ? (locale.id === "es" ? "Inicio" : "Home") : locale.nav[key]}</strong><i>↗</i></a>`).join("")}</nav>
       <p>${locale.footer.statement}</p>
     </div>
   </header>`;
@@ -90,11 +97,28 @@ function businessPage(locale, p) {
   <section class="full-package section"><div class="shell"><span class="section-no">02</span><h2 data-title>${p.closingTitle}</h2><p>${p.closingBody}</p></div></section>`;
 }
 
+function brandsPage(locale, p) {
+  return `${internalHero(locale, p, shared.media.brands, "brands")}
+  <section class="brand-portfolio section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${p.listTitle}</h2></div><ol>${p.brands.map(([name, body], i) => `<li><span>${String(i + 1).padStart(2, "0")}</span><h3>${name}</h3><p>${body}</p></li>`).join("")}</ol></section>
+  <section class="brand-bridge section"><div class="shell"><span class="section-no">02</span><h2 data-title>${p.closingTitle}</h2><p>${p.closingBody}</p>${arrowLink(locale.paths.business, locale.nav.business, true)}</div></section>`;
+}
+
+function locationsPage(locale, p) {
+  return `${internalHero(locale, p, shared.media.company, "locations")}
+  <section class="location-network section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${p.networkTitle}</h2></div><ol>${p.locations.map(([place, figure, body], i) => `<li><span>${String(i + 1).padStart(2, "0")}</span><p>${place}</p><h3>${figure}</h3><p>${body}</p></li>`).join("")}</ol></section>`;
+}
+
 function sustainabilityPage(locale, p) {
   return `${internalHero(locale, p, shared.media.environment, "sustainability")}
   <section class="pillars section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${locale.id === "es" ? "Tres pilares, una misma ruta." : "Three pillars, one path."}</h2></div><ol>${p.pillars.map(([n, title, body]) => `<li><span>${n}</span><h3>${title}</h3><p>${body}</p></li>`).join("")}</ol></section>
   <section class="commitments section"><article><figure data-image-reveal><img src="${shared.media.social}" alt="" width="1200" height="900" loading="lazy"></figure><div><span>02 / SOCIAL</span><h2 data-title>${p.socialTitle}</h2><p>${p.socialBody}</p></div></article><article><figure data-image-reveal><img src="${shared.media.water}" alt="" width="1200" height="900" loading="lazy"></figure><div><span>03 / PLANETA</span><h2 data-title>${p.environmentTitle}</h2><p>${p.environmentBody}</p></div></article></section>
   <section class="reports section shell" id="reports"><div><span class="section-no">04</span><h2 data-title>${p.reportsTitle}</h2><p>${p.reportsBody}</p><small>${p.certification}</small></div><div class="report-list">${p.reports.map((year) => `<div><span>${locale.footer.reports}</span><strong>${year}</strong><i>—</i></div>`).join("")}</div></section>`;
+}
+
+function compliancePage(locale, p) {
+  return `${internalHero(locale, p, shared.media.essence, "compliance")}
+  <section class="compliance-governance section shell"><span class="section-no">01</span><div><h2 data-title>${p.governanceTitle}</h2><p>${p.governanceBody}</p></div></section>
+  <section class="principles section"><div class="shell"><div class="section-heading"><span class="section-no">02</span><h2 data-title>${p.principlesTitle}</h2></div><ol>${p.principles.map((principle, i) => `<li><span>${String(i + 1).padStart(2, "0")}</span><strong>${principle}</strong></li>`).join("")}</ol><div class="policy-action">${arrowLink(`${assetBase}/pdf/Politica_de_tratamiento_de_datos_personales.pdf`, p.policyLabel)}</div></div></section>`;
 }
 
 function contactPage(locale, p) {
@@ -112,14 +136,14 @@ function faq(locale, p) {
 }
 
 function nextPage(locale, pageKey) {
-  const order = ["home", "company", "purpose", "business", "sustainability", "contact"];
+  const order = ["home", "company", "purpose", "business", "brands", "locations", "sustainability", "compliance", "contact"];
   const next = order[(order.indexOf(pageKey) + 1) % order.length];
   const label = next === "home" ? (locale.id === "es" ? "Inicio" : "Home") : locale.nav[next];
   return `<a class="next-page" href="${locale.paths[next]}"><span>${locale.common.next}</span><strong>${label}</strong><i>↗</i></a>`;
 }
 
 function footer(locale) {
-  return `<footer class="site-footer"><div class="shell footer-main"><div><img src="${shared.logo}" alt="Crystal" width="210" height="70" loading="lazy"><p>${locale.footer.statement}</p></div><nav>${["company", "purpose", "business", "sustainability", "contact"].map((k) => `<a href="${locale.paths[k]}">${locale.nav[k]}</a>`).join("")}</nav><nav>${Object.entries(shared.socials).map(([name, url]) => `<a href="${url}" target="_blank" rel="noopener">${name}<i>↗</i></a>`).join("")}</nav></div><div class="shell footer-bottom"><span>© ${new Date().getUTCFullYear()} Crystal S.A.S. ${locale.footer.rights}</span><span>Medellín / Colombia</span></div></footer>`;
+  return `<footer class="site-footer"><div class="shell footer-main"><div><img src="${shared.logo}" alt="Crystal" width="210" height="70" loading="lazy"><p>${locale.footer.statement}</p></div><nav>${["company", "purpose", "business", "brands", "locations", "sustainability", "compliance", "contact"].map((k) => `<a href="${locale.paths[k]}">${locale.nav[k]}</a>`).join("")}</nav><nav>${Object.entries(shared.socials).map(([name, url]) => `<a href="${url}" target="_blank" rel="noopener">${name}<i>↗</i></a>`).join("")}</nav></div><div class="shell footer-bottom"><span>© ${new Date().getUTCFullYear()} Crystal S.A.S. ${locale.footer.rights}</span><span>Medellín / Colombia</span></div></footer>`;
 }
 
 function pageBody(locale, pageKey) {
@@ -128,7 +152,10 @@ function pageBody(locale, pageKey) {
   if (pageKey === "company") return companyPage(locale, p);
   if (pageKey === "purpose") return purposePage(locale, p);
   if (pageKey === "business") return businessPage(locale, p);
+  if (pageKey === "brands") return brandsPage(locale, p);
+  if (pageKey === "locations") return locationsPage(locale, p);
   if (pageKey === "sustainability") return sustainabilityPage(locale, p);
+  if (pageKey === "compliance") return compliancePage(locale, p);
   return contactPage(locale, p);
 }
 
@@ -138,5 +165,5 @@ export function renderSite(locale, pageKey) {
   const alternate = `https://www.crystal.com.co${locale.alternatePaths[pageKey]}`;
   const faqSchema = pageKey === "home" ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: p.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) } : null;
   const orgSchema = { "@context": "https://schema.org", "@type": "Organization", name: "Crystal S.A.S.", url: "https://www.crystal.com.co/", logo: `${assetBase}/images/Logos/Logo-crystal-transparente.png`, foundingDate: "1938", address: { "@type": "PostalAddress", addressLocality: "Medellín", addressCountry: "CO" }, sameAs: Object.values(shared.socials) };
-  return `<!doctype html><html lang="${locale.code}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${p.metaTitle}</title><meta name="description" content="${p.metaDescription}"><meta name="theme-color" content="#f0eee8"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="${locale.id === "es" ? "en" : "es-CO"}" href="${alternate}"><link rel="alternate" hreflang="x-default" href="https://www.crystal.com.co/"><meta property="og:type" content="website"><meta property="og:title" content="${p.metaTitle}"><meta property="og:description" content="${p.metaDescription}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${shared.media.home}"><link rel="preconnect" href="https://crystal.com.co" crossorigin><script src="/assets/js/theme.js"></script><link rel="stylesheet" href="/assets/css/main.css"><script type="application/ld+json">${JSON.stringify(orgSchema)}</script>${faqSchema ? `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>` : ""}</head><body class="page-${pageKey}${pageKey === "home" ? " is-loading" : ""}" data-language="${locale.id}"><a class="skip-link" href="#main">${locale.skip}</a>${loader(locale, pageKey)}${header(locale, pageKey)}<main id="main">${pageBody(locale, pageKey)}${pageKey !== "contact" ? nextPage(locale, pageKey) : ""}</main>${footer(locale)}<script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/js/main.js" defer></script></body></html>`;
+  return `<!doctype html><html lang="${locale.code}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${p.metaTitle}</title><meta name="description" content="${p.metaDescription}"><meta name="theme-color" content="#f0eee8"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="${locale.id === "es" ? "en" : "es-CO"}" href="${alternate}"><link rel="alternate" hreflang="x-default" href="https://www.crystal.com.co/"><meta property="og:type" content="website"><meta property="og:title" content="${p.metaTitle}"><meta property="og:description" content="${p.metaDescription}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${shared.media.home}"><link rel="preconnect" href="https://crystal.com.co" crossorigin><script src="/assets/js/theme.js"></script><link rel="stylesheet" href="/assets/css/main.css"><script type="application/ld+json">${JSON.stringify(orgSchema)}</script>${faqSchema ? `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>` : ""}</head><body class="page-${pageKey}${pageKey === "home" ? " is-loading" : ""}" data-language="${locale.id}"><a class="skip-link" href="#main">${locale.skip}</a>${loader(locale, pageKey)}${header(locale, pageKey)}<main id="main">${pageBody(locale, pageKey)}${pageKey !== "contact" ? nextPage(locale, pageKey) : ""}</main>${footer(locale)}<script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/js/main.js" defer></script></body></html>`;
 }
