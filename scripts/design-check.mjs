@@ -40,11 +40,17 @@ for (const [background, foreground] of [["f0eee8", "161616"], ["f0eee8", "686763
 }
 for (const [background, foreground] of [["ee4035", "ffffff"], ["d9473d", "ffffff"]]) assert.ok(contrast(background, foreground) >= 3, `insufficient large-text contrast: ${background}/${foreground}`);
 
-const routes = ["index.html", "compania/index.html", "proposito/index.html", "modelo-de-negocio/index.html", "sostenibilidad/index.html", "contacto/index.html", "en/index.html", "en/company/index.html", "en/purpose/index.html", "en/business-model/index.html", "en/sustainability/index.html", "en/contact/index.html"];
+const routes = ["index.html", "compania/index.html", "proposito/index.html", "modelo-de-negocio/index.html", "marcas/index.html", "ubicaciones/index.html", "sostenibilidad/index.html", "cumplimiento/index.html", "contacto/index.html", "en/index.html", "en/company/index.html", "en/purpose/index.html", "en/business-model/index.html", "en/brands/index.html", "en/locations/index.html", "en/sustainability/index.html", "en/compliance/index.html", "en/contact/index.html"];
 for (const route of routes) {
   const html = await readFile(new URL(`../dist/${route}`, import.meta.url), "utf8");
   assert.match(html, /data-theme-toggle/, `${route}: missing theme control`);
   assert.match(html, /\/assets\/js\/theme\.js/, `${route}: missing early theme script`);
 }
 
-console.log(`Design system: ${required.length + 25} checks passed across ${routes.length} routes`);
+const home = await readFile(new URL("../dist/index.html", import.meta.url), "utf8");
+assert.match(home, /class="loader-emblem"/, "loader: centered emblem is missing");
+assert.match(home, /class="loader-word"/, "loader: progressive Crystal word is missing");
+assert.ok(home.indexOf('class="loader-word"') < home.indexOf('class="loader-weave"'), "loader: weave must sit below the Crystal lockup");
+assert.match(css, /@media\(max-width:900px\)/, "tablet breakpoint does not cover 762px viewports");
+
+console.log(`Design system: ${required.length + 29} checks passed across ${routes.length} routes`);
