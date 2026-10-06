@@ -6,6 +6,7 @@ Static-first bilingual website for Crystal S.A.S., with a small Python backend f
 
 - Six consolidated pages in Spanish and English: Home, Company, Purpose, Business Model, Sustainability and Contact.
 - Locally hosted variable Raleway typography.
+- Light and dark themes with system preference detection, an accessible manual control and persisted user choice.
 - Brand-driven GSAP loader based on the textile weave, needle and Crystal thread colors.
 - Purposeful GSAP motion for image reveals, editorial rows, timelines and industrial accordions.
 - SEO foundation: one H1, canonical, hreflang, Open Graph, Organization and FAQPage JSON-LD.
