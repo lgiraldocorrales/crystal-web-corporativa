@@ -37,8 +37,8 @@ export const shared = {
   }
 };
 
-const esPaths = { home: "/", company: "/compania/", purpose: "/proposito/", business: "/modelo-de-negocio/", sustainability: "/sostenibilidad/", contact: "/contacto/" };
-const enPaths = { home: "/en/", company: "/en/company/", purpose: "/en/purpose/", business: "/en/business-model/", sustainability: "/en/sustainability/", contact: "/en/contact/" };
+const esPaths = { home: "/", company: "/compania/", purpose: "/proposito/", business: "/modelo-de-negocio/", brands: "/marcas/", locations: "/ubicaciones/", sustainability: "/sostenibilidad/", compliance: "/cumplimiento/", contact: "/contacto/" };
+const enPaths = { home: "/en/", company: "/en/company/", purpose: "/en/purpose/", business: "/en/business-model/", brands: "/en/brands/", locations: "/en/locations/", sustainability: "/en/sustainability/", compliance: "/en/compliance/", contact: "/en/contact/" };
 
 const spanishPages = {
   home: {
@@ -81,6 +81,17 @@ const spanishPages = {
       { number: "05", title: "Marcas", subtitle: "Latinoamérica", body: "Gef, Punto Blanco, Baby Fresh, Galax y Casino conectan la capacidad industrial con experiencias cercanas a las personas.", facts: ["+270 tiendas", "11 países", "Omnicanalidad"], image: shared.media.brands }
     ], closingTitle: "Paquete completo", closingBody: "Acompañamos marcas alrededor del mundo desde el desarrollo y abastecimiento hasta la manufactura y entrega de producto terminado."
   },
+  brands: {
+    metaTitle: "Marcas | Crystal S.A.S.", metaDescription: "Conoce las marcas de Crystal: Gef, Punto Blanco, Baby Fresh, Galax, Casino y la operación de Parfois.",
+    eyebrow: "Marcas", title: "Marcas distintas. Una misma capacidad para estar cerca.", intro: "Nuestro portafolio traduce conocimiento industrial en propuestas relevantes para distintas edades, momentos y estilos de vida.", heroAlt: "Portafolio de marcas de Crystal",
+    listTitle: "Seis expresiones del mismo sistema.", brands: [["Gef", "Moda versátil para la vida cotidiana."], ["Punto Blanco", "Diseño, bienestar y evolución constante."], ["Baby Fresh", "Prendas pensadas para los primeros años."], ["Galax", "Soluciones esenciales con experiencia textil."], ["Casino", "Una marca conectada con necesidades reales."], ["Parfois", "Operación de una franquicia internacional en la región."]],
+    closingTitle: "De la planta al consumidor.", closingBody: "La integración entre manufactura, diseño, canales físicos y digitales nos permite aprender de las personas y responder con agilidad."
+  },
+  locations: {
+    metaTitle: "Ubicaciones | Crystal S.A.S.", metaDescription: "Consulta la presencia industrial y comercial de Crystal en Colombia y Latinoamérica.",
+    eyebrow: "Ubicaciones", title: "Capacidad industrial en Colombia. Alcance latinoamericano.", intro: "Nuestra red conecta plantas, oficinas, centros de distribución y tiendas para operar como un solo sistema.", heroAlt: "Presencia industrial de Crystal",
+    networkTitle: "Una red que acerca cada etapa.", locations: [["Colombia", "6 plantas manufactureras", "Hilandería, tintorería, textiles, confección y calcetería."], ["Colombia · Estados Unidos · México · Costa Rica", "Oficinas", "Equipos que conectan clientes, aliados y operación regional."], ["Latinoamérica", "3 centros de distribución", "Infraestructura para abastecer canales y mercados."], ["11 países", "+270 tiendas", "Presencia comercial en Centroamérica, el Caribe y Suramérica."]]
+  },
   sustainability: {
     metaTitle: "Sostenibilidad | Crystal S.A.S.", metaDescription: "Conoce los compromisos sociales, ambientales y económicos que orientan la ruta de sostenibilidad de Crystal.",
     eyebrow: "Sostenibilidad", title: "Producir mejor es cuidar lo que nos conecta.", intro: "Definimos tres pilares para avanzar hacia nuestro propósito: las personas y la comunidad, el planeta y la contribución al desarrollo económico.",
@@ -88,6 +99,12 @@ const spanishPages = {
     socialTitle: "Comprometidos con las personas.", socialBody: "Comprendemos al ser humano desde su integralidad. Trabajamos con nuestros colaboradores, sus familias y comunidades para promover el desarrollo individual, familiar y social.",
     environmentTitle: "En armonía con el entorno.", environmentBody: "Optimizamos el uso del agua y la energía, revisamos nuestros procesos y promovemos materias primas, empaques, procesos y tiendas con menor impacto.",
     reportsTitle: "Resultados que se pueden consultar.", reportsBody: "Los informes anuales reúnen iniciativas sociales, económicas y ambientales y las comparten con nuestros grupos de interés.", reports: ["2025", "2024", "2023", "2022", "2021"], certification: "En nuestras plantas consumimos energía generada por fuentes 100% renovables como parte del compromiso con la mitigación del cambio climático."
+  },
+  compliance: {
+    metaTitle: "Cumplimiento y gobierno | Crystal S.A.S.", metaDescription: "Conoce el gobierno corporativo, los principios de actuación y la política de tratamiento de datos de Crystal.",
+    eyebrow: "Cumplimiento", title: "La confianza se construye con decisiones claras.", intro: "Nuestro gobierno corporativo, los principios de actuación y las políticas orientan relaciones transparentes con todos nuestros grupos de interés.", heroAlt: "Personas y cultura de Crystal",
+    governanceTitle: "Gobierno con responsabilidad.", governanceBody: "La Asamblea de Accionistas nombra la Junta Directiva, que define la estrategia y supervisa el desempeño gerencial junto con las presidencias, vicepresidencias, revisoría fiscal y comités directivos.",
+    principlesTitle: "Principios que se vuelven conducta.", principles: ["Constancia", "Honestidad", "Optimismo", "Posibilismo", "Sentido social"], policyLabel: "Consultar política de tratamiento de datos"
   },
   contact: {
     metaTitle: "Contacto | Crystal S.A.S.", metaDescription: "Comunícate con Crystal S.A.S. y dirige tu solicitud al área correspondiente.", eyebrow: "Contacto", title: "Estamos aquí para escucharte.", intro: "Déjanos tus comentarios, dudas o sugerencias y elige el área con la que deseas comunicarte.",
@@ -122,8 +139,25 @@ const englishPages = {
       { number: "05", title: "Brands", subtitle: "Latin America", body: "Gef, Punto Blanco, Baby Fresh, Galax and Casino connect industrial capability with experiences close to people.", facts: ["270+ stores", "11 countries", "Omnichannel"], image: shared.media.brands }
     ], closingTitle: "Full package", closingBody: "We support brands around the world from development and sourcing through manufacturing and finished-product delivery."
   },
+  brands: {
+    metaTitle: "Brands | Crystal S.A.S.", metaDescription: "Discover Crystal's brands: Gef, Punto Blanco, Baby Fresh, Galax, Casino and the Parfois operation.",
+    eyebrow: "Brands", title: "Distinct brands. One capability to stay close.", intro: "Our portfolio turns industrial knowledge into relevant propositions for different ages, moments and lifestyles.", heroAlt: "Crystal brand portfolio",
+    listTitle: "Six expressions of one system.", brands: [["Gef", "Versatile fashion for everyday life."], ["Punto Blanco", "Design, well-being and constant evolution."], ["Baby Fresh", "Garments created for the early years."], ["Galax", "Essential solutions backed by textile expertise."], ["Casino", "A brand connected to real needs."], ["Parfois", "Operation of an international franchise in the region."]],
+    closingTitle: "From the plant to the consumer.", closingBody: "The integration of manufacturing, design, physical stores and digital channels helps us learn from people and respond with agility."
+  },
+  locations: {
+    metaTitle: "Locations | Crystal S.A.S.", metaDescription: "Explore Crystal's industrial and commercial presence in Colombia and Latin America.",
+    eyebrow: "Locations", title: "Industrial capability in Colombia. Latin American reach.", intro: "Our network connects plants, offices, distribution centers and stores to operate as one system.", heroAlt: "Crystal industrial presence",
+    networkTitle: "A network that brings every stage closer.", locations: [["Colombia", "6 manufacturing plants", "Spinning, dyeing, textiles, garment manufacturing and hosiery."], ["Colombia · United States · Mexico · Costa Rica", "Offices", "Teams connecting customers, partners and regional operations."], ["Latin America", "3 distribution centers", "Infrastructure serving channels and markets."], ["11 countries", "270+ stores", "Commercial presence across Central America, the Caribbean and South America."]]
+  },
   sustainability: {
     metaTitle: "Sustainability | Crystal S.A.S.", metaDescription: "Discover the social, environmental and economic commitments guiding Crystal's sustainability journey.", eyebrow: "Sustainability", title: "Producing better means caring for what connects us.", intro: "We defined three pillars to advance our purpose: people and communities, the planet and our contribution to economic development.", pillars: [["01", "Social", "Well-being, development and relationships that strengthen employees, families and communities."], ["02", "Environmental", "Responsible resource use, climate action and continuous improvement throughout the chain."], ["03", "Economic", "Employment, industry and capabilities that contribute to regional development."]], socialTitle: "Committed to people.", socialBody: "We understand people as a whole. We work with employees, families and communities to promote individual, family and social development.", environmentTitle: "In harmony with our surroundings.", environmentBody: "We optimize water and energy use, review our processes and promote lower-impact materials, packaging, operations and stores.", reportsTitle: "Results you can review.", reportsBody: "Annual reports bring together social, economic and environmental initiatives and share them with our stakeholders.", reports: ["2025", "2024", "2023", "2022", "2021"], certification: "Our plants use electricity generated from 100% renewable sources as part of our climate-change mitigation commitment."
+  },
+  compliance: {
+    metaTitle: "Compliance and governance | Crystal S.A.S.", metaDescription: "Explore Crystal's corporate governance, principles and personal-data policy.",
+    eyebrow: "Compliance", title: "Trust is built through clear decisions.", intro: "Our corporate governance, principles and policies guide transparent relationships with every stakeholder.", heroAlt: "Crystal people and culture",
+    governanceTitle: "Governance with responsibility.", governanceBody: "The Shareholders' Meeting appoints the Board of Directors, which sets strategy and oversees management alongside the presidencies, vice presidencies, statutory audit and management committees.",
+    principlesTitle: "Principles turned into conduct.", principles: ["Perseverance", "Honesty", "Optimism", "Possibility", "Social awareness"], policyLabel: "View personal-data policy"
   },
   contact: {
     metaTitle: "Contact | Crystal S.A.S.", metaDescription: "Contact Crystal S.A.S. and direct your request to the appropriate team.", eyebrow: "Contact", title: "We are here to listen.", intro: "Leave us your comments, questions or suggestions and choose the team you would like to reach.", areas: ["Spinning", "Industry", "Full package", "Institutional sales", "Gef", "Punto Blanco", "Baby Fresh", "Galax", "Parfois", "Customer service", "Ethics", "Franchises or distributors", "Suppliers and purchasing"], fields: { area: "Send to", name: "First name", lastName: "Last name", email: "Email", company: "Company", message: "Message", submit: "Send message", sending: "Sending…", success: "We received your message and will reply as soon as possible.", error: "We could not send your message. Please try again." }, privacy: "Personal data will be processed to handle your request. You can exercise your rights by writing to proteccionbasedatos@crystal.com.co.", customerLine: "Customer service line", phone: "01 8000 517 536"
@@ -131,6 +165,6 @@ const englishPages = {
 };
 
 export const locales = {
-  es: { id: "es", code: "es-CO", languageLabel: "EN", skip: "Saltar al contenido", menu: "Menú", close: "Cerrar", paths: esPaths, alternatePaths: enPaths, nav: { company: "Compañía", purpose: "Propósito", business: "Modelo de negocio", sustainability: "Sostenibilidad", contact: "Contacto" }, common: { explore: "Explorar", discover: "Conocer más", back: "Volver al inicio", scroll: "Desliza", since: "Desde 1938", read: "Leer", download: "Descargar", next: "Siguiente" }, footer: { statement: "Moda consciente. Industria conectada. Personas que dejan huella.", info: "Información", governance: "Gobierno corporativo", policies: "Políticas", reports: "Informes de sostenibilidad", privacy: "Protección de datos", rights: "Todos los derechos reservados." }, pages: spanishPages },
-  en: { id: "en", code: "en", languageLabel: "ES", skip: "Skip to content", menu: "Menu", close: "Close", paths: enPaths, alternatePaths: esPaths, nav: { company: "Company", purpose: "Purpose", business: "Business model", sustainability: "Sustainability", contact: "Contact" }, common: { explore: "Explore", discover: "Discover more", back: "Back home", scroll: "Scroll", since: "Since 1938", read: "Read", download: "Download", next: "Next" }, footer: { statement: "Conscious fashion. Connected industry. People who leave a mark.", info: "Information", governance: "Corporate governance", policies: "Policies", reports: "Sustainability reports", privacy: "Data protection", rights: "All rights reserved." }, pages: englishPages }
+  es: { id: "es", code: "es-CO", languageLabel: "EN", skip: "Saltar al contenido", menu: "Menú", close: "Cerrar", paths: esPaths, alternatePaths: enPaths, nav: { company: "Compañía", purpose: "Propósito", business: "Modelo de negocio", brands: "Marcas", locations: "Ubicaciones", sustainability: "Sostenibilidad", compliance: "Cumplimiento", contact: "Contacto" }, common: { explore: "Explorar", discover: "Conocer más", back: "Volver al inicio", scroll: "Desliza", since: "Desde 1938", read: "Leer", download: "Descargar", next: "Siguiente" }, footer: { statement: "Moda consciente. Industria conectada. Personas que dejan huella.", info: "Información", governance: "Gobierno corporativo", policies: "Políticas", reports: "Informes de sostenibilidad", privacy: "Protección de datos", rights: "Todos los derechos reservados." }, pages: spanishPages },
+  en: { id: "en", code: "en", languageLabel: "ES", skip: "Skip to content", menu: "Menu", close: "Close", paths: enPaths, alternatePaths: esPaths, nav: { company: "Company", purpose: "Purpose", business: "Business model", brands: "Brands", locations: "Locations", sustainability: "Sustainability", compliance: "Compliance", contact: "Contact" }, common: { explore: "Explore", discover: "Discover more", back: "Back home", scroll: "Scroll", since: "Since 1938", read: "Read", download: "Download", next: "Next" }, footer: { statement: "Conscious fashion. Connected industry. People who leave a mark.", info: "Information", governance: "Corporate governance", policies: "Policies", reports: "Sustainability reports", privacy: "Data protection", rights: "All rights reserved." }, pages: englishPages }
 };
