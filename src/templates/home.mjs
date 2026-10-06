@@ -6,17 +6,20 @@ const pathFor = (locale, key) => locale.paths[key];
 function loader(locale, pageKey) {
   if (pageKey !== "home") return "";
   const label = locale.id === "es" ? "Cargando sitio de Crystal" : "Loading Crystal website";
+  const word = [..."rystal"].map((letter) => letter === "t"
+    ? `<span class="loader-letter loader-letter--stitched">${letter}<svg class="loader-stitch" viewBox="0 0 120 128" aria-hidden="true"><path class="loader-stitch__thread" d="M4 38 Q60 -2 116 38"/><path class="loader-stitch__needle" d="M60 1 C56 12 57 82 60 126 C63 82 64 12 60 1 Z"/><ellipse class="loader-stitch__eye" cx="60" cy="13" rx="2.2" ry="6"/></svg></span>`
+    : `<span class="loader-letter">${letter}</span>`).join("");
   return `<div class="site-loader" data-loader role="status" aria-label="${label}">
     <div class="loader-stage" aria-hidden="true">
       <div class="loader-brand">
-        <span class="loader-emblem"><img src="/favicon.svg" alt="" width="76" height="76"></span>
-        <strong class="loader-word">${[..."Crystal"].map((letter) => `<span>${letter}</span>`).join("")}</strong>
+        <span class="loader-emblem"><svg viewBox="0 0 176 104" aria-hidden="true"><path class="loader-emblem__shape" d="M171 46 84 4 9 39C-3 44-3 57 9 63l75 37 87-43H30c-10 0-16-4-16-9s6-9 16-9h141Z" fill-rule="evenodd"/></svg></span>
+        <strong class="loader-word" aria-label="Crystal">${word}</strong>
       </div>
       <span class="loader-origin">1938 / Medellín / Colombia</span>
       <div class="loader-weave">
         <div class="warp">${Array.from({ length: 17 }, () => "<i></i>").join("")}</div>
         <div class="weft">${Array.from({ length: 7 }, () => "<i></i>").join("")}</div>
-        <span class="loader-needle"></span><span class="loader-thread"></span>
+        <svg class="loader-weave-thread" viewBox="0 0 900 220" preserveAspectRatio="none"><path d="M0 110 C75 78 125 142 200 110 S325 78 400 110 525 142 600 110 725 78 800 110 850 132 900 110"/></svg>
       </div>
     </div>
     <div class="loader-curtain loader-curtain--a"></div><div class="loader-curtain loader-curtain--b"></div>
