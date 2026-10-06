@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,8 +13,8 @@ await mkdir(resolve(dist, "assets/js"), { recursive: true });
 await mkdir(resolve(dist, "assets/vendor"), { recursive: true });
 await mkdir(resolve(dist, "en"), { recursive: true });
 
-await cp(resolve(root, "src/styles/main.css"), resolve(dist, "assets/css/main.css"));
-await cp(resolve(root, "src/scripts/main.js"), resolve(dist, "assets/js/main.js"));
+await copyFile(resolve(root, "src/styles/main.css"), resolve(dist, "assets/css/main.css"));
+await copyFile(resolve(root, "src/scripts/main.js"), resolve(dist, "assets/js/main.js"));
 
 const vendorFiles = ["gsap.min.js", "ScrollTrigger.min.js"];
 for (const file of vendorFiles) {
@@ -22,7 +22,7 @@ for (const file of vendorFiles) {
   if (!existsSync(source)) {
     throw new Error(`Missing ${file}. Run npm install before npm run build.`);
   }
-  await cp(source, resolve(dist, `assets/vendor/${file}`));
+  await copyFile(source, resolve(dist, `assets/vendor/${file}`));
 }
 
 await writeFile(resolve(dist, "index.html"), renderHome(locales.es));
