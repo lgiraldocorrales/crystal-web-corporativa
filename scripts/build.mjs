@@ -7,7 +7,7 @@ import { renderSite } from "../src/templates/home.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dist = resolve(root, "dist");
-const pages = ["home", "company", "purpose", "business", "sustainability", "contact"];
+const pages = ["home", "company", "purpose", "business", "brands", "locations", "sustainability", "compliance", "contact"];
 
 await rm(dist, { recursive: true, force: true });
 for (const path of ["assets/css", "assets/js", "assets/vendor", "assets/fonts"]) await mkdir(resolve(dist, path), { recursive: true });
@@ -15,6 +15,8 @@ for (const path of ["assets/css", "assets/js", "assets/vendor", "assets/fonts"])
 await copyFile(resolve(root, "src/styles/main.css"), resolve(dist, "assets/css/main.css"));
 await copyFile(resolve(root, "src/scripts/main.js"), resolve(dist, "assets/js/main.js"));
 await copyFile(resolve(root, "src/scripts/theme.js"), resolve(dist, "assets/js/theme.js"));
+await copyFile(resolve(root, "src/assets/favicon.svg"), resolve(dist, "favicon.svg"));
+await copyFile(resolve(root, "src/assets/site.webmanifest"), resolve(dist, "site.webmanifest"));
 
 for (const file of ["gsap.min.js", "ScrollTrigger.min.js"]) {
   const source = resolve(root, `node_modules/gsap/dist/${file}`);
