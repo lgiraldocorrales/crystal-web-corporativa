@@ -14,6 +14,7 @@ for (const path of ["assets/css", "assets/js", "assets/vendor", "assets/fonts"])
 
 await copyFile(resolve(root, "src/styles/main.css"), resolve(dist, "assets/css/main.css"));
 await copyFile(resolve(root, "src/scripts/main.js"), resolve(dist, "assets/js/main.js"));
+await copyFile(resolve(root, "src/scripts/theme.js"), resolve(dist, "assets/js/theme.js"));
 
 for (const file of ["gsap.min.js", "ScrollTrigger.min.js"]) {
   const source = resolve(root, `node_modules/gsap/dist/${file}`);
