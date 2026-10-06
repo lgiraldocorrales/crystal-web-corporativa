@@ -51,6 +51,10 @@ const home = await readFile(new URL("../dist/index.html", import.meta.url), "utf
 assert.match(home, /class="loader-emblem"/, "loader: centered emblem is missing");
 assert.match(home, /class="loader-word"/, "loader: progressive Crystal word is missing");
 assert.ok(home.indexOf('class="loader-word"') < home.indexOf('class="loader-weave"'), "loader: weave must sit below the Crystal lockup");
+assert.match(home, /class="loader-emblem__shape"/, "loader: authentic Crystal C mark is missing");
+assert.match(home, /class="loader-stitch__needle"/, "loader: signature needle is missing");
+assert.match(home, /class="loader-stitch__thread"/, "loader: signature thread is missing");
+assert.doesNotMatch(home, /class="loader-word"[^>]*>\s*<span[^>]*>C</, "loader: C mark must not be duplicated as text");
 assert.match(css, /@media\(max-width:900px\)/, "tablet breakpoint does not cover 762px viewports");
 
-console.log(`Design system: ${required.length + 29} checks passed across ${routes.length} routes`);
+console.log(`Design system: ${required.length + 33} checks passed across ${routes.length} routes`);
