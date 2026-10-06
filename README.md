@@ -4,7 +4,7 @@ Static-first bilingual website for Crystal S.A.S., with a small Python backend f
 
 ## Current milestone
 
-- Six consolidated pages in Spanish and English: Home, Company, Purpose, Business Model, Sustainability and Contact.
+- Nine consolidated pages in Spanish and English: Home, Company, Purpose, Business Model, Brands, Locations, Sustainability, Compliance and Contact.
 - Locally hosted variable Raleway typography.
 - Light and dark themes with system preference detection, an accessible manual control and persisted user choice.
 - Brand-driven GSAP loader based on the textile weave, needle and Crystal thread colors.
@@ -14,7 +14,7 @@ Static-first bilingual website for Crystal S.A.S., with a small Python backend f
 - Secure Flask contact endpoint prepared for MasterBase SMTP on port 587.
 - Security headers and strict request validation.
 
-The former 38-route site has been consolidated into 12 focused routes while preserving its company history, industrial capabilities, sustainability commitments and bilingual navigation.
+The former 38-route site has been consolidated into 18 focused routes while preserving its company history, industrial capabilities, brand portfolio, regional presence, governance, sustainability commitments and bilingual navigation.
 
 ## Local build
 
