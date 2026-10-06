@@ -1,302 +1,140 @@
-import { assetBase, media, shared } from "../content/site.mjs";
+import { assetBase, shared } from "../content/site.mjs";
 
-const esc = (value = "") => String(value)
-  .replaceAll("&", "&amp;")
-  .replaceAll("<", "&lt;")
-  .replaceAll(">", "&gt;")
-  .replaceAll('"', "&quot;");
+const esc = (value = "") => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const pathFor = (locale, key) => locale.paths[key];
 
-function loader(locale) {
-  return `
-    <div class="site-loader" data-loader role="status" aria-live="polite" aria-label="${locale.code === "es-CO" ? "Cargando sitio de Crystal" : "Loading Crystal website"}">
-      <div class="loader-stage" aria-hidden="true">
-        <div class="loader-mark loader-mark--symbol">
-          <img src="${media.logo}" alt="" width="560" height="190">
-        </div>
-        <div class="loader-mark loader-mark--word">
-          <img src="${media.logo}" alt="" width="560" height="190">
-        </div>
-        <svg class="loader-stitch" viewBox="0 0 300 120" focusable="false">
-          <path class="loader-thread" d="M18 67 C85 7 204 7 280 66" pathLength="1" />
-          <path class="loader-needle" d="M160 15 C157 42 157 76 160 108" pathLength="1" />
-          <ellipse class="loader-eye" cx="160" cy="16" rx="3.5" ry="9" />
-        </svg>
-      </div>
-      <span class="loader-index">1938 — <span data-loader-year>2026</span></span>
-    </div>`;
+function loader(locale, pageKey) {
+  if (pageKey !== "home") return "";
+  const label = locale.id === "es" ? "Cargando sitio de Crystal" : "Loading Crystal website";
+  return `<div class="site-loader" data-loader role="status" aria-label="${label}">
+    <div class="loader-weave" aria-hidden="true">
+      <div class="warp">${Array.from({ length: 17 }, () => "<i></i>").join("")}</div>
+      <div class="weft">${Array.from({ length: 9 }, () => "<i></i>").join("")}</div>
+      <span class="loader-needle"></span><span class="loader-thread"></span>
+    </div>
+    <div class="loader-signature" aria-hidden="true"><strong>CRYSTAL</strong><span>1938 / COLOMBIA</span></div>
+    <div class="loader-curtain loader-curtain--a"></div><div class="loader-curtain loader-curtain--b"></div>
+  </div>`;
 }
 
-function header(locale) {
-  const home = locale.path;
-  return `
-    <header class="site-header" data-header>
-      <a class="brand" href="${home}" aria-label="Crystal — Home">
-        <img src="${media.logo}" alt="Crystal" width="154" height="52">
-      </a>
-      <nav class="desktop-nav" aria-label="${locale.code === "es-CO" ? "Navegación principal" : "Primary navigation"}">
-        <a href="#company">${locale.nav.company}</a>
-        <a href="#purpose">${locale.nav.purpose}</a>
-        <a href="#business">${locale.nav.business}</a>
-        <a href="#sustainability">${locale.nav.sustainability}</a>
-      </nav>
-      <div class="header-actions">
-        <a class="language-link" href="${locale.alternate}" hreflang="${locale.code === "es-CO" ? "en" : "es"}">${locale.languageLabel}</a>
-        <a class="contact-link" href="${locale.code === "es-CO" ? "/ServicioAlCliente/" : "/CustomerService/"}">${locale.nav.contact}</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
-          <span></span><span></span><span></span>
-          <span class="sr-only">Menu</span>
-        </button>
-      </div>
-      <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
-        <a href="#company">${locale.nav.company}</a>
-        <a href="#purpose">${locale.nav.purpose}</a>
-        <a href="#business">${locale.nav.business}</a>
-        <a href="#sustainability">${locale.nav.sustainability}</a>
-        <a href="${locale.code === "es-CO" ? "/ServicioAlCliente/" : "/CustomerService/"}">${locale.nav.contact}</a>
-      </div>
-    </header>`;
+function header(locale, pageKey) {
+  const items = ["company", "purpose", "business", "sustainability"];
+  return `<header class="site-header" data-header>
+    <a class="brand" href="${pathFor(locale, "home")}" aria-label="Crystal — Home"><img src="${shared.logo}" alt="Crystal" width="166" height="52"></a>
+    <nav class="desktop-nav" aria-label="${locale.id === "es" ? "Navegación principal" : "Primary navigation"}">
+      ${items.map((key, i) => `<a ${pageKey === key ? 'aria-current="page"' : ""} href="${pathFor(locale, key)}"><span>0${i + 1}</span>${locale.nav[key]}</a>`).join("")}
+    </nav>
+    <div class="header-actions">
+      <a class="language-link" href="${locale.alternatePaths[pageKey]}" hreflang="${locale.id === "es" ? "en" : "es"}">${locale.languageLabel}</a>
+      <a class="contact-link" ${pageKey === "contact" ? 'aria-current="page"' : ""} href="${pathFor(locale, "contact")}">${locale.nav.contact}</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle><span>${locale.menu}</span><i></i></button>
+    </div>
+    <div class="site-menu" id="site-menu" data-mobile-menu hidden>
+      <div class="menu-top"><img src="${shared.logo}" alt="" width="166" height="52"><button type="button" data-menu-close>${locale.close} <span>×</span></button></div>
+      <nav aria-label="${locale.menu}">${["home", ...items, "contact"].map((key, i) => `<a href="${pathFor(locale, key)}" ${pageKey === key ? 'aria-current="page"' : ""}><span>${String(i + 1).padStart(2, "0")}</span><strong>${key === "home" ? (locale.id === "es" ? "Inicio" : "Home") : locale.nav[key]}</strong><i>↗</i></a>`).join("")}</nav>
+      <p>${locale.footer.statement}</p>
+    </div>
+  </header>`;
 }
 
-function hero(locale) {
-  return `
-    <section class="hero" id="company" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true" data-hero-media>
-        ${media.hero.map((item, index) => `
-          <figure class="hero-frame${index === 0 ? " is-active" : ""}" data-hero-frame>
-            <img src="${item.src}" alt="" width="1920" height="1080" ${index ? 'loading="lazy"' : 'fetchpriority="high"'}>
-          </figure>`).join("")}
-      </div>
-      <div class="hero-shade"></div>
-      <div class="hero-copy page-grid">
-        <p class="eyebrow hero-eyebrow" data-reveal>${locale.hero.eyebrow}</p>
-        <h1 id="hero-title" class="hero-title" data-split>${locale.hero.title}</h1>
-        <p class="hero-body" data-reveal>${locale.hero.body}</p>
-        <div class="hero-links" data-reveal>
-          <a class="text-link text-link--light" href="${locale.code === "es-CO" ? "/quienesSomos/" : "/WhoWeAre/"}">${locale.hero.primary}<span aria-hidden="true">↗</span></a>
-          <a class="text-link text-link--light" href="#business">${locale.hero.secondary}<span aria-hidden="true">↓</span></a>
-        </div>
-      </div>
-      <div class="hero-rail" aria-hidden="true">
-        <span>01</span><span class="hero-rail-line"><i data-hero-progress></i></span><span>04</span>
-      </div>
-      <span class="scroll-cue" aria-hidden="true">Scroll</span>
-    </section>`;
+const arrowLink = (href, label, light = false) => `<a class="line-link${light ? " line-link--light" : ""}" href="${href}"><span>${label}</span><i aria-hidden="true">↗</i></a>`;
+
+function homePage(locale, p) {
+  const es = locale.id === "es";
+  return `<section class="home-hero" data-hero>
+    <figure class="home-hero__image" data-image-reveal><img src="${shared.media.home}" alt="${esc(p.heroAlt)}" width="1920" height="1080" fetchpriority="high"></figure>
+    <div class="home-hero__veil"></div>
+    <div class="home-hero__copy shell"><p class="eyebrow" data-reveal>${p.eyebrow}</p><h1 data-title>${p.title}</h1><p class="hero-lede" data-reveal>${p.intro}</p>${arrowLink(locale.paths.company, locale.common.discover, true)}</div>
+    <p class="home-hero__index">${p.index}</p><span class="scroll-mark">${locale.common.scroll}<i></i></span>
+  </section>
+  <section class="opening-statement shell section"><span class="section-no">01 / 05</span><h2 data-title>${p.opening}</h2><p>${es ? "De la fibra al punto de venta, cada etapa comparte conocimiento, exigencia y una misma dirección." : "From fiber to point of sale, every stage shares knowledge, rigor and one direction."}</p></section>
+  <section class="home-business section" aria-labelledby="home-business-title">
+    <div class="shell section-heading"><span class="section-no">02 / 05</span><div><h2 id="home-business-title" data-title>${p.businessTitle}</h2><p>${p.businessIntro}</p></div></div>
+    <div class="discipline-list shell">
+      ${[
+        ["01", es ? "Hilandería" : "Spinning", shared.media.yarn, es ? "Fibra / hilo / conocimiento" : "Fiber / yarn / knowledge"],
+        ["02", es ? "Manufactura" : "Manufacturing", shared.media.fullPackage, es ? "Textil / confección / calcetería" : "Textiles / garments / hosiery"],
+        ["03", es ? "Marcas" : "Brands", shared.media.brands, "Gef / Punto Blanco / Baby Fresh / Galax"]
+      ].map(([n, title, img, note]) => `<a class="discipline" href="${locale.paths.business}" data-preview-row><span>${n}</span><h3>${title}</h3><p>${note}</p><figure><img src="${img}" alt="" width="760" height="520" loading="lazy"></figure><i>↗</i></a>`).join("")}
+    </div>
+  </section>
+  <section class="purpose-band section" aria-labelledby="purpose-band-title"><figure data-image-reveal><img src="${shared.media.purpose}" alt="" width="1600" height="1000" loading="lazy"></figure><div class="purpose-band__copy"><span class="section-no">03 / 05</span><h2 id="purpose-band-title" data-title>${p.purposeTitle}</h2>${arrowLink(locale.paths.purpose, locale.common.discover, true)}</div></section>
+  <section class="footprint section shell"><div class="section-heading"><span class="section-no">04 / 05</span><div><p class="eyebrow">${es ? "Presencia" : "Footprint"}</p><h2 data-title>${es ? "Hecho aquí. Presente allá." : "Made here. Present there."}</h2></div></div><dl class="stat-grid">${shared.stats.map((s) => `<div data-stat><dt>${s.value}</dt><dd>${s[locale.id]}</dd></div>`).join("")}</dl></section>
+  <section class="impact-panel section"><div class="impact-panel__media"><video muted loop playsinline preload="metadata" poster="${shared.media.environment}" data-autoplay><source src="${shared.media.video}" type="video/mp4"></video></div><div class="impact-panel__copy"><span class="section-no">05 / 05</span><h2 data-title>${p.sustainabilityTitle}</h2><p>${p.sustainabilityBody}</p>${arrowLink(locale.paths.sustainability, locale.common.discover, true)}</div></section>
+  ${faq(locale, p)}`;
 }
 
-function purpose(locale) {
-  return `
-    <section class="purpose section-space" id="purpose" aria-labelledby="purpose-title">
-      <div class="page-grid purpose-grid">
-        <div class="section-intro">
-          <p class="eyebrow" data-reveal>${locale.purpose.eyebrow}</p>
-          <h2 id="purpose-title" class="display-title" data-split>${locale.purpose.title}</h2>
-          <a class="text-link" href="${locale.code === "es-CO" ? "/propositoyesencia/" : "/PurposeAndEssence/"}" data-reveal>${locale.purpose.link}<span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="purpose-showcase" data-purpose-showcase>
-          <figure class="purpose-image purpose-image--main">
-            <img src="${media.purpose[0]}" alt="${locale.code === "es-CO" ? "Proceso creativo y de moda de Crystal" : "Crystal creative and fashion process"}" width="960" height="1200" loading="lazy">
-          </figure>
-          <figure class="purpose-image purpose-image--detail">
-            <img src="${media.purpose[1]}" alt="${locale.code === "es-CO" ? "Detalle de la esencia de Crystal" : "Detail of Crystal's essence"}" width="720" height="900" loading="lazy">
-          </figure>
-          <span class="showcase-caption">Crystal / 1938—2026</span>
-        </div>
-      </div>
-    </section>`;
+function internalHero(locale, p, image, pageKey) {
+  return `<section class="internal-hero internal-hero--${pageKey}"><div class="shell internal-hero__copy"><p class="eyebrow" data-reveal>${p.eyebrow}</p><h1 data-title>${p.title}</h1><p class="hero-lede" data-reveal>${p.intro}</p></div><figure data-image-reveal><img src="${image}" alt="${esc(p.heroAlt || "")}" width="1800" height="1080" fetchpriority="high"></figure><span class="internal-hero__code">CR / ${pageKey.toUpperCase()}</span></section>`;
 }
 
-function business(locale) {
-  return `
-    <section class="business section-space" id="business" aria-labelledby="business-title">
-      <div class="page-grid business-heading">
-        <p class="eyebrow" data-reveal>${locale.business.eyebrow}</p>
-        <div>
-          <h2 id="business-title" class="display-title display-title--compact" data-split>${locale.business.title}</h2>
-          <p class="section-lede" data-reveal>${locale.business.intro}</p>
-        </div>
-      </div>
-      <div class="business-track-wrap" data-horizontal-wrap>
-        <div class="business-track" data-horizontal-track>
-          ${locale.business.items.map(item => `
-            <article class="business-card">
-              <a href="${item.href}" class="business-card-link" aria-label="${esc(item.title)}">
-                <figure><img src="${item.image}" alt="" width="1000" height="1250" loading="lazy"></figure>
-                <div class="business-card-copy">
-                  <span>${item.number}</span>
-                  <h3>${item.title}</h3>
-                  <p>${item.body}</p>
-                  <i aria-hidden="true">↗</i>
-                </div>
-              </a>
-            </article>`).join("")}
-        </div>
-      </div>
-    </section>`;
+function companyPage(locale, p) {
+  return `${internalHero(locale, p, shared.media.company, "company")}
+  <section class="history section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${p.historyTitle}</h2></div><ol class="timeline">${p.history.map(([year, title, body]) => `<li><time>${year}</time><div><h3>${title}</h3><p>${body}</p></div></li>`).join("")}</ol></section>
+  <section class="company-footprint section"><div class="shell company-footprint__grid"><div><span class="section-no">02</span><h2 data-title>${p.footprintTitle}</h2><p>${p.footprintBody}</p></div><dl class="stat-grid stat-grid--stacked">${shared.stats.map((s) => `<div data-stat><dt>${s.value}</dt><dd>${s[locale.id]}</dd></div>`).join("")}</dl></div></section>
+  <section class="governance section shell" id="governance"><span class="section-no">03</span><div><h2 data-title>${p.governanceTitle}</h2><p>${p.governanceBody}</p><div class="document-links"><a href="${assetBase}/pdf/Politica_de_tratamiento_de_datos_personales.pdf" target="_blank" rel="noopener">${p.governanceLink}<i>↓</i></a><a href="${locale.paths.contact}">${locale.nav.contact}<i>↗</i></a></div></div></section>`;
 }
 
-function footprint(locale) {
-  return `
-    <section class="footprint section-space" aria-labelledby="footprint-title">
-      <div class="page-grid footprint-grid">
-        <div class="footprint-copy">
-          <p class="eyebrow" data-reveal>${locale.footprint.eyebrow}</p>
-          <h2 id="footprint-title" class="display-title display-title--compact" data-split>${locale.footprint.title}</h2>
-          <p class="section-lede" data-reveal>${locale.footprint.body}</p>
-          <a class="text-link" href="${locale.code === "es-CO" ? "/ubicacion/" : "/Location/"}" data-reveal>${locale.footprint.link}<span aria-hidden="true">↗</span></a>
-        </div>
-        <dl class="stat-list">
-          ${shared.stats.map(stat => `<div class="stat" data-stat><dt>${stat.value}</dt><dd>${locale.code === "es-CO" ? stat.es : stat.en}</dd></div>`).join("")}
-        </dl>
-      </div>
-    </section>`;
+function purposePage(locale, p) {
+  return `${internalHero(locale, p, shared.media.purpose, "purpose")}
+  <section class="purpose-quote section"><div class="shell"><span aria-hidden="true">“</span><h2 data-title>${p.statement}</h2></div></section>
+  <section class="values section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${p.valuesTitle}</h2></div><ol class="values-list">${p.values.map(([title, body], i) => `<li><span>0${i + 1}</span><h3>${title}</h3><p>${body}</p></li>`).join("")}</ol></section>
+  <section class="essence-closing section"><figure data-image-reveal><img src="${shared.media.essence}" alt="" width="1600" height="1000" loading="lazy"></figure><p data-title>${p.closing}</p></section>`;
 }
 
-function sustainability(locale) {
-  return `
-    <section class="sustainability" id="sustainability" aria-labelledby="sustainability-title">
-      <div class="sustainability-media">
-        <video muted loop playsinline preload="metadata" data-sustainability-video poster="${media.purpose[1]}">
-          <source src="${media.sustainabilityVideo}" type="video/mp4">
-        </video>
-      </div>
-      <div class="sustainability-copy">
-        <p class="eyebrow" data-reveal>${locale.sustainability.eyebrow}</p>
-        <h2 id="sustainability-title" class="display-title display-title--compact" data-split>${locale.sustainability.title}</h2>
-        <p class="section-lede" data-reveal>${locale.sustainability.body}</p>
-        <a class="text-link text-link--light" href="${locale.code === "es-CO" ? "/sostenibilidad/" : "/Sustainability/"}" data-reveal>${locale.sustainability.link}<span aria-hidden="true">↗</span></a>
-      </div>
-    </section>`;
+function businessPage(locale, p) {
+  return `${internalHero(locale, p, shared.media.fullPackage, "business")}
+  <section class="business-system section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${p.processTitle}</h2></div><div class="unit-list">${p.units.map((u) => `<article class="unit" data-unit><div class="unit__head"><span>${u.number}</span><h3>${u.title}</h3><p>${u.subtitle}</p><button type="button" aria-expanded="false" aria-label="${locale.common.explore} ${esc(u.title)}">+</button></div><div class="unit__body"><figure><img src="${u.image}" alt="" width="1000" height="720" loading="lazy"></figure><div><p>${u.body}</p><ul>${u.facts.map((f) => `<li>${f}</li>`).join("")}</ul></div></div></article>`).join("")}</div></section>
+  <section class="full-package section"><div class="shell"><span class="section-no">02</span><h2 data-title>${p.closingTitle}</h2><p>${p.closingBody}</p></div></section>`;
 }
 
-function ethics(locale) {
-  return `
-    <section class="ethics section-space" aria-labelledby="ethics-title">
-      <div class="ethics-thread" aria-hidden="true"><svg viewBox="0 0 1200 300" preserveAspectRatio="none"><path data-thread-path d="M-30 210 C230 20 360 290 610 125 C825 -18 1000 250 1240 70" pathLength="1" /></svg></div>
-      <div class="page-grid ethics-grid">
-        <p class="eyebrow" data-reveal>${locale.ethics.eyebrow}</p>
-        <div>
-          <h2 id="ethics-title" class="display-title" data-split>${locale.ethics.title}</h2>
-          <p class="section-lede" data-reveal>${locale.ethics.body}</p>
-          <a class="text-link" href="${locale.code === "es-CO" ? "/asiSomos/" : "/ThisIsWhoWeAre/"}" data-reveal>${locale.ethics.link}<span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>`;
+function sustainabilityPage(locale, p) {
+  return `${internalHero(locale, p, shared.media.environment, "sustainability")}
+  <section class="pillars section shell"><div class="section-heading"><span class="section-no">01</span><h2 data-title>${locale.id === "es" ? "Tres pilares, una misma ruta." : "Three pillars, one path."}</h2></div><ol>${p.pillars.map(([n, title, body]) => `<li><span>${n}</span><h3>${title}</h3><p>${body}</p></li>`).join("")}</ol></section>
+  <section class="commitments section"><article><figure data-image-reveal><img src="${shared.media.social}" alt="" width="1200" height="900" loading="lazy"></figure><div><span>02 / SOCIAL</span><h2 data-title>${p.socialTitle}</h2><p>${p.socialBody}</p></div></article><article><figure data-image-reveal><img src="${shared.media.water}" alt="" width="1200" height="900" loading="lazy"></figure><div><span>03 / PLANETA</span><h2 data-title>${p.environmentTitle}</h2><p>${p.environmentBody}</p></div></article></section>
+  <section class="reports section shell" id="reports"><div><span class="section-no">04</span><h2 data-title>${p.reportsTitle}</h2><p>${p.reportsBody}</p><small>${p.certification}</small></div><div class="report-list">${p.reports.map((year) => `<div><span>${locale.footer.reports}</span><strong>${year}</strong><i>—</i></div>`).join("")}</div></section>`;
 }
 
-function faq(locale) {
-  return `
-    <section class="faq section-space" aria-labelledby="faq-title">
-      <div class="page-grid faq-grid">
-        <div>
-          <p class="eyebrow">${locale.faq.eyebrow}</p>
-          <h2 id="faq-title" class="display-title display-title--compact">${locale.faq.title}</h2>
-        </div>
-        <div class="faq-list">
-          ${locale.faq.items.map((item, index) => `
-            <details class="faq-item" ${index === 0 ? "open" : ""}>
-              <summary><span>${String(index + 1).padStart(2, "0")}</span>${item.q}<i aria-hidden="true"></i></summary>
-              <p>${item.a}</p>
-            </details>`).join("")}
-        </div>
-      </div>
-    </section>`;
+function contactPage(locale, p) {
+  return `<section class="contact-page"><div class="shell contact-intro"><p class="eyebrow">${p.eyebrow}</p><h1 data-title>${p.title}</h1><p>${p.intro}</p></div><div class="shell contact-layout"><aside><span>${p.customerLine}</span><a href="tel:+5718000517536">${p.phone}</a><a href="mailto:proteccionbasedatos@crystal.com.co">proteccionbasedatos@crystal.com.co</a></aside><form class="contact-form" data-contact-form novalidate>
+    <label class="field field--wide"><span>${p.fields.area}</span><select name="area" required><option value=""></option>${p.areas.map((a) => `<option>${a}</option>`).join("")}</select></label>
+    <label class="field"><span>${p.fields.name}</span><input name="name" autocomplete="given-name" maxlength="100" required></label><label class="field"><span>${p.fields.lastName}</span><input name="lastName" autocomplete="family-name" maxlength="100" required></label>
+    <label class="field"><span>${p.fields.email}</span><input type="email" name="email" autocomplete="email" maxlength="254" required></label><label class="field"><span>${p.fields.company}</span><input name="company" autocomplete="organization" maxlength="120"></label>
+    <label class="field field--wide"><span>${p.fields.message}</span><textarea name="message" rows="6" minlength="10" maxlength="3000" required></textarea></label><input class="trap" name="website" tabindex="-1" autocomplete="off">
+    <p class="form-privacy">${p.privacy}</p><button class="submit-button" type="submit"><span>${p.fields.submit}</span><i>↗</i></button><p class="form-status" role="status" data-form-status></p>
+  </form></div></section>`;
+}
+
+function faq(locale, p) {
+  return `<section class="faq section shell"><div class="section-heading"><span class="section-no">FAQ</span><h2>${p.faqTitle}</h2></div><div class="faq-list">${p.faqs.map(([q, a], i) => `<details ${i === 0 ? "open" : ""}><summary><span>0${i + 1}</span>${q}<i></i></summary><p>${a}</p></details>`).join("")}</div></section>`;
+}
+
+function nextPage(locale, pageKey) {
+  const order = ["home", "company", "purpose", "business", "sustainability", "contact"];
+  const next = order[(order.indexOf(pageKey) + 1) % order.length];
+  const label = next === "home" ? (locale.id === "es" ? "Inicio" : "Home") : locale.nav[next];
+  return `<a class="next-page" href="${locale.paths[next]}"><span>${locale.common.next}</span><strong>${label}</strong><i>↗</i></a>`;
 }
 
 function footer(locale) {
-  const es = locale.code === "es-CO";
-  return `
-    <footer class="site-footer">
-      <div class="page-grid footer-grid">
-        <div class="footer-brand">
-          <img src="${media.logo}" alt="Crystal" width="200" height="68" loading="lazy">
-          <p>${locale.footer.statement}</p>
-        </div>
-        <div class="footer-column">
-          <h2>${locale.footer.company}</h2>
-          <a href="${es ? "/quienesSomos/" : "/WhoWeAre/"}">${es ? "Quiénes somos" : "Who we are"}</a>
-          <a href="${es ? "/historiaC/1938-1948/" : "/OurHistory/1938-1948/"}">${es ? "Historia" : "History"}</a>
-          <a href="${es ? "/gobiernoCorp/" : "/CorporateGovernance/"}">${es ? "Gobierno corporativo" : "Corporate governance"}</a>
-          <a href="${es ? "/ServicioAlCliente/" : "/CustomerService/"}">${locale.nav.contact}</a>
-        </div>
-        <div class="footer-column">
-          <h2>${locale.footer.resources}</h2>
-          <a href="${es ? "/politicas/" : "/Policies/"}">${es ? "Políticas" : "Policies"}</a>
-          <a href="${es ? "/certificaciones/" : "/Certifications/"}">${es ? "Certificaciones" : "Certifications"}</a>
-          <a href="${es ? "/informesDeSostenibilidad/" : "/sustainabilityReports/"}">${es ? "Informes de sostenibilidad" : "Sustainability reports"}</a>
-        </div>
-        <div class="footer-column footer-social">
-          <h2>Social</h2>
-          ${Object.entries(shared.socials).map(([name, url]) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${name}<span aria-hidden="true">↗</span></a>`).join("")}
-        </div>
-      </div>
-      <div class="page-grid footer-bottom">
-        <span>© ${new Date().getUTCFullYear()} Crystal S.A.S. ${locale.footer.rights}</span>
-        <span>Medellín, Colombia</span>
-      </div>
-    </footer>`;
+  return `<footer class="site-footer"><div class="shell footer-main"><div><img src="${shared.logo}" alt="Crystal" width="210" height="70" loading="lazy"><p>${locale.footer.statement}</p></div><nav>${["company", "purpose", "business", "sustainability", "contact"].map((k) => `<a href="${locale.paths[k]}">${locale.nav[k]}</a>`).join("")}</nav><nav>${Object.entries(shared.socials).map(([name, url]) => `<a href="${url}" target="_blank" rel="noopener">${name}<i>↗</i></a>`).join("")}</nav></div><div class="shell footer-bottom"><span>© ${new Date().getUTCFullYear()} Crystal S.A.S. ${locale.footer.rights}</span><span>Medellín / Colombia</span></div></footer>`;
 }
 
-export function renderHome(locale) {
-  const es = locale.code === "es-CO";
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: locale.faq.items.map(item => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a }
-    }))
-  };
-  const orgSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Crystal S.A.S.",
-    url: "https://www.crystal.com.co/",
-    logo: `${assetBase}/images/Logos/Logo-crystal-transparente.png`,
-    foundingDate: "1938",
-    address: { "@type": "PostalAddress", addressLocality: "Medellín", addressCountry: "CO" },
-    sameAs: Object.values(shared.socials)
-  };
-  return `<!doctype html>
-<html lang="${locale.code}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>${locale.meta.title}</title>
-  <meta name="description" content="${locale.meta.description}">
-  <meta name="theme-color" content="#f4f1eb">
-  <link rel="canonical" href="https://www.crystal.com.co${locale.path}">
-  <link rel="alternate" hreflang="es-CO" href="https://www.crystal.com.co/">
-  <link rel="alternate" hreflang="en" href="https://www.crystal.com.co/en/">
-  <link rel="alternate" hreflang="x-default" href="https://www.crystal.com.co/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="${locale.meta.title}">
-  <meta property="og:description" content="${locale.meta.description}">
-  <meta property="og:url" content="https://www.crystal.com.co${locale.path}">
-  <meta property="og:image" content="${media.hero[0].src}">
-  <meta property="og:locale" content="${es ? "es_CO" : "en_US"}">
-  <link rel="preconnect" href="https://crystal.com.co" crossorigin>
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script type="application/ld+json">${JSON.stringify(orgSchema)}</script>
-  <script type="application/ld+json">${JSON.stringify(faqSchema)}</script>
-</head>
-<body class="is-loading">
-  <a class="skip-link" href="#main">${locale.skip}</a>
-  ${loader(locale)}
-  ${header(locale)}
-  <main id="main">
-    ${hero(locale)}
-    ${purpose(locale)}
-    ${business(locale)}
-    ${footprint(locale)}
-    ${sustainability(locale)}
-    ${ethics(locale)}
-    ${faq(locale)}
-  </main>
-  ${footer(locale)}
-  <script src="/assets/vendor/gsap.min.js" defer></script>
-  <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
-  <script src="/assets/js/main.js" defer></script>
-</body>
-</html>`;
+function pageBody(locale, pageKey) {
+  const p = locale.pages[pageKey];
+  if (pageKey === "home") return homePage(locale, p);
+  if (pageKey === "company") return companyPage(locale, p);
+  if (pageKey === "purpose") return purposePage(locale, p);
+  if (pageKey === "business") return businessPage(locale, p);
+  if (pageKey === "sustainability") return sustainabilityPage(locale, p);
+  return contactPage(locale, p);
+}
+
+export function renderSite(locale, pageKey) {
+  const p = locale.pages[pageKey];
+  const canonical = `https://www.crystal.com.co${locale.paths[pageKey]}`;
+  const alternate = `https://www.crystal.com.co${locale.alternatePaths[pageKey]}`;
+  const faqSchema = pageKey === "home" ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: p.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) } : null;
+  const orgSchema = { "@context": "https://schema.org", "@type": "Organization", name: "Crystal S.A.S.", url: "https://www.crystal.com.co/", logo: `${assetBase}/images/Logos/Logo-crystal-transparente.png`, foundingDate: "1938", address: { "@type": "PostalAddress", addressLocality: "Medellín", addressCountry: "CO" }, sameAs: Object.values(shared.socials) };
+  return `<!doctype html><html lang="${locale.code}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${p.metaTitle}</title><meta name="description" content="${p.metaDescription}"><meta name="theme-color" content="#f0eee8"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="${locale.id === "es" ? "en" : "es-CO"}" href="${alternate}"><link rel="alternate" hreflang="x-default" href="https://www.crystal.com.co/"><meta property="og:type" content="website"><meta property="og:title" content="${p.metaTitle}"><meta property="og:description" content="${p.metaDescription}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${shared.media.home}"><link rel="preconnect" href="https://crystal.com.co" crossorigin><link rel="stylesheet" href="/assets/css/main.css"><script type="application/ld+json">${JSON.stringify(orgSchema)}</script>${faqSchema ? `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>` : ""}</head><body class="page-${pageKey}${pageKey === "home" ? " is-loading" : ""}" data-language="${locale.id}"><a class="skip-link" href="#main">${locale.skip}</a>${loader(locale, pageKey)}${header(locale, pageKey)}<main id="main">${pageBody(locale, pageKey)}${pageKey !== "contact" ? nextPage(locale, pageKey) : ""}</main>${footer(locale)}<script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/js/main.js" defer></script></body></html>`;
 }
