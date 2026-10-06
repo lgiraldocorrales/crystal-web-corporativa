@@ -1,10 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <style>
-    .mark{fill:#8d8f90}.cut{fill:#f0eee8}
-    @media (prefers-color-scheme:dark){.mark{fill:#f1efe9}.cut{fill:#151515}}
-  </style>
-  <path class="mark" d="M5 32 27 18h29L35 27H18l-8 5 8 5h17l21 9H27L5 32Z"/>
-  <path class="cut" d="M18 29h31l-7 3 7 3H18c-4 0-6-1-6-3s2-3 6-3Z"/>
-  <path fill="#1464d2" d="M45 21h2v22h-2z"/>
-  <path fill="none" stroke="#ee4035" stroke-width="2" stroke-linecap="round" d="M39 27c5-5 10-5 16 0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 104">
+  <style>.mark{fill:#858689}@media(prefers-color-scheme:dark){.mark{fill:#f1efe9}}</style>
+  <path class="mark" fill-rule="evenodd" d="M171 46 84 4 9 39C-3 44-3 57 9 63l75 37 87-43H30c-10 0-16-4-16-9s6-9 16-9h141Z"/>
 </svg>
