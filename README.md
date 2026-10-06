@@ -4,15 +4,16 @@ Static-first bilingual website for Crystal S.A.S., with a small Python backend f
 
 ## Current milestone
 
-- New Spanish and English Home pages.
-- Brand-driven GSAP loader based on the Crystal needle/thread mark.
-- GSAP ScrollTrigger editorial showcases for desktop and touch-native galleries for mobile.
+- Six consolidated pages in Spanish and English: Home, Company, Purpose, Business Model, Sustainability and Contact.
+- Locally hosted variable Raleway typography.
+- Brand-driven GSAP loader based on the textile weave, needle and Crystal thread colors.
+- Purposeful GSAP motion for image reveals, editorial rows, timelines and industrial accordions.
 - SEO foundation: one H1, canonical, hreflang, Open Graph, Organization and FAQPage JSON-LD.
 - Accessibility foundation, including keyboard navigation and reduced-motion behavior.
 - Secure Flask contact endpoint prepared for MasterBase SMTP on port 587.
 - Security headers and strict request validation.
 
-The remaining captured routes are the source inventory for the next milestone. They should be migrated into the new shared layout only after approval of the Home visual direction.
+The former 38-route site has been consolidated into 12 focused routes while preserving its company history, industrial capabilities, sustainability commitments and bilingual navigation.
 
 ## Local build
 
