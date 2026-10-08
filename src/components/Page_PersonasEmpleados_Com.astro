@@ -1,0 +1,864 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopHeaderEs42957cbf from '../components/DesktopHeaderEs42957cbf.astro';
+import MobileHeaderEs93bf6e69 from '../components/MobileHeaderEs93bf6e69.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/PersonasEmpleados/Com">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEs42957cbf />
+<MobileHeaderEs93bf6e69 />
+<head>
+
+</head>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12">
+<div class="slider" style="height: 100%;">
+<ul class="slides">
+<li>
+<img src="/static/store/images/compromisoSocial/Sostenibilidad_3.png"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 1%; font-weight: 300;letter-spacing: 1px;">
+<a href="/" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Inicio / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Sostenibilidad / </a>
+<a href="/compromisoSocial" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Compromiso social</a>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="font-weight: 300; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l10 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12 section scrollspy" id="Empl" style="padding: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h1 class="source-h2" id="main-content" style="margin: 0%;margin-block-end: 2%;" tabindex="-1">Nuestros empleados</h1>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">
+                                                        Comprometidos con entornos de trabajo saludables
+                                                    </h5>
+<p style="font-size: large;">
+                                                        Valoramos la contribución de nuestros empleados en la estrategia de la Compañía como parte fundamental de esta, por eso, buscamos que sus condiciones de trabajo impacten positivamente en su salud y bienestar, mediante un sistema de gestión en seguridad y salud en el trabajo que va más allá del cumplimiento de los requisitos legales, abordando el tema desde 5 ejes de gestión:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>1.</b> Prevención de la accidentalidad:  la seguridad de nuestros empleados en su labor, es lo primero para nosotros, por eso buscamos disminuir al máximo el riesgo y la ocurrencia de accidentes e incidentes de trabajo por medio de estos programas:
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •	Programa de gestión de peligro y riesgo químico
+                                                        <br/>
+                                                        •	Programa intervención peligro mecánico
+                                                        <br/>
+                                                        •	Programa de gestión riesgo osteomuscular
+                                                        <br/>
+                                                        •	Programa aseguramiento energías peligrosas
+                                                        <br/>
+                                                        •	Programa de gestión peligros en espacio confinados
+                                                        <br/>
+                                                        •	Programa de protección contra caídas de altura
+                                                        <br/>
+                                                        •	Programa de seguridad para trabajo en caliente
+                                                        <br/>
+                                                        •	Plan estratégico de seguridad vial
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>2.</b>	Prevención de la enfermedad laboral:  somos corresponsables del bienestar de nuestros empleados, por esto, implementamos estrategias que buscan disminuir o evitar la aparición de enfermedades laborales a través de programas como:
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •	Programa visión cero enfermedades laborales osteomusculares
+                                                        <br/>
+                                                        •	Programa de vigilancia auditivo
+                                                        <br/>
+                                                        •	Programa de vigilancia respiratorio
+                                                        <br/>
+                                                        •	Programa de vigilancia del riesgo psicosocial
+                                                        <br/>
+                                                        •	Programa de gestión del peligro y riesgo químico
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>3.</b>	Salud Integral: entendemos la salud de nuestros empleados como un pilar fundamental para su bienestar y desarrollo, por eso contamos con estrategias de promoción y prevención con las que los acompañamos cada día para que puedan tener las herramientas disponibles a la mano para procurar siempre su bienestar.
+                                                          
+
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        Programa de prevención y promoción:
+                                                        <br/>
+                                                        •   SanaMente: estrategias de prevención e intervención sobre todos los factores que influyen en la salud de las personas.
+                                                        <br/>
+                                                        •   Vigilancia de ausentismo y reintegro laboral
+                                                        <br/>
+                                                        •   Programas de promoción y prevención 
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>4.</b>	Preparación y prevención emergencias: tenemos diseñados programas de prevención, preparación y atención de emergencias, articulados al plan de continuidad de negocio en la Compañía, los cuales nos permiten anticiparnos a eventos que se pueden presentar poniendo por encima de todo, la protección de la vida de nuestros empleados, el medioambiente, los impactos a nuestros vecinos y, por último, la seguridad y continuidad de nuestros procesos.
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>5.</b>	Cumplimiento requisitos legales: estamos comprometidos con el cumplimiento de la normatividad vigente en salud y seguridad en el trabajo, así como con los requisitos de nuestros clientes y entidades certificadoras, contando para ello con el compromiso gerencial para ejecutar todas las acciones necesarias en la implementación de esto.
+                                                    
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">                                               
+                                                   
+                                                        Contamos con grupos de apoyo que facilitan la gestión de la salud y seguridad en el trabajo como:
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •   Copasst
+                                                        <br/>
+                                                        •   Comité de Convivencia
+                                                        <br/>
+                                                        •   Comité PESV
+                                                        <br/>
+                                                        •   Comité de Emergencia
+                                                        <br/>
+                                                        •   Brigada de Emergencia
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="Fami" style="padding: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12">
+<h5 style="font-weight: 500; ">
+                                                        Comprometidos con nuestros empleados y sus familias
+                                                    </h5>
+<p style="font-size: large;">
+                                                        En Crystal concebimos el bienestar como un factor fundamental para el desarrollo integral de nuestros empleados y, por medio de programas y actividades que promueven el desarrollo de habilidades físicas, emocionales y sociales, les proporcionamos herramientas y acompañamiento para ello.
+                                                    </p>
+<p style="font-size: large;">
+
+                                                        Pensamos en la familia como núcleo base de la sociedad y en esa medida, acompañamos a nuestros empleados y también a sus familias en las diferentes etapas de la vida, de la siguiente manera:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<strong>Amigos de la familia lactante: </strong>
+                                                        somos conscientes de la importancia de esta etapa de la vida, en la nutrición de los bebés de nuestros empleados y el vínculo afectivo en sus familias, por esto contamos con espacios y programas que promueven una sana Lactancia:
+                                                        
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •   Salas de lactancia en todas nuestras plantas de producción
+                                                        <br/>
+                                                        •   Talleres de acompañamiento y formación para madres y padres gestantes, lactantes y cuidadores
+
+                                                    </p>
+<p style="font-size: large;margin-left: 2%;">
+<strong>Caminantes: </strong>
+                                                        sabemos que familias sanas y felices, aportan positivamente a la sociedad en la que vivimos, por eso formamos a las familias de nuestros empleados a través de talleres de pautas de crianza desde el abordaje de la disciplina positiva.
+                                                        <br/><br/>
+<strong>Semillero infantil:</strong>  
+                                                        aportamos en la crianza y el desarrollo de los niños de las familias de nuestros empleados, con espacios sanos de recreación y formación para ellos y sus acudientes.
+                                                        <br/><br/>
+<strong>Semillero juvenil:</strong> 
+                                                        brindamos orientación a los adolescentes de las familias de nuestros empleados, a través de espacios creativos, lúdicos y formativos que les permiten socializar y desarrollarse en un entorno sano. 
+                                                        <br/><br/>
+<strong>Orientación psicosocial:</strong> 
+                                                        sabemos que la salud mental de las personas está relacionada con muchos aspectos de su vida, su forma de pensar, actuar, tomar decisiones y relacionarse con los demás, por eso, propiciamos para nuestros empleados y sus familias, entornos sanos para su bienestar mental
+                                                       
+                                                    </p>
+<p style="font-size: large;margin-left: 4%;">
+
+                                                        •   Escucha activa: espacio de acompañamiento psicológico
+                                                        <br/>
+                                                        •   En Familia: formación en temas de importancia en la dinámica familiar 
+                                                        <br/>
+                                                        •   Duelo: acompañamiento en procesos de pérdidas o cambios 
+                                                        <br/>
+                                                        •   Adicciones: prevención de adicciones psicoactivas y comportamentales 
+                                                        <br/>
+</p>
+<p style="font-size: large;margin-left: 2%;">
+<strong>Propósito y proyecto de vida: </strong>
+                                                        tener un propósito nos impulsa, por eso guiamos a nuestros colaboradores en la construcción y consecución de sus proyectos personales.
+                                                        <br/><br/>
+<strong>Programa ABC de la vivienda: </strong>
+                                                        para muchos de nuestros empleados y sus familias, tener casa propia constituye una parte importante en sus proyectos de vida, por eso los acompañamos para hacer realidad este sueño, con asesoría permanente en estas tres líneas: ahorro, beneficios y crédito.
+                                                        <br/><br/>
+<strong>Tiempo feliz y con sentido:</strong> 
+                                                        promovemos y gestionamos el sano esparcimiento en el tiempo libre, para nuestros cerca de 7.000 empleados y sus familias. 
+                                                        <br/><br/>
+<strong>Aliados con el cuidado:</strong> 
+                                                        promovemos estilos de vida saludables, a través del deporte y garantizamos la nutrición de nuestros colaboradores a través de un servicio de alimentación propio. 
+                                                        <br/><br/>
+<strong>Nuestro día:</strong> 
+                                                        compartimos un espacio de integración en el que, empleados, familias y directivas, celebramos la vida y agradecemos por todo lo logrado en el año, entregando un día de felicidad, esparcimiento familiar y regalos espaciales, a los niños de nuestros empleados en Navidad.
+                                                        <br/><br/>
+<strong>Noche de reconocimientos:</strong> 
+                                                        un momento especial donde la Compañía agradece la entrega, colaboración, aporte y respaldo de nuestros empleados en el cumplimiento de los objetivos, a aquellos que llevan más de 20 años con nosotros. 
+                                                        <br/><br/>
+<strong>Preparación para la jubilación:</strong> 
+                                                        cumpliendo nuestro propósito de acompañar a todos nuestros empleados en cada etapa de su vida, orientamos este cambio, logrando un proceso sano de transición para ellos y sus familias. 
+                                                        <br/><br/>
+<strong>Educación: </strong>
+                                                        estamos comprometidos con el desarrollo de nuestros empleados, por eso los acompañamos gestionando sus procesos de aprendizaje, para contribuir no solo con el cumplimiento de la estrategia de la Compañía, sino también con su crecimiento profesional. 
+                                                    </p>
+</div>
+</div>
+<div class="row">
+<div class="col s12">
+<div class="col l6 m6 s12 center">
+<img src="/static/store/images/compromisoSocial/Otros_beneficios.png" style="width: 80%;"/>
+</div>
+<div class="col l6 m6 s12">
+<h5 style="font-weight: 500; ">
+                                                            Otros beneficios
+                                                        </h5>
+<p style="padding: 1%;">
+<strong>Apoyo económico: </strong>
+<br/>
+                                                            Educación para empleados 
+                                                            <br/>
+                                                            Educación para el grupo familiar 
+                                                            <br/>
+                                                            Apoyo para lentes y montura 
+                                                            <br/>
+                                                            Apoyo para fallecimiento de empleados y sus familias 
+                                                            <br/>
+                                                            Prima de vacaciones 
+                                                            <br/><br/>
+<strong>Línea de préstamos a nuestros empleados: </strong>
+<br/>
+                                                            Útiles 
+                                                            <br/>
+                                                            Educación  
+                                                            <br/>
+                                                            Vivienda 
+                                                            <br/>
+                                                            Calamidad 
+                                                            <br/><br/>
+<strong>Descuento y préstamos en nuestras tiendas propias: 
+                                                            </strong>
+<br/>
+                                                            Con la intención de facilitar el acceso pleno de la experiencia de nuestras marcas a todos nuestros empleados y sus familias, para que puedan llevar con orgullo eso por lo que trabajan cada día, les entregamos un descuento significativo y les brindamos la posibilidad de pagar sus compras por cuotas de préstamo.
+                                                        </p>
+</div>
+</div>
+</div>
+<div></div>
+</div>
+<div class="col s12 section scrollspy" id="Com" style="padding: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row" style="font-size: large;text-align: justify;">
+<div class="col s12" style="font-size: x-large;">
+<h2 style="margin: 0%; margin-block-end: 2%;">Nuestra comunidad</h2>
+</div>
+<div class="col s12">
+<p>
+                                                        Alineados con nuestro propósito de tejer vida para nuestro planeta, transformando el futuro desde las personas, contribuimos con el desarrollo del país por medio de programas con sentido social como hilo conductor de nuestras acciones y de la relación con el mundo que nos rodea. 
+                                                    </p>
+<p style="margin-left: 2%;">
+<strong>Hilos de esperanza: </strong>
+                                                        en el año 2014 nace en nuestra planta textil ubicada en el municipio de Marinilla, proyecto social empresarial, que busca darle una nueva disposición a excedentes de producción de la Compañía que ya no son comercializables, brindando así, la oportunidad a las comunidades aledañas a nuestra planta, para la creación de emprendimientos. 
+                                                        <br/><br/>
+                                                        Hoy el programa tiene 5 líneas estratégicas de funcionamiento:
+                                                        <br/>
+<b>1.</b> Donación de productos que no son comercializables pero que si pueden ser usados como vestuario. 
+                                                        <br/>
+<b>2.</b> Transformación de prendas que se convierten en materia prima para productos artesanales elaborados por grupos de la comunidad, que luego obtienen recursos económicos de estos en unos talleres que denominamos costureros.
+                                                        <br/>
+<b>3.</b> Adecuación de prendas que se reparan para que luego puedan ser usadas como vestuario.
+                                                        <br/>
+<b>4.</b> El lavado de productos que están en buen estado pero que requieren ser lavados antes de ser usados.
+                                                        <br/>
+<b>5.</b> Destinación final de productos que quedan luego de ser filtrados en las demás líneas y se donan a algunas instituciones que encuentran utilidad en estas o se disponen para ser clasificadas y destinadas finalmente de forma adecuada por la entidad de separación de residuos del municipio Marinilla.
+                                                        <br/><br/>
+                                                        En el 2020, participamos en un concurso de Lacoste, uno de nuestros clientes aliados, que buscaba beneficiar con recursos económicos algún proyecto social de sus empresas proveedoras. A esta convocatoria se presentaron 6 proyectos de diferentes organizaciones alrededor del mundo, y en la oficina central de Lacoste ubicada en Francia, nuestro proyecto, Hilos de Esperanza, fue elegido ganador por unanimidad por el comité evaluador del concurso.  ​
+                                                        <br/><br/>
+                                                        En el 2022, de nuevo participamos en esta convocatoria y gracias a los excelentes resultados que ha tenido el programa Hilos de Esperanza en la región, fuimos elegidos de nuevo por Lacoste para la asignación de nuevos recursos, ampliando de esta manera nuestra capacidad de impactar positivamente a más personas. ​
+                                                        <br/><br/>
+<strong>Opción DEVBIDA (Programa C.E.O):</strong> 
+                                                        Seguimos uniendo esfuerzos junto con CEO y otras 9 empresas del sector del Oriente Antioqueño, para que cada vez más personas, incluyendo jóvenes, puedan encontrar en el programa mejores opciones para sus vidas, la de sus familias y las comunidades rurales del Oriente Antioqueño.
+                                                        <br/>
+                                                         En el 2022, invitamos a participar a 25 jóvenes de 5 de las empresas patrocinadoras del programa, en un grupo juvenil denominado Orienta tu sabor, donde tuvimos como pretexto la capacitación en cocina básica, para guiarlos en temas de propósito, orientación vocacional, hábitos saludables y salud mental. De los 5 cupos que nos asignaron, el 100% fueron utilizados y aprovechados. <br/>
+<br/>
+<strong>Fundación Golondrinas:</strong> 
+                                                        continuando con nuestro propósito de ayuda a la primera infancia, apoyamos activamente a la Fundación Golondrinas, ubicados en los departamentos de Antioquia y Córdoba, quienes atienden a más de 19 mil niños con proyectos de atención integral a la primera infancia, educativos y de desarrollo comunitario. 
+                                                        <br/><br/>
+<strong>Plan padrino FAN:</strong> 
+                                                        somos gestores de felicidad y promovemos entre nuestros colaboradores, la participación en el plan padrino de la fundación FAN, en el que, con un aporte mensual, contribuyen con el bienestar y el futuro de los niños que hacen parte de esta entidad de apoyo.  
+                                                        <br/><br/>
+<strong>Escuela Camilo C Restrepo:</strong> 
+                                                        para nosotros, la educación es fundamental para construir país, por ello, coherentes con esta visión, la Compañía gestiona actividades de inversión social, que le apuestan a mejorar el nivel y la calidad de vida de cientos de jóvenes en la Escuela Camilo C Restrepo.  
+                                                        <br/><br/>
+<strong>Fundación Juanfe:</strong> 
+                                                        bajo la convicción de que haciendo sinergias logramos siempre los mejores resultados, nos unimos a la labor social que realiza la Fundación Juanfe y bajo su compromiso de romper los ciclos de pobreza de madres adolescentes marginadas y mejorar sus condiciones de vida, construyendo un mejor futuro tanto para ellas, como para las futuras generaciones, aportamos nuestro  granito de arena, para hacer posible sus proyectos sociales y adicionalmente, los dotamos de uniformes tanto para las madres adolescentes beneficiarias, como para el personal de la fundación.
+                                                        <br/><br/>
+<strong>Baby Fresh x Unicef:</strong> 
+                                                        seres de cuidado es una iniciativa que apoyamos desde 2017, con la cuál hemos impactado a más de 700 familias acompañándolas y ayudándolas de la mano de UNICEF. Nuestras tiendas son centros de donación donde se pueden hacer aportes y comprar los productos en los que se donan el 100% del precio de estos.
+                                                        <br/><br/>
+<strong>Becas Vamos Pa Lante:</strong> 
+                                                        creemos en la educación como motor principal para el desarrollo de nuestro País, es por esto que nos unimos al programa Vamos Pa Lante, el cual otorga becas de rescate a estudiantes de pregrado de diferentes estratos y regiones del País, que se encuentran en riesgo de desertar de sus carreras por razones económicas, y gracias a este programa podrán continuar con sus estudios y hacer realidad sus sueños profesionales.
+                                                        <br/><br/>
+<strong>Tejer para Creer:</strong> 
+                                                        Brindamos acompañamiento integral a personas que bajo el desempeño del oficio de confección desean tener alternativas de empleo o emprendimiento para generar recursos económicos propios y para sus familias, bajo 3 líneas de trabajo: acompañamiento técnico formativo de la mano del SENA - Servicio Nacional de Aprendizaje, fortalecimiento del Taller de Tina - unidad productiva de la Fundación Las Golondrinas de Medellín que acompaña a familias de escasos recursos en el país y, emprendimiento, mediante la capacitación en temas específicos que les ayuden a desarrollar sus ideas de negocio propias. Todo esto, bajo acompañamiento sicosocial para todos los participantes.
+                                                        Entre el 2022 y el 2023 hemos contado con 97 participantes de los cuales el 85% son cabezas de hogar.
+                                                        <br/><br/>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l2 m2 s12 list_content_menu hide-on-med-and-down" style="text-align: center; position: sticky;top: 100px;float: left;flex-direction: column;background-color: #fff;">
+<ul class="section table-of-contents">
+<li><a style="font-size: large;">Sostenibilidad</a></li>
+<br/>
+<li><a class="active" href="/compromisoSocial">Compromiso social</a></li>
+<br/>
+<li><a href="/compromisoAmbiental">Compromiso ambiental</a></li>
+<br/>
+<li><a href="/certificaciones">Certificaciones</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/assets/scripts/a99df2eeb893e4b9.js"></script>
+<div class="container-fluid footer-desktop">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 #f5f5f5 grey lighten-4">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col s12">
+<div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Sobre nosotros</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/quienesSomos" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Quiénes somos</a><br/>
+<a href="/propositoyesencia" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Propósito y esencia</a><br/>
+<a href="/historiaC/1938-1948" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Nuestra historia</a><br/>
+<a href="/hilanderia" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Hilanderia</a><br/>
+<a href="/paquete" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Paquete completo</a><br/>
+<a href="/marcas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Marcas</a><br/>
+<a href="/ubicacion" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Ubicación</a>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Sostenibilidad</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/sostenibilidad" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Nuestro compromiso</a><br/>
+<a href="/compromisoSocial" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Compromiso social</a><br/>
+<a href="/compromisoAmbiental" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Compromiso ambiental</a>
+<a href="/certificaciones" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Certificaciones</a><br/>
+<br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Cumplimiento</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/gobiernoCorp" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Gobierno corporativo</a><br/>
+<a href="/asiSomos" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Programa ético así somos</a><br/>
+<a href="/politicas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Políticas</a><br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a href="/ServicioAlCliente" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Contáctanos</a><br/><br/>
+<a href="https://www.magneto365.com/co/empresas/crystal" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Empleo</a><br/><br/>
+<a href="https://www.innovacrystal.co/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Innova</a><br/><br/>
+<a href="https://numrot7.net/crystal/login" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Proveedores</a><br/><br/>
+<a href="/pqrs" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">PQRS</a><br/>
+</div>
+</div>
+<div class="col l4 m8 s8">
+<a style="color:black;">Redes Sociales</a>
+<section class="container-fluid box">
+<div class="box">
+<a href="https://web.facebook.com/grupocrystalsas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/facebook.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.instagram.com/crystals.a.s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/instagram.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.linkedin.com/company/crystal-s-a-s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/linkedin.png" width="30px"/></a><br/>
+</div>
+<div class="box">
+<a href="https://vimeo.com/user74044025" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/vimeo.png" style="border-radius: 48%;" width="30px"/></a><br/>
+</div>
+</section>
+<a style="color:black;">Encuéntranos como Crystal S.A.S</a><br/>
+<h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid footer-mobile">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 #f5f5f5 grey lighten-4">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col s12">
+<div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Sobre nosotros</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/quienesSomos" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Quiénes somos</a><br/>
+<a href="/propositoyesencia" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Propósito y esencia</a><br/>
+<a href="/historiaC/1938-1948" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Nuestra historia</a><br/>
+<a href="/hilanderia" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Hilanderia</a><br/>
+<a href="/paquete" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Paquete completo</a><br/>
+<a href="/marcas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Marcas</a><br/>
+<a href="/ubicacion" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Ubicación</a>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Sostenibilidad</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/sostenibilidad" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Nuestro compromiso</a><br/>
+<a href="/compromisoSocial" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Compromiso social</a><br/>
+<a href="/compromisoAmbiental" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Compromiso ambiental</a>
+<a href="/certificaciones" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Certificaciones</a><br/>
+<br/>
+</div>
+</div>
+</div>
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Cumplimiento</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/gobiernoCorp" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Gobierno corporativo</a><br/>
+<a href="/asiSomos" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Programa ético así somos</a><br/>
+<a href="/politicas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Políticas</a><br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a href="/ServicioAlCliente" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Contáctanos</a><br/>
+<a href="https://www.magneto365.com/co/empresas/crystal" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Empleo</a><br/>
+<a href="https://www.innovacrystal.co/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Innova</a><br/>
+<a href="https://numrot7.net/crystal/login" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Proveedores</a><br/>
+<a href="/pqrs" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">PQRS</a><br/>
+</div>
+</div>
+</div>
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Redes Sociales</a>
+<section class="container-fluid box" style="width:100%;justify-content:flex-start;">
+<div class="box">
+<a href="https://web.facebook.com/grupocrystalsas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/facebook.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.instagram.com/crystals.a.s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/instagram.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.linkedin.com/company/crystal-s-a-s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/linkedin.png" width="30px"/></a><br/>
+</div>
+<div class="box">
+<a href="https://vimeo.com/user74044025" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/vimeo.png" style="border-radius: 48%;" width="30px"/></a><br/>
+</div>
+</section>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Encuéntranos como Crystal S.A.S</a><br/>
+<h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-block-end:0%;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terminos_y_condiciones_.pdf" target="_blank"><strong style="color:grey">Términos y condiciones | </strong></a>
+<a href="/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf" target="_blank"><strong style="color:grey">Política y aviso de privacidad</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+</div>
+</OriginalLayout>

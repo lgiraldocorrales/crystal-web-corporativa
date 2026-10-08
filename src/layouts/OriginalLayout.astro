@@ -1,0 +1,40 @@
+---
+import routes from '../data/routes.json';
+import '../styles/accessibility.css';
+interface Props {
+  /** Exact public route retained from the audited site. */
+  route: string;
+}
+// Resolve shared SEO and language without changing visual content.
+const { route } = Astro.props;
+const page = routes.find(page => page.route === route)!;
+const site = (import.meta.env.PUBLIC_SITE_URL || 'https://www.crystal.com.co').replace(/\/$/, '');
+const counterpart = routes.find(candidate => candidate.route === page.alternate);
+const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
+// This layout remains static: original progressive scripts implement interactions.
+---
+<!doctype html>
+<html lang={page.language}>
+  <head>
+    <slot name="head" />
+    <title>{page.title}</title>
+    <meta name="description" content={page.description} />
+    <link rel="canonical" href={site + page.publicRoute} />
+    <link rel="alternate" hreflang={page.language} href={site + page.publicRoute} />
+    {counterpart && <link rel="alternate" hreflang={counterpart.language} href={site + counterpart.publicRoute} />}
+    <meta property="og:title" content={page.title} />
+    <meta property="og:description" content={page.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={site + page.publicRoute} />
+    <meta property="og:image" content={site + '/static/store/images/Logos/Logo-crystal.png'} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={page.title} />
+    <meta name="twitter:description" content={page.description} />
+    <meta name="contact-turnstile-key" content={turnstileKey} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">{page.language === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a>
+    <slot />
+    <script is:inline src="/assets/accessibility.js"></script>
+  </body>
+</html>

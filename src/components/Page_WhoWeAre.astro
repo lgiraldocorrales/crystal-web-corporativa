@@ -1,0 +1,694 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopHeaderEna7e63395 from '../components/DesktopHeaderEna7e63395.astro';
+import MobileHeaderEne22b73f8 from '../components/MobileHeaderEne22b73f8.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/WhoWeAre">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEna7e63395 />
+<MobileHeaderEne22b73f8 />
+<head>
+
+</head>
+<div class="container-fluid">
+<div class="row sliderResponsive" style="margin-block-end: 0%;">
+<div class="col s12 sliderResponsive">
+<div class="sliderResponsive">
+<ul class="slides sliderResponsive">
+<li>
+<img sizes="(max-width: 320px) 280px,
+                                        (max-width: 480px) 440px,
+                                        800px" src="/static/store/images/quienesSomos/quienes-somos-3333.png" srcset="/static/store/images/quienesSomos/quienes-somos-3333.png 320w, /static/store/images/quienesSomos/quienes-somos-3333.png 480w, /static/store/images/quienesSomos/quienes-somos-3333.png 800w" style="width:100%"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 1%; font-weight: 300;">
+<a href="/" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Home / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">About us / </a>
+<a href="/WhoWeAre" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Who we are</a>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="font-weight: 300; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l10 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12 section scrollspy" id="Historia" style="padding-top: 0%; padding: 2%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h1 class="source-h2" id="main-content" style="margin-top: 0%;" tabindex="-1">Who we are</h1>
+</div>
+<div class="col s12" style="font-size: x-large;">
+<strong>We bring the best of what we do to our customers and consumers, as center of our reason to be, based on an omnichannel and sustainability strategy.</strong>
+</div>
+<div class="col s12" style="padding-top: 2%; padding-block-end: 2%;">
+<p style="font-size: large;font-weight: 300;">
+                                                        We are a Colombian company, producer and distributor of apparel and fashion brands, with a business model, structured under these four business lines:
+                                                        <a href="/Spinning" style="color: #4c4c4c;"><u>Spinning</u></a>, 
+                                                        <a href="/FullPackage" style="color: #4c4c4c;"><u>Full package</u></a>, 
+                                                        <a style="color: #4c4c4c;"><u>Industry</u></a>, <a href="/marcas" style="color: #4c4c4c;"><u>Brands</u></a>, 
+                                                        with nearly ninety years of experience in the market, founded by three Colombian entrepreneurs, Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, who in the decade of the thirties, bet on their dream of building a company, consolidating it under the name Zigzag, which was dedicated to produce socks for children.
+                                                        <br/>
+<br/>
+                                                        After the liquidation of Zigzag, Alfonso Velasquez Velez, Octavio and Julio Echavarria Hernandez, in 1948 Calceteria Victoria was born, until the beginning of the fifties, when the Echavarria Hernandez brothers opened the Crystal Socks Factory, located in Barrio Antioquia in the city of Medellin, establishing the foundations of what would become one of the largest companies in the industry within the country. 
+                                                    </p>
+</div>
+<div class="col s12">
+<div class="col l1 m12 s12">
+</div>
+<div class="col l2 m4 s12" style="padding-top: 2%; padding-block-end: 4%;">
+<div class="card">
+<div class="card-image center">
+<img data-aos="fade-down" src="/static/store/images/quienesSomos/Julio_Echavarria_Hernandez.png" style="width: 100%; height: 100%;"/>
+</div>
+<div class="card-action center" style="padding: 1.3%;">
+<h6 style="font-size: small;">Julio Echavarría Hernández</h6>
+</div>
+</div>
+</div>
+<div class="col l2 m4 s12" style="padding-top: 2%; padding-block-end: 4%;">
+<div class="card">
+<div class="card-image center">
+<img data-aos="fade-down" data-aos-delay="250" src="/static/store/images/quienesSomos/Octavio_Echavarria_Hernandez.png" style="width: 100%; height: 100%;"/>
+</div>
+<div class="card-action center" style="padding: 1%;">
+<h6 style="font-size: small;">Octavio Echavarría Hernández</h6>
+</div>
+</div>
+</div>
+<div class="col l2 m4 s12" style="padding-top: 2%; padding-block-end: 4%;">
+<div class="card">
+<div class="card-image center">
+<img data-aos="fade-down" data-aos-delay="450" src="/static/store/images/quienesSomos/Carlos_Manuel_Echavarria_Toro.png" style="width: 100%; height: 100%;"/>
+</div>
+<div class="card-action center" style="padding: 1%;">
+<h6 style="font-size: small;">Carlos Manuel Echavarría Toro</h6>
+</div>
+</div>
+</div>
+<div class="col l2 m4 s12" style="padding-top: 2%; padding-block-end: 4%;">
+<div class="card">
+<div class="card-image center">
+<img data-aos="fade-down" data-aos-delay="650" src="/static/store/images/quienesSomos/Luis_Fernando_Restrepo_Echavarria.png" style="width: 100%; height: 100%;"/>
+</div>
+<div class="card-action center" style="padding: 1%;">
+<h6 style="font-size: small;">Luis Fernando Restrepo Echavarría</h6>
+</div>
+</div>
+</div>
+<div class="col l2 m4 s12" style="padding-top: 2%; padding-block-end: 4%;">
+<div class="card">
+<div class="card-image center">
+<img data-aos="fade-down" data-aos-delay="850" src="/static/store/images/quienesSomos/Juan_Carlos_Echavarria_Zuluaga.png" style="width: 100%; height: 100%;"/>
+</div>
+<div class="card-action center" style="padding: 1%;">
+<h6 style="font-size: small;">Juan Carlos Echavarría Zuluaga</h6>
+</div>
+</div>
+</div>
+<div class="col l1 m12 s12">
+</div>
+</div>
+<div class="col s12">
+<p style="font-size: large;">
+                                                        After years of growth and development; and after the death of Octavio Echavarría Hernández, his son, Carlos Manuel Echavarría Toro, assumed the Presidency of the Company, contributing with his ingenuity and knowledge of the industry, in the accelerated process of growth of the Organization, which allowed diversifying the business, boosting the exports, expanding the production chain, acquiring own stores and thus strengthening the brands:
+                                                        <a href="https://www.gef.com.co/" style="color: #4c4c4c;" target="_blank"><u>Gef</u></a>, 
+                                                        <a href="https://www.puntoblanco.com.co/" style="color: #4c4c4c;" target="_blank"><u>Punto Blanco</u></a>, 
+                                                        <a href="https://tienda.babyfresh.com.co/" style="color: #4c4c4c;" target="_blank"><u>Baby Fresh</u></a>, 
+                                                        <a href="https://www.galax.co/" style="color: #4c4c4c;" target="_blank"><u>Galax</u></a> y 
+                                                        <a href="https://www.mediascasino.com/" style="color: #4c4c4c;" target="_blank"><u>Casino</u></a>, which today are synonymous of quality, innovation and design, both nationally and internationally. 
+                                                        <br/>
+<br/>
+                                                        Constant, honest and intelligently executed work over the years, by a highly committed and competitive human capital, and wisely directed for nearly two decades by its current Corporate President Luis Fernando Restrepo Echavarría, and his cousin and Executive President Juan Carlos Echavarría Zuluaga, have allowed this Company, which has not been oblivious to the changes in the environment, to continue to be a symbol of trust and quality in the market, thus building relationships of mutual growth with employees, their families and the country.  
+                                                        <br/>
+<br/>
+                                                        Crystal now have over 270 stores in  Colombia, 6 high-performance manufacturing plants, and are present in 11 countries throughout Latin America with our own brands Gef, Punto Blanco, Baby Fresh, Galax and Casino and our franchise Parfois, which are synonymous with quality, Innovation and design, both domestically and internationally.
+We take the best of what we do to our customers as they are at the center of our core which is based on an omnichannel and sustainable strategy.
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l2 m2 s12 list_content_menu hide-on-med-and-down" style="text-align: center; position: sticky;top: 100px;float: left;flex-direction: column;background-color: #fff;">
+<ul class="section table-of-contents">
+<li><a class="active" href="/WhoWeAre" style="font-size: large;">Who we are</a></li>
+<br/>
+<li><a href="/PurposeAndEssence">Our purpose and essence</a></li>
+<br/>
+<li><a href="/OurHistory/1938-1948">Our history</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid footer-desktop">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 #f5f5f5 grey lighten-4">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col s12">
+<div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">About us</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/WhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Who we are</a><br/>
+<a href="/PurposeAndEssence" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Purpose and essence</a><br/>
+<a href="/OurHistory/1938-1948" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Our history</a><br/>
+<a href="/Spinning" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Spinning</a><br/>
+<a href="/FullPackage" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Full package</a><br/>
+<a href="/marcas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Brands</a><br/>
+<a href="/Location" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Location</a>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Sustainability</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/Sustainability" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Our commitment</a><br/>
+<a href="/SocialCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Social commitment</a><br/>
+<a href="/EnvironmentalCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Environmental commitment</a>
+<a href="/Certifications" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Certifications</a><br/>
+<br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Compliance</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/CorporateGovernance" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Corporate governance</a><br/>
+<a href="/ThisIsWhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Así Somos Ethical program</a><br/>
+<a href="/Policies" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Policies</a><br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a href="/CustomerService" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Contact us</a><br/><br/>
+<a href="https://www.magneto365.com/co/empresas/crystal" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Employment</a><br/><br/>
+<a href="https://www.innovacrystal.co/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">INNOVA</a><br/><br/>
+<a href="https://numrot7.net/crystal/login" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Suppliers</a><br/><br/>
+<a href="/pqrs" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">PQRS</a><br/>
+</div>
+</div>
+<div class="col l4 m8 s8">
+<a style="color:black;">Social Media</a>
+<section class="container-fluid box">
+<div class="box">
+<a href="https://web.facebook.com/grupocrystalsas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/facebook.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.instagram.com/crystals.a.s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/instagram.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.linkedin.com/company/crystal-s-a-s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/linkedin.png" width="30px"/></a><br/>
+</div>
+<div class="box">
+<a href="https://vimeo.com/user74044025" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/vimeo.png" style="border-radius: 48%;" width="30px"/></a><br/>
+</div>
+</section>
+<a style="color:black;">Find us as Crystal S.A.S</a><br/>
+<h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid footer-mobile">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 #f5f5f5 grey lighten-4">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col s12">
+<div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">About us</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/WhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Who we are</a><br/>
+<a href="/PurposeAndEssence" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Purpose and essence</a><br/>
+<a href="/OurHistory/1938-1948" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Our history</a><br/>
+<a href="/Spinning" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Spinning</a><br/>
+<a href="/FullPackage" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Full package</a><br/>
+<a href="/marcas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Brands</a><br/>
+<a href="/Location" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Location</a>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Sustainability</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/Sustainability" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Our commitment</a><br/>
+<a href="/SocialCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Social commitment</a><br/>
+<a href="/EnvironmentalCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Environmental commitment</a>
+<a href="/Certifications" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Certifications</a><br/>
+<br/>
+</div>
+</div>
+</div>
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Compliance</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/CorporateGovernance" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Corporate governance</a><br/>
+<a href="/ThisIsWhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Así Somos Ethical program</a><br/>
+<a href="/Policies" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Policies</a><br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a href="/CustomerService" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Contact us</a><br/>
+<a href="https://www.magneto365.com/co/empresas/crystal" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Employment</a><br/>
+<a href="https://www.innovacrystal.co/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">INNOVA</a><br/>
+<a href="https://numrot7.net/crystal/login" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Suppliers</a><br/>
+<a href="/pqrs" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">PQRS</a><br/>
+</div>
+</div>
+</div>
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Social Media</a>
+<section class="container-fluid box" style="width:100%;justify-content:flex-start;">
+<div class="box">
+<a href="https://web.facebook.com/grupocrystalsas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/facebook.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.instagram.com/crystals.a.s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/instagram.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.linkedin.com/company/crystal-s-a-s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/linkedin.png" width="30px"/></a><br/>
+</div>
+<div class="box">
+<a href="https://vimeo.com/user74044025" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/vimeo.png" style="border-radius: 48%;" width="30px"/></a><br/>
+</div>
+</section>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Find us as Crystal S.A.S</a><br/>
+<h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-block-end:0%;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terms_and_Conditions_.pdf" target="_blank"><strong style="color:grey">Terms and Conditions |</strong></a>
+<a href="/static/store/pdf/Personal_data_processing_policy_.pdf" target="_blank"><strong style="color:grey">Privacy Policy and Notice</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+
+
+</OriginalLayout>

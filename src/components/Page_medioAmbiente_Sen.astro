@@ -1,0 +1,729 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopFooterEs10dff320 from '../components/DesktopFooterEs10dff320.astro';
+import DesktopHeaderEs9b0d581f from '../components/DesktopHeaderEs9b0d581f.astro';
+import MobileFooterEs151ccb19 from '../components/MobileFooterEs151ccb19.astro';
+import MobileHeaderEs5f4fecd3 from '../components/MobileHeaderEs5f4fecd3.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/medioAmbiente/Sen">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEs9b0d581f />
+<MobileHeaderEs5f4fecd3 />
+<head>
+
+</head>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12">
+<div class="slider" style="height: 100%;">
+<ul class="slides">
+<li>
+<img src="/static/store/images/compromisoAmbiental/Sostenibilidad_2.png"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 1%; font-weight: 300;letter-spacing: 1px;">
+<a href="/" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Inicio / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Sostenibilidad / </a>
+<a href="/compromisoAmbiental" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Compromiso ambiental</a>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="font-weight: 300;padding: 3%; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l10 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12 section scrollspy" id="Water" style="text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h1 class="source-h2" id="main-content" style="margin: 0%;margin-block-end: 2%;" tabindex="-1">Agua</h1>
+</div>
+<div class="col s12">
+<p style="font-size: large;">
+                                                        Crystal, desde hace años ha sido consiente del impacto en el recurso agua debido a nuestras actividades productivas, por ello, se han realizo esfuerzos en las buenas prácticas y la adquisición de maquinaria más eficiente que permita obtener un mejor uso del recurso.
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •	Hemos reducido el consumo de agua en nuestros procesos de producción con maquinaria más eficiente y procesos de reutilización.
+                                                        <br/>
+<br/>
+                                                        •	En nuestra planta de Marinilla, Antioquia, en Colombia, tenemos nuestra propia planta de tratamiento de aguas, allí tratamos el agua que consumimos para la producción y el agua residual que se genera durante dichos procesos, para regresarla al afluente de forma limpia y segura.
+                                                        <br/>
+<br/>
+                                                        •	En nuestras marcas tenemos jeans hechos con ahorro de agua de hasta un 80% gracias a colorantes biodegradables. El lavado de la tela tiene un ahorro hasta 40% gracias a nuevas tecnologías en las cajas de lavado. Algunos de nuestros jeans están hechos con 90% de agua lluvia y fibras recicladas de residuos de producción.
+                                                        <br/>
+<br/>
+                                                        •	Para el proceso de tintorería, se cuenta con un Software que permite la gestión, planificación y formulación de la tintorería textil. Con este sistema se gestiona la receta de una forma integral (procesos y ciclos) con lo que se evita pérdidas de agua y productos químicos, además de optimizar los tiempos de producción y tener menor relación de baño. 
+                                                        <br/>
+<br/>
+                                                        •	Como parte de la estrategia para el uso racional del agua, se realizan campañas de educación, sensibilización y educación a los colaboradores de toda la organización
+                                                        
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="Clima" style="margin-top: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h2 style="margin: 0%;margin-block-end: 2%;">Energía y cambio climático</h2>
+</div>
+<div class="col s12">
+<p style="font-size: large;">                                                    
+                                                        Constantemente revisamos nuestros procesos, buscando nuevas y mejores formas de utilizar el recurso energético y disminuir el impacto en el medioambiente. Estamos comprometidos con:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •   La mitigación del cambio climático: hacemos parte de un grupo selecto de compañías que operan con Energía Verde, es decir, con energía generada por medio de fuentes 100% renovables, lo cual es validado por medio de Certificados de Energía Renovable Internacionales (I-REC).
+                                                        <br/>
+<br/>
+                                                        •	Usar energía eficiente en nuestras plantas, con transformaciones tecnológicas y de infraestructura
+                                                        <br/>
+<br/>
+                                                        •	Aprovechar la luz del sol para trabajar en el día, implementando techos traslúcidos
+                                                        <br/>
+<br/>
+                                                        •	Hacer más eficiente la iluminación y ahorrar sobre este gasto, cambiándonos a iluminación LED
+                                                        <br/>
+<br/>
+                                                        •	Aumentar nuestro ahorro energético, adquiriendo nueva maquinaria, equipos con tecnología más eficiente.
+                                                        <br/>
+<br/>
+                                                        •	Aumentar la eficiencia en combustión y disminuimos la emisión de gases contaminantes a la atmósfera (proyecto desarrollado en convenio con CNPML)
+                                                        <br/>
+<br/>
+                                                        •	Aumentar el uso de bicicletas, más transporte público y más carros compartidos… por parte de nuestros empleados, promoviendo a través de nuestro plan MES, estrategias de movilidad sostenible, que buscan reducir la emisión de gases y la contaminación en el aire
+                                                        <br/>
+<br/>
+                                                        •	 En nuestro proceso de tintorería, logramos recuperar energía térmica, usando el calor del agua residual para calentar el agua que entra al proceso de tintura y disminuir el consumo de combustible y electricidad
+                                                        <br/>
+<br/>
+                                                        •	Hemos reducido en un 25% nuestras emisiones de gases de efecto invernadero a través de nuestra gestión ambiental
+                                                        <br/>
+<br/>
+                                                        •	Apoyar la siembra de árboles en alianza con el acueducto CORBELÉN de Marinilla dentro del "Proyecto implementación de una forestación y reforestación protectora para las quebradas Cascajo y Cascajito
+                                                        <br/>
+<br/>
+                                                        •	Instalar paneles solares en nuestras plantas de producción de Marinilla y Rionegro – Zona Franca para surtir con energía fotovoltaica nuestros procesos.
+                                                        <br/>
+<br/>
+                                                        •	Sembrar árboles en alianza con Celsia para mitigar el impacto de las emisiones de CO2
+                                                    </p>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">Gestión de residuos</h5>
+<p style="font-size: large;">                                                    
+                                                        Los residuos aprovechables se comercializan y a través de gestores, llegan a procesos de transformación y aprovechamiento. Los residuos ordinarios generados en cada una de las plantas son entregados a los servicios municipales de aseo quienes hacen la disposición final de estos en rellenos sanitarios.
+                                                    </p>
+<p style="font-size: large;">                                                    
+                                                        Los residuos peligrosos se disponen a través de gestores autorizados para el tratamiento y disposición final de este tipo de residuos, algunos llegan a programas posconsumo, como pilas y baterías y otros se someten a incineración y disposición final en relleno de seguridad.
+                                                    </p>
+<p style="font-size: large;">                                                    
+                                                        En la planta de Armenia, hacemos compostaje de todos los residuos orgánicos que generamos en la sede.
+                                                    </p>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">Economía circular</h5>
+<p style="font-size: large;">                                                    
+                                                        En Crystal le apostamos a la economía circular a través de las siguientes iniciativas:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        • Estibas: hacemos uso de estibas reutilizables y retornables fabricadas en plástico reciclable. Con la implementación de esta estrategia evitamos comprar 50 estibas nuevas cada mes.
+                                                        <br/>
+<br/>
+                                                        • Material de empaque: devolvemos bobinas, cajas y bandejas plásticas a nuestro proveedor de hilazas ENKA.
+                                                        <br/>
+<br/>
+                                                        • Bolsas plásticas: las bolsas que utilizamos se retornan a tejeduría, estas se reutilizan hasta 3 o 4 veces ayudando a disminuir la cantidad de bolsas que compramos. Posteriormente, cuando se encuentran en mal estado, se envían al centro de acopio para su adecuada disposición.
+                                                        <br/>
+<br/>
+                                                        • Bolsas de rollos y tubos: una vez completado el proceso en el área de corte, se reintegran Las bolsas y tubos al proceso de acabados, lo cual ayuda a darle mayor reúso a este material.
+                                                        <br/>
+<br/>
+                                                        • Contenedores: retornamos a nuestros proveedores los contenedores de sustancias químicas: bidones y canecas.
+                                                        <br/>
+<br/>
+                                                        • Conos de cartón: reutilizamos los conos de cartón de Colhilados para re-enconar la materia prima, y los conos plásticos se regresan a la planta de Colhilados para ingresar nuevamente en su proceso productivo.
+                                                        <br/>
+<br/>
+                                                        • Cajas de cartón: recuperamos las cajas de cartón provenientes de estos procesos que están en buen estado y las enviamos al centro de distribución, esto ayuda a dar mayor circularidad en los procesos y a disminuir la compra de cajas nuevas.
+                                                        <br/>
+<br/>
+                                                        • Ganchos: Una vez acabada su vida útil son entregados a nuestro proveedor para que estos entren de nuevo como materia prima y se vuelvan ganchos nuevos.
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="Prod" style="margin-top: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h2 style="margin: 0%;margin-block-end: 2%;">Producción responsable</h2>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">
+                                                        Materias primas sostenibles
+                                                    </h5>
+<p style="font-size: large;">
+                                                        Priorizamos en nuestros procesos de compra, en los proyectos de innovación y desarrollo internos, la búsqueda de materias primas y fibras textiles que sean sostenibles y, gracias a ello, hoy contamos con:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •	Algodón orgánico: hecho en cultivos libres de fertilizantes y pesticidas químicos y sus semillas no están modificadas genéticamente. Su cultivo necesita de un 90% menos de agua y un 60% menos de energía que el algodón convencional, es una tela suave, transpirable e hipoalergénica. Es biodegradable, y puede reciclarse.
+                                                        <br/>
+<br/>
+                                                        •	Algodón reciclado: hecho con fibras recicladas de algodón, emplea un 80% menos de agua que el cultivo de algodón convencional. 
+                                                        <br/>
+<br/>
+                                                        •	Lyocell: fibra natural que nace de celulosa y es biodegrabable. Su ciclo de producción es cerrado, minimizando desechos y residuos.
+                                                        <br/>
+<br/>
+                                                        •   Viscosa EcoVero®: estándar en viscosa ecológicamente responsable. Material natural y renovable. Madera de silvicultura sostenible. Proceso de producción eco-responsable, biodegradable, y protege la tierra.
+                                                        <br/>
+<br/>
+                                                        •	Fibras recicladas: fibras recuperadas de otras prendas que se usan en mezclas disminuyendo la generación de materia prima virgen y evitando más desechos. Ahorro de agua y energía en el proceso.
+                                                        <br/>
+<br/>
+                                                        •	Lino: uno de los aspectos más notorios del lino textil es su durabilidad en comparación con otras fibras naturales igual de populares y su versatilidad para confeccionar distintas piezas de ropa. Es resistente a las plagas y tanto el árbol como su fibra son fungicidas. Asimismo, mientras crece requiere pocos cuidados, tales como poca agua y luz. También tiene una elevada capacidad de absorción de tintas lo cual lo hace ideal para la confección de diversos productos textiles manufacturados.
+                                                    </p>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">
+                                                        Empaques y etiquetas de nuestros productos
+                                                    </h5>
+<p style="font-size: large;">
+                                                        Mitigamos la generación de residuos, con empaques, ganchos y otros insumos biodegradables o reciclados.
+                                                        <br/>
+                                                        ¡Te invitamos a que cada vez que visites nuestras marcas lleves tu propia bolsa de tela!
+                                                        <br/><br/>
+                                                        De esta manera buscamos intervenir toda la cadena del producto:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •	Bolsas de plástico: desde el 2019 todas las bolsas de nuestras marcas son de plástico 100% reciclado. Además, contienen Biosphere, un aditivo que permiten que en caso tal que lleguen a un relleno sanitario o al ambiente, puedan ser biodegradadas por microorganismos entre 1 y 5 años.
+                                                        <br/>
+<br/>
+                                                        •	Bolsas de papel: usamos papel originado en bosques con manejo responsable. Usamos una sola tinta a base de agua, así evitamos procesos que gasten más energía y facilitamos la biodegradabilidad natural y reciclaje. Pasamos de tener 3 tamaños de bolsas de papel en todas las marcas, a tener solo 2 para optimizar mejor este empaque. Nuestro proveedor está certificado como FSC, asegurándonos que sus bosques son de fuentes responsables.
+                                                        <br/>
+<br/>
+                                                        •	Eliminamos las bolsas de plástico de los empaques de camisillas y pasamos a cartón sin laminados ni pegas para que pueda haber un proceso de reciclabilidad o biodegradación.
+                                                        <br/>
+<br/>
+                                                        •   Etiquetas de maule: alguna de nuestras etiquetas son Maule, una fibra virgen proveniente de cultivos responsables, eliminamos el ensanduchado y dejamos una capa de material sin pegas, no usamos laminados ni acabados para que puedan ser reciclables o biodegradable si caen en un relleno sanitario.
+                                                        <br/>
+<br/>
+                                                        •	Etiquetas de caña de azúcar: la caña de azúcar es un subproducto de la industria azucarera del país. Se aprovecha este residuo para hacer papel, en vez de proceder con su quema. Son cultivos que se regeneran rápidamente y captan grandes cantidades de CO2.
+                                                    </p>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">
+                                                        Procesos
+                                                    </h5>
+<p style="font-size: large;">
+                                                        La digitalización de procesos de desarrollo ha sido un gran logro puesto que le ha permitido reducción de fabricación de productos en desarrollo, a través de la modelación 3D y simuladores de costeo de producto, con base a nuestro histórico de datos; permitiéndonos flexibilidad y capacidad de respuesta.
+                                                        <br/><br/>
+                                                        Para garantizar la calidad de nuestros productos y disminuir la cantidad de segundas contamos con visión artificial en la salida de las ramas de telas que detectan las segundas en las telas para evitar reprocesos y hacer correctivos rápidamente, para incrementar la productividad.
+                                                        <br/><br/>
+                                                        Trabajamos para vender más con menos consumo de recursos, por esto implementamos un proceso de renovación tecnológica en todos nuestros procesos productivos:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •	Máquina de corte: nuevas máquinas de corte automáticas que evitan el desperdicio, tienen mejor calidad en el corte, cortan más capas y consumen menos energía representado en un ahorro de 181.200 kWh. 
+                                                        <br/>
+<br/>
+                                                        •	Máquina de tintorería: Nuevas máquinas con una capacidad entre 30% y 40% más de producción con menos consumo de energía y agua. El ahorro de energía es de 256.320 kWh.
+                                                        <br/>
+<br/>
+                                                        •	Máquina de tejidos: Esta máquina sirve para empatar la tela, ayuda a que haya menos desperdicio en la etapa de corte y consume menos energía representado en un ahorro de 233.280 kWh.
+                                                        <br/>
+<br/>
+                                                        •   Contamos con un laboratorio de calidad, que es una réplica a pequeña escala de la planta, con el fin de garantizar que el producto se pueda reproducir adecuadamente, minimizando los desperdicios, realizando las correcciones rápidamente, siendo más asertivos en la producción para evitar reprocesos e incrementar la productividad. 
+                                                        <br/>
+<br/>
+                                                        •	También reducimos el desperdicio en el empate de tela que pasa de 30 cm de a 4 cm.
+                                                    </p>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">
+                                                        Tiendas
+                                                    </h5>
+<p style="font-size: large;">
+                                                        En nuestras tiendas propias le apostamos al cuidado del medio ambiente a través de las siguientes iniciativas:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •	Ahorro de energía: equipos de cómputo con un 89% de eficiencia energética
+                                                        <br/>
+<br/>
+                                                        •	Ahorro de agua: dispensador de agua que ofrece agua 99% pura sin químicos ni residuos, adicionalmente es bajo en consumo, teniendo un consumo 14% menos con respecto a otros que ofrece el mercado
+                                                        <br/>
+<br/>
+                                                        •	Iluminación: tipo LED de alta tecnología, tenemos nuestras tiendas mejor iluminadas con un consumo menor del 27% con respecto a la utilizada en 2019.
+                                                        <br/>
+<br/>
+                                                        •   Aires acondicionados: Cuentan con un control de ahorro energético y usan refrigerante R410A amigable con el medio ambiente, implementamos equipos que utilizan refrigerante 410, el cual es amigable con el medio ambiente, no es tóxico ni inflamable.
+                                                        <br/>
+                                                        Usamos Termostatos PRO-8000, los cuales nos permiten tener una programación diaria del horario de encendido y apagado, y garantizar que el sistema esté apagado cuando la tienda no tenga operación.
+                                                        <br/>
+<br/>
+                                                        •	Pinturas: en polvo con un aprovechamiento de un 99% evitando desperdicios contaminantes para nuestros muebles
+                                                        <br/>
+<br/>
+                                                        •	Madera sustentable: los tableros y enchapes utilizados en nuestros muebles provienen de plantaciones forestales de las especies pino y eucalipto principalmente, debidamente registradas y controladas.
+                                                        <br/>
+<br/>
+                                                        •	Reusar: tenemos un sistema logístico y de almacenamiento del mobiliario que nos permite reutilizar constantemente nuestros muebles.
+                                                        <br/>
+<br/>
+                                                        •	Materiales de construcción: cada una de nuestras tiendas las construimos aproximadamente en un 35% en Sistema constructivo en seco (drywall).
+                                                        <br/>
+                                                        Reduce considerablemente el consumo de agua y los residuos generados en obra.
+                                                        <br/>
+<br/>
+                                                        •	Pisos: tipo vinilo en rollo amigable con el medio ambiente, libre de ftalato (compuestos químicos que se utilizan para ablandar vinilo) material 100% reciclable, y fabricado con productos 20% reciclados.
+                                                        <br/>
+<br/>
+                                                        •	Maniquíes: nuestros maniquíes son de Plex-t, una resina plástica desarrollada por EXPOR. De alta resistencia, 100% reciclable, estos maniquíes no requieren pintura, ni gastos de mantenimiento. Después de su vida útil, retornan para ser nuevamente transformados en materia prima para ingresar a un nuevo ciclo sostenible de aprovechamiento continuo.
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="Sen" style="margin-top: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h2 style="margin: 0%;margin-block-end: 2%;">Gestión ambiental con sentido social</h2>
+</div>
+<div class="col s12">
+<p style="font-size: large;">
+                                                        De la mano de nuestros empleados y sus familias, apoyamos programas que promueven la protección del medioambiente a través de alternativas seguras de empleo de algunos recursos de disposición final y con los que se apoyan, diferentes causas sociales.
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+                                                        •	Puntos verdes: la Fundación Puntos Verdes, busca que los ciudadanos y empresas reduzcan la contaminación, mediante la entrega responsable de los residuos de aparatos eléctricos y electrónicos (RAEE), acumulando así puntos que se podrán redimir en apoyo a causas sociales a nivel nacional.
+                                                        <br/>
+<br/>
+<a href="https://www.fundacionpuntosverdes.com/" target="_blank">https://www.fundacionpuntosverdes.com/</a>
+<br/>
+<br/>
+                                                        •	Tapitas por la vida:  en Crystal nos vinculamos a la campaña “Tapitas por la Vida” de la Fundación Medicáncer, con donaciones de tapitas plásticas. Las donaciones se entregan a pacientes que pertenecen al régimen subsidiado de salud que no cuentan con los recursos suficientes para llevar adecuadamente el proceso de seguimiento de la enfermedad del cáncer.
+                                                        <br/>
+                                                        ¡Con esta iniciativa protegemos el ambiente y apoyamos la vida!
+                                                        <br/>
+<br/>
+<a href="https://www.medicancer.org/labor-social" target="_blank">https://www.medicancer.org/index.php/noticias/26-tapitas-por-la-vida</a>
+<br/>
+<br/>
+                                                        •	Botellas de amor: la Fundación Llena una Botella de Amor, es una solución integral para el manejo sostenible de los residuos plásticos para mejorar con ello, la calidad de vida de comunidades vulnerables, mediante una estrategia innovadora dirigida a instituciones, empresas y comunidades, que consiste en llenar botellas con todos los residuos plásticos que se generan a diario. Una vez recolectadas son transformadas en perfiles plásticos, los cuales son utilizados para la elaboración de parques infantiles, mobiliario urbano y viviendas en beneficio de la población.
+                                                        <br/>
+<br/>
+<a href="https://botellasdeamor.org/" target="_blank">https://botellasdeamor.org/</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l2 m2 s12 list_content_menu hide-on-med-and-down" style="text-align: center; position: sticky;top: 100px;float: left;flex-direction: column;background-color: #fff;">
+<ul class="section table-of-contents">
+<li><a style="font-size: large;">Sostenibilidad</a></li>
+<br/>
+<li><a href="/compromisoSocial">Compromiso social</a></li>
+<br/>
+<li><a class="active" href="/compromisoAmbiental">Compromiso ambiental</a></li>
+<br/>
+<li><a href="/certificaciones">Certificaciones</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/assets/scripts/28d4333fde831685.js"></script>
+<DesktopFooterEs10dff320 />
+<MobileFooterEs151ccb19 />
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terminos_y_condiciones_.pdf" target="_blank"><strong style="color:grey">Términos y condiciones | </strong></a>
+<a href="/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf" target="_blank"><strong style="color:grey">Política y aviso de privacidad</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+
+</OriginalLayout>

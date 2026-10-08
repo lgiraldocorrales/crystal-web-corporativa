@@ -1,0 +1,738 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopFooterEn7cf4904c from '../components/DesktopFooterEn7cf4904c.astro';
+import DesktopHeaderEndb81ac8c from '../components/DesktopHeaderEndb81ac8c.astro';
+import MobileFooterEn5c7af963 from '../components/MobileFooterEn5c7af963.astro';
+import MobileHeaderEn58f2fa85 from '../components/MobileHeaderEn58f2fa85.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/OurHistory/2000">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEndb81ac8c />
+<MobileHeaderEn58f2fa85 />
+<head>
+
+</head>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 section scrollspy">
+<div class="row" id="prin" style="margin-block-end: 0%;">
+<div class="slider" style="height: 100%;">
+<ul class="slides">
+<li>
+<img src="/static/store/images/quienesSomos/quienes-somos-3333.png"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 1%; font-weight: 300; margin-block-end: 0%;">
+<a href="/" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Home / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">About us / </a>
+<a href="/WhoWeAre" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Who we are / </a>
+<a href="/OurHistory/1938-1948" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Our history</a>
+</div>
+</div>
+</div>
+<div class="col l12 list_content_menu" style="z-index:100;text-align: center; position: sticky;top: 100px;float: left;flex-direction: column;background-color: #fff;">
+<ul class="section table-of-contents hide-on-med-and-down" style="margin-top: 1%;margin-block-end: 0%; text-align: center;color: black;">
+<div class="row center" style="margin-block-end: 0%;">
+<a href="/OurHistory/1938-1948" style="color: #635c5c;font-weight: 400;">1938 - 1948</a><a></a>
+<a href="/OurHistory/1953-1964" style="color: #635c5c;font-weight: 400;">1953 - 1964</a><a></a>
+<a href="/OurHistory/1969" style="color: #635c5c;font-weight: 400;">1969</a><a></a>
+<a href="/OurHistory/1989" style="color: #635c5c;font-weight: 400;">1989</a><a></a>
+<a href="/OurHistory/1991" style="color: #635c5c;font-weight: 400;">1991</a><a></a>
+<a href="/OurHistory/1994-1995" style="color: #635c5c;font-weight: 400;">1994 - 1995</a><a></a>
+<a href="/OurHistory/2000" style="color: #635c5c;font-weight: 400;">2000</a><a></a>
+<a href="/OurHistory/2001-2011" style="color: #635c5c;font-weight: 400;">2001 - 2011</a><a></a>
+<a href="/OurHistory/2013" style="color: #635c5c;font-weight: 400;">2013</a><a></a>
+<a href="/OurHistory/2014-2015" style="color: #635c5c;font-weight: 400;">2014 - 2015</a><a></a>
+<a href="/OurHistory/2018" style="color: #635c5c;font-weight: 400;">2018</a><a></a>
+<a href="/OurHistory/2020" style="color: #635c5c;font-weight: 400;">2020</a><a></a>
+<a href="/OurHistory/2022" style="color: #635c5c;font-weight: 400;">2022</a><a></a>
+<a href="/OurHistory/2025" style="color: #635c5c;font-weight: 400;">2025</a><a></a>
+</div>
+</ul>
+</div>
+<div class="col s12 hide-on-large-only" style="top: 110px;text-align: center; position: sticky;float: left;flex-direction: column;background-color: #fff;">
+<div class="input-field col s12" style="margin-block-end: 0;">
+<select id="select">
+<option value="1938-1948">1938 - 1948</option>
+<option value="1953-1964">1953 - 1964</option>
+<option value="1969">1969</option>
+<option value="1989">1989</option>
+<option value="1991">1991</option>
+<option value="1994-1995">1994 - 1995</option>
+<option value="2000">2000</option>
+<option value="2001-2011">2001 - 2011</option>
+<option value="2013">2013</option>
+<option value="2014-2015">2014 - 2015</option>
+<option value="2018">2018</option>
+<option value="2020">2020</option>
+<option value="2022">2022</option>
+<option value="2025">2025</option>
+</select>
+</div>
+</div>
+<div class="col s12" style="font-weight: 300; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l10 m12 s12">
+<div class="container-fluid" style="padding: 2%;">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h1 class="source-h2" id="main-content" style="margin-top: 0%;margin-block-end: 3%;" tabindex="-1">Our history</h1>
+</div>
+<div class="col s12" style="text-align: left;">
+<div class="col s12 section scrollspy" id="1938-1948">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="text-align: center;padding: 5%;padding-top: 2%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    1938 - 1948
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Our origin: ZigZag LTDA and Hosiery Victoria </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                   Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for children. After some years of operation, this company is liquidated, giving way to the creation of Calcetería Victoria with Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfonso Velásquez Vélez as main partners.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 left"><img src="/static/store/images/quienesSomos/historia/h-1938-1948.jpg" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="1953-1964">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 5%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    1953 - 1964
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">The Crystal sock factory and our Galax brand are born </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                After liquidating Calcetería Victoria, the brothers Octavio and Julio Echavarría Hernández, inaugurate the Crystal Media Factory, in the Antioquia neighborhood of the city of Medellín, with their own brand Galax, thus laying the foundations for what would be one of the largest companies in Colombia.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/h-1953-1964.jpg" style="width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="1969">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="text-align: center;padding: 5%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    1969
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Accreditation of our Punto Blanco brand </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                The Spanish brand Punto Blanco, accredits Crystal for the manufacture of the products in Colombia, for its trajectory and high quality standards and the company's corporate name is changed to Crystal Socks, to support this recognized European brand.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 left"><img src="/static/store/images/quienesSomos/historia/h-1969.png" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="1989">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 5%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    1989
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Acquisition of modern textiles and our Gef brand </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                After years of growth and development, in 1989, Carlos Manuel Echavarría Toro, son of Octavio Echavarría and president of the Organization, is negotiating to acquire the French administration company Textiles Modernos, dedicated to the manufacture of garments under the own brand Gef (Acronym of Gerard Fortier). The company is renamed Vestimundo.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/h-1989.jpg" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="1991">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="text-align: center;padding: 7%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    1991
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Baby Fresh joins our portfolio of brands </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Within the process of transformation and adaptation of Gef to the consumer of the XXI century, the baby brand proposal Baby Fresh is launched this year.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 left"><img src="/static/store/images/quienesSomos/historia/h-1991.jpg" style="border: 1px solid #efefef;width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="1994-1995">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 5%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    1994 - 1995
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Production plants east antioquia </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Thanks to the growth of international markets and the Company's participation in them, the company Sotinsa, dedicated to the production of socks for export, is created in the Free Trade Zone of Rionegro, Antioquia, in Colombia, and the textile process is transferred from Vestimundo to Marinilla, Antioquia, thus expanding the productive capacity.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/1994-1995.png" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2000">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="padding: 8%; text-align: center;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    2000
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Expansion of our retail </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Almatex is born, a new company that is dedicated to the administration and expansion of the chain of own stores in the main cities of Colombia.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 left"><img src="/static/store/images/quienesSomos/historia/2000-1.png" style="width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2001-2011">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 5%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    2001 - 2011
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Expansion of our production capacity </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                We acquired our garment plants, Printex in Armenia, Nicole Pereira and Nicole Manizales and; in agreement with PARKDALE MILLS, the largest producer of yarns and yarns in the world, we built Colombiana de Hilados in the Free Trade Zone of Rionegro, Antioquia, in order to guarantee the constant supply of raw material for the companies of the Organization and third parties.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/2001-2011.png" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2013">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="padding: 5%; text-align: center;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    2013
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">We optimize our operation to continue expanding </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                The plants of Marinilla, Sabaneta, La 30 and the management company of the Retail business are integrated: Almatex, under the new corporate name CRYSTAL, seeking to optimize resources and processes. Sotinsa's production process ends its operations in the Rionegro Free Trade Zone and is integrated into the Sabaneta headquarters.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 left"><img src="/static/store/images/quienesSomos/historia/2013_1.png" style="width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2014-2015">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 8%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    2014 - 2015
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">We enter the online world </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Faced with an increasingly interconnected consumer, our brands Gef, Punto Blanco and Baby Fresh enter virtual commerce each with its own online space.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/2014-2015.png" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2018">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="padding: 7%; text-align: center;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    2018
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">We integrate our production processes </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Our Hosiery and Clothing plants of the Sabaneta headquarters, are moved to the headquarters of Marinilla and the Coffee Axis respectively to integrate with it, the production processes.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 left"><img src="/static/store/images/quienesSomos/historia/2018v1.png" style="width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2020">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 3%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                 2020
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Digital transformation and sustainability in a challenging year for the company </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                With more than 250 stores in Colombia, nearly 7000 employees and a presence in 14 countries in Latin America, we faced the challenge of the COVID-19 pandemic, prioritizing the well-being of our human talent, accelerating our digital transformation process and enhancing our strategic focus on sustainability to innovate and create new growth opportunities for the business.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/2020.jpg" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2022">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 right" style="padding: 2%; text-align: center;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                    2022
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">Standing firm in our purpose to knit life for our planet </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Aware of the importance of continuing on our path towards sustainability and the positive impact of these actions on our environment, we launched several eco-efficient initiatives: we began the installation of 7387 solar panels in our production plants in Rionegro - Zona Franca and Marinilla, to supply our processes with solar energy; we moved our Manizales manufacturing plant in order to modernize its infrastructure and achieve greater efficiency in the process; we began planting 150,000 trees in the eastern Antioquia region to reduce the impact of carbon emissions; and we upgraded our water treatment plant to make the process more efficient. We also began planting 150,000 trees in the eastern region of Antioquia to reduce the impact of carbon emissions, and we upgraded our water treatment plant to make the process more efficient.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/2022.jpg" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="2025">
+<div class="container-fluid">
+<div class="row">
+<div class="col l6 m6 s12 left" style="text-align: center;padding: 3%;">
+<h2 style="font-weight: 600; font-size: 3rem;font-family: BrandonGrotesqueWeb,sans-serif;">
+                                                 2025
+                                                </h2>
+<p>
+<h3 style="font-weight: 400; font-size: 1.875rem;">We help people express their essence </h3>
+</p>
+<p style="font-weight: 300; text-align: justify;font-size: large;">
+                                                Committed to shaping a more sustainable future and keeping people at the center of our purpose, this year we redefined our mission: we exist to help individuals express their essence through conscious fashion.
+
+Additionally, in order to make several processes more efficient, on July 1, 2025, the Printex production plant, located in the municipality of Armenia in the department of Quindío and a key site in the manufacturing of our seamless products, was integrated into Crystal’s legal entity as our new site: Crystal Armenia.
+                                                </p>
+</div>
+<div class="col l6 m6 s12 right"><img src="/static/store/images/quienesSomos/historia/h-2025.png" style=" width: 100%;"/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l2 m2 s12 list_content_menu hide-on-med-and-down" style="top: 150px;text-align: center; position: sticky;float: left;flex-direction: column;background-color: #fff;">
+<ul class="section table-of-contents">
+<li><a href="/WhoWeAre" style="font-size: large;">Who we are</a></li>
+<br/>
+<li><a href="/PurposeAndEssence">Our purpose and essence</a></li>
+<br/>
+<li><a class="active" href="/OurHistory/1938-1948">Our history</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/assets/scripts/014122d836150ad0.js"></script>
+<DesktopFooterEn7cf4904c />
+<MobileFooterEn5c7af963 />
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terms_and_Conditions_.pdf" target="_blank"><strong style="color:grey">Terms and Conditions |</strong></a>
+<a href="/static/store/pdf/Personal_data_processing_policy_.pdf" target="_blank"><strong style="color:grey">Privacy Policy and Notice</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+
+</OriginalLayout>

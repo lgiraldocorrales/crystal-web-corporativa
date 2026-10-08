@@ -1,0 +1,962 @@
+[
+  {
+    "route": "/",
+    "publicRoute": "/",
+    "language": "es",
+    "alternate": "/en",
+    "title": "Crystal S.A.S",
+    "description": "Estamos integrados a través de 6 plantas manufacturas en Colombia con un sistema vertical que abarca procesos de hilandería, tintorería, textiles, confección y ",
+    "source": "zip",
+    "component": "Page_Home"
+  },
+  {
+    "route": "/Brands",
+    "publicRoute": "/Brands",
+    "language": "en",
+    "alternate": "/marcas",
+    "title": "Brands - Crystal S.A.S",
+    "description": "It's music, it's color... it's GEF. We help people express their essence through fashion, with looks designed for every day of the week. Our portfolio continues",
+    "source": "production-recovery",
+    "component": "Page_Brands"
+  },
+  {
+    "route": "/BusinessUnits",
+    "publicRoute": "/BusinessUnits",
+    "language": "en",
+    "alternate": "/unidades",
+    "title": "Business units - Crystal S.A.S",
+    "description": "Established in 2004 as a strategic alliance with Parkdale Mills. Location: Rionegro Free Trade Zone Area: 200,000 square feet Capacity: 22 tons / day Products: ",
+    "source": "zip",
+    "component": "Page_BusinessUnits"
+  },
+  {
+    "route": "/Certifications",
+    "publicRoute": "/Certifications",
+    "language": "en",
+    "alternate": "/certificaciones",
+    "title": "Certifications - Crystal S.A.S",
+    "description": "We promote the generation of electricity from renewable sources as part of our commitment to climate change mitigation, therefore, in our production plants we c",
+    "source": "zip",
+    "component": "Page_Certifications"
+  },
+  {
+    "route": "/CorporateGovernance",
+    "publicRoute": "/CorporateGovernance",
+    "language": "en",
+    "alternate": "/gobiernoCorp",
+    "title": "Corporate governance - Crystal S.A.S",
+    "description": "The Board of Directors is elected by the Shareholders' Assembly and is responsible for setting Crystal S.A.S.'s strategy and supervising its management performa",
+    "source": "zip",
+    "component": "Page_CorporateGovernance"
+  },
+  {
+    "route": "/CustomerService",
+    "publicRoute": "/CustomerService",
+    "language": "en",
+    "alternate": "/ServicioAlCliente",
+    "title": "Contact us - Crystal S.A.S",
+    "description": "Dear user, the personal data collected in this form will be stored, analyzed, and in some cases transmitted to third parties in order to give attention and solu",
+    "source": "zip",
+    "component": "Page_CustomerService"
+  },
+  {
+    "route": "/Environment/Clima",
+    "publicRoute": "/Environment/Clima",
+    "language": "en",
+    "alternate": "/medioAmbiente/Clima",
+    "title": "Environmental commitment (Detail) - Crystal S.A.S",
+    "description": "Crystal, for years has been aware of the impact on the water resource due to our productive activities, therefore, efforts have been made in good practices and ",
+    "source": "production-recovery",
+    "component": "Page_Environment_Clima"
+  },
+  {
+    "route": "/Environment/Prod",
+    "publicRoute": "/Environment/Prod",
+    "language": "en",
+    "alternate": "/medioAmbiente/Prod",
+    "title": "Environmental commitment (Detail) - Crystal S.A.S",
+    "description": "Crystal, for years has been aware of the impact on the water resource due to our productive activities, therefore, efforts have been made in good practices and ",
+    "source": "production-recovery",
+    "component": "Page_Environment_Prod"
+  },
+  {
+    "route": "/Environment/Sen",
+    "publicRoute": "/Environment/Sen",
+    "language": "en",
+    "alternate": "/medioAmbiente/Sen",
+    "title": "Environmental commitment (Detail) - Crystal S.A.S",
+    "description": "Crystal, for years has been aware of the impact on the water resource due to our productive activities, therefore, efforts have been made in good practices and ",
+    "source": "production-recovery",
+    "component": "Page_Environment_Sen"
+  },
+  {
+    "route": "/Environment/Water",
+    "publicRoute": "/Environment/Water",
+    "language": "en",
+    "alternate": "/medioAmbiente/Water",
+    "title": "Environmental commitment (Detail) - Crystal S.A.S",
+    "description": "Crystal, for years has been aware of the impact on the water resource due to our productive activities, therefore, efforts have been made in good practices and ",
+    "source": "production-recovery",
+    "component": "Page_Environment_Water"
+  },
+  {
+    "route": "/EnvironmentalCommitment",
+    "publicRoute": "/EnvironmentalCommitment",
+    "language": "en",
+    "alternate": "/compromisoAmbiental",
+    "title": "Environmental commitment - Crystal S.A.S",
+    "description": "We believe in the possibility of living in harmony with our environment, therefore, we implemented certain actions to reduce the impact of the consumption of re",
+    "source": "zip",
+    "component": "Page_EnvironmentalCommitment"
+  },
+  {
+    "route": "/FullPackage",
+    "publicRoute": "/FullPackage",
+    "language": "en",
+    "alternate": "/paquete",
+    "title": "Full package - Crystal S.A.S",
+    "description": "At Crystal we have over 35 years of experience providing full package services to brands around the world in circular knitting, seamless knitting, and hosiery p",
+    "source": "zip",
+    "component": "Page_FullPackage"
+  },
+  {
+    "route": "/Location",
+    "publicRoute": "/Location",
+    "language": "en",
+    "alternate": "/ubicacion",
+    "title": "Location - Crystal S.A.S",
+    "description": "We are integrated through 6 manufacturing plants in Colombia with a vertical system that covers spinning, dyeing, textiles, clothing and hosiery processes. We h",
+    "source": "zip",
+    "component": "Page_Location"
+  },
+  {
+    "route": "/Others",
+    "publicRoute": "/Others",
+    "language": "en",
+    "alternate": "/otros",
+    "title": "Others (Full Package) - Crystal S.A.S",
+    "description": "We provide accompaniment in the product design stage, as wide or intensive as our customers need:",
+    "source": "zip",
+    "component": "Page_Others"
+  },
+  {
+    "route": "/OurHistory/1938-1948",
+    "publicRoute": "/OurHistory/1938-1948",
+    "language": "en",
+    "alternate": "/historiaC/1938-1948",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "zip",
+    "component": "Page_OurHistory_1938_1948"
+  },
+  {
+    "route": "/OurHistory/1953-1964",
+    "publicRoute": "/OurHistory/1953-1964",
+    "language": "en",
+    "alternate": "/historiaC/1953-1964",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_1953_1964"
+  },
+  {
+    "route": "/OurHistory/1969",
+    "publicRoute": "/OurHistory/1969",
+    "language": "en",
+    "alternate": "/historiaC/1969",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_1969"
+  },
+  {
+    "route": "/OurHistory/1989",
+    "publicRoute": "/OurHistory/1989",
+    "language": "en",
+    "alternate": "/historiaC/1989",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_1989"
+  },
+  {
+    "route": "/OurHistory/1991",
+    "publicRoute": "/OurHistory/1991",
+    "language": "en",
+    "alternate": "/historiaC/1991",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_1991"
+  },
+  {
+    "route": "/OurHistory/1994-1995",
+    "publicRoute": "/OurHistory/1994-1995",
+    "language": "en",
+    "alternate": "/historiaC/1994-1995",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_1994_1995"
+  },
+  {
+    "route": "/OurHistory/2000",
+    "publicRoute": "/OurHistory/2000",
+    "language": "en",
+    "alternate": "/historiaC/2000",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2000"
+  },
+  {
+    "route": "/OurHistory/2001-2011",
+    "publicRoute": "/OurHistory/2001-2011",
+    "language": "en",
+    "alternate": "/historiaC/2001-2011",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2001_2011"
+  },
+  {
+    "route": "/OurHistory/2013",
+    "publicRoute": "/OurHistory/2013",
+    "language": "en",
+    "alternate": "/historiaC/2013",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2013"
+  },
+  {
+    "route": "/OurHistory/2014-2015",
+    "publicRoute": "/OurHistory/2014-2015",
+    "language": "en",
+    "alternate": "/historiaC/2014-2015",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2014_2015"
+  },
+  {
+    "route": "/OurHistory/2018",
+    "publicRoute": "/OurHistory/2018",
+    "language": "en",
+    "alternate": "/historiaC/2018",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2018"
+  },
+  {
+    "route": "/OurHistory/2020",
+    "publicRoute": "/OurHistory/2020",
+    "language": "en",
+    "alternate": "/historiaC/2020",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2020"
+  },
+  {
+    "route": "/OurHistory/2022",
+    "publicRoute": "/OurHistory/2022",
+    "language": "en",
+    "alternate": "/historiaC/2022",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2022"
+  },
+  {
+    "route": "/OurHistory/2025",
+    "publicRoute": "/OurHistory/2025",
+    "language": "en",
+    "alternate": "/historiaC/2025",
+    "title": "Our history - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández and Alfredo Mesa Vélez, found in Medellín - Colombia, the Zigzag sock company that produces socks for c",
+    "source": "production-recovery",
+    "component": "Page_OurHistory_2025"
+  },
+  {
+    "route": "/PeopleEmployees/Com",
+    "publicRoute": "/PeopleEmployees/Com",
+    "language": "en",
+    "alternate": "/PersonasEmpleados/Com",
+    "title": "Social commitment (Details) - Crystal S.A.S",
+    "description": "We value the contribution of our employees in the Company's strategy as a fundamental part of it, therefore, we seek that their working conditions have a positi",
+    "source": "production-recovery",
+    "component": "Page_PeopleEmployees_Com"
+  },
+  {
+    "route": "/PeopleEmployees/Empl",
+    "publicRoute": "/PeopleEmployees/Empl",
+    "language": "en",
+    "alternate": "/PersonasEmpleados/Empl",
+    "title": "Social commitment (Details) - Crystal S.A.S",
+    "description": "We value the contribution of our employees in the Company's strategy as a fundamental part of it, therefore, we seek that their working conditions have a positi",
+    "source": "production-recovery",
+    "component": "Page_PeopleEmployees_Empl"
+  },
+  {
+    "route": "/PersonasEmpleados/Com",
+    "publicRoute": "/PersonasEmpleados/Com",
+    "language": "es",
+    "alternate": "/PeopleEmployees/Com",
+    "title": "Compromiso social (Detalle) - Crystal S.A.S",
+    "description": "Valoramos la contribución de nuestros empleados en la estrategia de la Compañía como parte fundamental de esta, por eso, buscamos que sus condiciones de trabajo",
+    "source": "production-recovery",
+    "component": "Page_PersonasEmpleados_Com"
+  },
+  {
+    "route": "/PersonasEmpleados/Empl",
+    "publicRoute": "/PersonasEmpleados/Empl",
+    "language": "es",
+    "alternate": "/PeopleEmployees/Empl",
+    "title": "Compromiso social (Detalle) - Crystal S.A.S",
+    "description": "Valoramos la contribución de nuestros empleados en la estrategia de la Compañía como parte fundamental de esta, por eso, buscamos que sus condiciones de trabajo",
+    "source": "production-recovery",
+    "component": "Page_PersonasEmpleados_Empl"
+  },
+  {
+    "route": "/PersonasEmpleados/Fami",
+    "publicRoute": "/PersonasEmpleados/Fami",
+    "language": "es",
+    "alternate": null,
+    "title": "Compromiso social (Detalle) - Crystal S.A.S",
+    "description": "Valoramos la contribución de nuestros empleados en la estrategia de la Compañía como parte fundamental de esta, por eso, buscamos que sus condiciones de trabajo",
+    "source": "production-recovery",
+    "component": "Page_PersonasEmpleados_Fami"
+  },
+  {
+    "route": "/Policies",
+    "publicRoute": "/Policies",
+    "language": "en",
+    "alternate": "/politicas",
+    "title": "Policies - Crystal S.A.S",
+    "description": "We acknowledge that information is a valuable resource that requires protection and safekeeping by all of our Company's employees, partners, customers and suppl",
+    "source": "zip",
+    "component": "Page_Policies"
+  },
+  {
+    "route": "/PurposeAndEssence",
+    "publicRoute": "/PurposeAndEssence",
+    "language": "en",
+    "alternate": "/propositoyesencia",
+    "title": "Purpose and essence - Crystal S.A.S",
+    "description": "",
+    "source": "zip",
+    "component": "Page_PurposeAndEssence"
+  },
+  {
+    "route": "/ServicioAlCliente",
+    "publicRoute": "/ServicioAlCliente",
+    "language": "es",
+    "alternate": "/CustomerService",
+    "title": "Contáctanos - Crystal S.A.S",
+    "description": "Estimado usuario, los datos personales recolectados en el presente formulario serán almacenados, analizados, y en algunos casos transmitidos a terceros a fin de",
+    "source": "zip",
+    "component": "Page_ServicioAlCliente"
+  },
+  {
+    "route": "/SocialCommitment",
+    "publicRoute": "/SocialCommitment",
+    "language": "en",
+    "alternate": "/compromisoSocial",
+    "title": "Social commitment - Crystal S.A.S",
+    "description": "We understand the human being as a whole, therefore, we have programs that promote individual, family and social development. We work hand in hand with our coll",
+    "source": "zip",
+    "component": "Page_SocialCommitment"
+  },
+  {
+    "route": "/Spinning",
+    "publicRoute": "/Spinning",
+    "language": "en",
+    "alternate": "/hilanderia",
+    "title": "Spinning - Crystal S.A.S",
+    "description": "Thanks to Crystal's interest in having its own spinning mill that would guarantee the availability of this resource for its production processes and Parkdale's ",
+    "source": "zip",
+    "component": "Page_Spinning"
+  },
+  {
+    "route": "/SpinningProducts",
+    "publicRoute": "/SpinningProducts",
+    "language": "en",
+    "alternate": "/hilandProductos",
+    "title": "Products (Spinning) - Crystal S.A.S",
+    "description": "We manufacture cotton threads, a wide variety of products in polyester, acrylic, black and white rayon, nylon and much more. We rely on the innovation and conti",
+    "source": "production-recovery",
+    "component": "Page_SpinningProducts"
+  },
+  {
+    "route": "/Sustainability",
+    "publicRoute": "/Sustainability",
+    "language": "en",
+    "alternate": "/sostenibilidad",
+    "title": "Our commitment - Crystal S.A.S",
+    "description": "On the way to achieving our purpose, we define 3 key pillars: Social (people and community), Environmental (our planet) and Economic (the contribution to the ec",
+    "source": "zip",
+    "component": "Page_Sustainability"
+  },
+  {
+    "route": "/SustainabilityReport/2021",
+    "publicRoute": "/SustainabilityReport/2021",
+    "language": "en",
+    "alternate": "/sostenibilidadReporte/2021",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_SustainabilityReport_2021"
+  },
+  {
+    "route": "/SustainabilityReport/2022",
+    "publicRoute": "/SustainabilityReport/2022",
+    "language": "en",
+    "alternate": "/sostenibilidadReporte/2022",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_SustainabilityReport_2022"
+  },
+  {
+    "route": "/SustainabilityReport/2023",
+    "publicRoute": "/SustainabilityReport/2023",
+    "language": "en",
+    "alternate": "/sostenibilidadReporte/2023",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_SustainabilityReport_2023"
+  },
+  {
+    "route": "/SustainabilityReport/2024",
+    "publicRoute": "/SustainabilityReport/2024",
+    "language": "en",
+    "alternate": "/sostenibilidadReporte/2024",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_SustainabilityReport_2024"
+  },
+  {
+    "route": "/SustainabilityReport/2025",
+    "publicRoute": "/SustainabilityReport/2025",
+    "language": "en",
+    "alternate": "/sostenibilidadReporte/2025",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_SustainabilityReport_2025"
+  },
+  {
+    "route": "/ThisIsWhoWeAre",
+    "publicRoute": "/ThisIsWhoWeAre",
+    "language": "en",
+    "alternate": "/asiSomos",
+    "title": "Así Somos Program - Crystal S.A.S",
+    "description": "Actions are the evidence of the values of an organization, therefore, our ethical program is called \"ASI SOMOS\" and it is the reflection of the responsibility t",
+    "source": "zip",
+    "component": "Page_ThisIsWhoWeAre"
+  },
+  {
+    "route": "/WhoWeAre",
+    "publicRoute": "/WhoWeAre",
+    "language": "en",
+    "alternate": "/quienesSomos",
+    "title": "Who we are - Crystal S.A.S",
+    "description": "We are a Colombian company, producer and distributor of apparel and fashion brands, with a business model, structured under these four business lines: Spinning ",
+    "source": "zip",
+    "component": "Page_WhoWeAre"
+  },
+  {
+    "route": "/_localized/en/openEnd",
+    "publicRoute": "/openEnd",
+    "language": "en",
+    "alternate": "/openEnd",
+    "title": "Open End - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page__localized_en_openEnd"
+  },
+  {
+    "route": "/_localized/en/ringSpun",
+    "publicRoute": "/ringSpun",
+    "language": "en",
+    "alternate": "/ringSpun",
+    "title": "Ring Spun - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page__localized_en_ringSpun"
+  },
+  {
+    "route": "/_localized/en/speciality",
+    "publicRoute": "/speciality",
+    "language": "en",
+    "alternate": "/speciality",
+    "title": "Speciality - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page__localized_en_speciality"
+  },
+  {
+    "route": "/asiSomos",
+    "publicRoute": "/asiSomos",
+    "language": "es",
+    "alternate": "/ThisIsWhoWeAre",
+    "title": "Programa Así Somos - Crystal S.A.S",
+    "description": "Las acciones son la evidencia de los valores de una organización, por esto, nuestro programa ético se llama “ASI SOMOS” y es el reflejo de la responsabilidad qu",
+    "source": "zip",
+    "component": "Page_asiSomos"
+  },
+  {
+    "route": "/certificaciones",
+    "publicRoute": "/certificaciones",
+    "language": "es",
+    "alternate": "/Certifications",
+    "title": "Certificaciones - Crystal S.A.S",
+    "description": "Promovemos la generación de energía eléctrica con base en fuentes renovables como parte de nuestro compromiso con la mitigación del cambio climático, por esta r",
+    "source": "zip",
+    "component": "Page_certificaciones"
+  },
+  {
+    "route": "/compromisoAmbiental",
+    "publicRoute": "/compromisoAmbiental",
+    "language": "es",
+    "alternate": "/EnvironmentalCommitment",
+    "title": "Compromiso ambiental - Crystal S.A.S",
+    "description": "Creemos en la posibilidad de vivir en armonía con nuestro entorno, por eso, implementamos medidas para disminuir el impacto del consumo de los recursos en nuest",
+    "source": "zip",
+    "component": "Page_compromisoAmbiental"
+  },
+  {
+    "route": "/compromisoSocial",
+    "publicRoute": "/compromisoSocial",
+    "language": "es",
+    "alternate": "/SocialCommitment",
+    "title": "Compromiso social - Crystal S.A.S",
+    "description": "Comprendemos al ser humano desde su integralidad, por eso, contamos con programas que promueven el desarrollo individual, familiar y social. Trabajamos de la ma",
+    "source": "zip",
+    "component": "Page_compromisoSocial"
+  },
+  {
+    "route": "/en",
+    "publicRoute": "/en",
+    "language": "en",
+    "alternate": "/",
+    "title": "Crystal S.A.S",
+    "description": "We are integrated through 6 manufacturing plants in Colombia with a vertical system that covers spinning, dyeing, textiles, clothing and hosiery processes. We h",
+    "source": "zip",
+    "component": "Page_en"
+  },
+  {
+    "route": "/gobiernoCorp",
+    "publicRoute": "/gobiernoCorp",
+    "language": "es",
+    "alternate": "/CorporateGovernance",
+    "title": "Gobierno corporativo - Crystal S.A.S",
+    "description": "La Junta Directiva es nombrada por la Asamblea de Accionistas y tiene como responsabilidad fijar la estrategia Crystal S.A.S y supervisar su desempeño gerencial",
+    "source": "zip",
+    "component": "Page_gobiernoCorp"
+  },
+  {
+    "route": "/hilandProductos",
+    "publicRoute": "/hilandProductos",
+    "language": "es",
+    "alternate": "/SpinningProducts",
+    "title": "Productos (Hilandería) - Crystal S.A.S",
+    "description": "Fabricamos hilos de algodón, gran variedad de productos en poliéster, acrílico, rayón negro y blanco, nylon y mucho más. Nos basamos en la innovación y la mejor",
+    "source": "production-recovery",
+    "component": "Page_hilandProductos"
+  },
+  {
+    "route": "/hilanderia",
+    "publicRoute": "/hilanderia",
+    "language": "es",
+    "alternate": "/Spinning",
+    "title": "Hilandería - Crystal S.A.S",
+    "description": "Gracias al deseo de Crystal de tener su propia hilandería que le garantizara la disponibilidad de este recurso siempre para sus procesos productivos y de Parkda",
+    "source": "zip",
+    "component": "Page_hilanderia"
+  },
+  {
+    "route": "/historiaC/1938-1948",
+    "publicRoute": "/historiaC/1938-1948",
+    "language": "es",
+    "alternate": "/OurHistory/1938-1948",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "zip",
+    "component": "Page_historiaC_1938_1948"
+  },
+  {
+    "route": "/historiaC/1953-1964",
+    "publicRoute": "/historiaC/1953-1964",
+    "language": "es",
+    "alternate": "/OurHistory/1953-1964",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_1953_1964"
+  },
+  {
+    "route": "/historiaC/1969",
+    "publicRoute": "/historiaC/1969",
+    "language": "es",
+    "alternate": "/OurHistory/1969",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_1969"
+  },
+  {
+    "route": "/historiaC/1989",
+    "publicRoute": "/historiaC/1989",
+    "language": "es",
+    "alternate": "/OurHistory/1989",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_1989"
+  },
+  {
+    "route": "/historiaC/1991",
+    "publicRoute": "/historiaC/1991",
+    "language": "es",
+    "alternate": "/OurHistory/1991",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_1991"
+  },
+  {
+    "route": "/historiaC/1994-1995",
+    "publicRoute": "/historiaC/1994-1995",
+    "language": "es",
+    "alternate": "/OurHistory/1994-1995",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_1994_1995"
+  },
+  {
+    "route": "/historiaC/2000",
+    "publicRoute": "/historiaC/2000",
+    "language": "es",
+    "alternate": "/OurHistory/2000",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2000"
+  },
+  {
+    "route": "/historiaC/2001-2011",
+    "publicRoute": "/historiaC/2001-2011",
+    "language": "es",
+    "alternate": "/OurHistory/2001-2011",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2001_2011"
+  },
+  {
+    "route": "/historiaC/2013",
+    "publicRoute": "/historiaC/2013",
+    "language": "es",
+    "alternate": "/OurHistory/2013",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2013"
+  },
+  {
+    "route": "/historiaC/2014-2015",
+    "publicRoute": "/historiaC/2014-2015",
+    "language": "es",
+    "alternate": "/OurHistory/2014-2015",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2014_2015"
+  },
+  {
+    "route": "/historiaC/2018",
+    "publicRoute": "/historiaC/2018",
+    "language": "es",
+    "alternate": "/OurHistory/2018",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2018"
+  },
+  {
+    "route": "/historiaC/2020",
+    "publicRoute": "/historiaC/2020",
+    "language": "es",
+    "alternate": "/OurHistory/2020",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2020"
+  },
+  {
+    "route": "/historiaC/2022",
+    "publicRoute": "/historiaC/2022",
+    "language": "es",
+    "alternate": "/OurHistory/2022",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2022"
+  },
+  {
+    "route": "/historiaC/2025",
+    "publicRoute": "/historiaC/2025",
+    "language": "es",
+    "alternate": "/OurHistory/2025",
+    "title": "Nuestra historia - Crystal S.A.S",
+    "description": "Octavio Echavarría Hernández, Julio Echavarría Hernández y Alfredo Mesa Vélez, fundan en Medellín - Colombia, la Empresa de calcetines Zigzag que produce calcet",
+    "source": "production-recovery",
+    "component": "Page_historiaC_2025"
+  },
+  {
+    "route": "/informesDeSostenibilidad",
+    "publicRoute": "/informesDeSostenibilidad",
+    "language": "es",
+    "alternate": "/sustainabilityReports",
+    "title": "Crystal S.A.S",
+    "description": "Recopilamos todas las iniciativas anuales, de Compañía, alineadas con los pilares social, económico y ambiental que respaldan nuestro compromiso con la sostenib",
+    "source": "zip",
+    "component": "Page_informesDeSostenibilidad"
+  },
+  {
+    "route": "/marcas",
+    "publicRoute": "/marcas",
+    "language": "es",
+    "alternate": "/Brands",
+    "title": "Marcas - Crystal S.A.S",
+    "description": "Es música, es color… es GEF. Ayudamos a las personas a expresar su esencia a través de la moda, con looks pensados para los 7 días de la semana. Nuestro portafo",
+    "source": "zip",
+    "component": "Page_marcas"
+  },
+  {
+    "route": "/medioAmbiente/Clima",
+    "publicRoute": "/medioAmbiente/Clima",
+    "language": "es",
+    "alternate": "/Environment/Clima",
+    "title": "Compromiso ambiental (Detalle) - Crystal S.A.S",
+    "description": "Crystal, desde hace años ha sido consiente del impacto en el recurso agua debido a nuestras actividades productivas, por ello, se han realizo esfuerzos en las b",
+    "source": "production-recovery",
+    "component": "Page_medioAmbiente_Clima"
+  },
+  {
+    "route": "/medioAmbiente/Prod",
+    "publicRoute": "/medioAmbiente/Prod",
+    "language": "es",
+    "alternate": "/Environment/Prod",
+    "title": "Compromiso ambiental (Detalle) - Crystal S.A.S",
+    "description": "Crystal, desde hace años ha sido consiente del impacto en el recurso agua debido a nuestras actividades productivas, por ello, se han realizo esfuerzos en las b",
+    "source": "production-recovery",
+    "component": "Page_medioAmbiente_Prod"
+  },
+  {
+    "route": "/medioAmbiente/Sen",
+    "publicRoute": "/medioAmbiente/Sen",
+    "language": "es",
+    "alternate": "/Environment/Sen",
+    "title": "Compromiso ambiental (Detalle) - Crystal S.A.S",
+    "description": "Crystal, desde hace años ha sido consiente del impacto en el recurso agua debido a nuestras actividades productivas, por ello, se han realizo esfuerzos en las b",
+    "source": "production-recovery",
+    "component": "Page_medioAmbiente_Sen"
+  },
+  {
+    "route": "/medioAmbiente/Water",
+    "publicRoute": "/medioAmbiente/Water",
+    "language": "es",
+    "alternate": "/Environment/Water",
+    "title": "Compromiso ambiental (Detalle) - Crystal S.A.S",
+    "description": "Crystal, desde hace años ha sido consiente del impacto en el recurso agua debido a nuestras actividades productivas, por ello, se han realizo esfuerzos en las b",
+    "source": "production-recovery",
+    "component": "Page_medioAmbiente_Water"
+  },
+  {
+    "route": "/openEnd",
+    "publicRoute": "/openEnd",
+    "language": "es",
+    "alternate": "/_localized/en/openEnd",
+    "title": "Open End - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_openEnd"
+  },
+  {
+    "route": "/otros",
+    "publicRoute": "/otros",
+    "language": "es",
+    "alternate": "/Others",
+    "title": "Otros (Paquete completo) - Crystal S.A.S",
+    "description": "Brindamos acompañamiento en la etapa de diseño de producto, tan amplia o intensiva como nuestros clientes lo necesiten:",
+    "source": "zip",
+    "component": "Page_otros"
+  },
+  {
+    "route": "/paquete",
+    "publicRoute": "/paquete",
+    "language": "es",
+    "alternate": "/FullPackage",
+    "title": "Paquete completo - Crystal S.A.S",
+    "description": "En Crystal llevamos más de 35 años de experiencia ofreciendo servicios de paquete completo a marcas alrededor del mundo en productos de tejido circular, tejido ",
+    "source": "zip",
+    "component": "Page_paquete"
+  },
+  {
+    "route": "/politicas",
+    "publicRoute": "/politicas",
+    "language": "es",
+    "alternate": "/Policies",
+    "title": "Políticas - Crystal S.A.S",
+    "description": "Reconocemos que la información es un recurso valioso que requiere protección y cuidado por parte de todos los empleados, socios, clientes y proveedores de nuest",
+    "source": "zip",
+    "component": "Page_politicas"
+  },
+  {
+    "route": "/pqrs",
+    "publicRoute": "/pqrs",
+    "language": "es",
+    "alternate": null,
+    "title": "PQRS - Crystal S.A.S",
+    "description": "",
+    "source": "zip",
+    "component": "Page_pqrs"
+  },
+  {
+    "route": "/propositoyesencia",
+    "publicRoute": "/propositoyesencia",
+    "language": "es",
+    "alternate": "/PurposeAndEssence",
+    "title": "Propósito y esencia - Crystal S.A.S",
+    "description": "",
+    "source": "zip",
+    "component": "Page_propositoyesencia"
+  },
+  {
+    "route": "/quienesSomos",
+    "publicRoute": "/quienesSomos",
+    "language": "es",
+    "alternate": "/WhoWeAre",
+    "title": "Quiénes somos - Crystal S.A.S",
+    "description": "Somos una compañía colombiana, productora y comercializadora de marcas de vestuario y moda, con un modelo de negocio, estructurado bajo estas cuatro líneas: Hil",
+    "source": "zip",
+    "component": "Page_quienesSomos"
+  },
+  {
+    "route": "/ringSpun",
+    "publicRoute": "/ringSpun",
+    "language": "es",
+    "alternate": "/_localized/en/ringSpun",
+    "title": "Ring Spun - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_ringSpun"
+  },
+  {
+    "route": "/sostenibilidad",
+    "publicRoute": "/sostenibilidad",
+    "language": "es",
+    "alternate": "/Sustainability",
+    "title": "Nuestro compromiso - Crystal S.A.S",
+    "description": "En el camino para lograr nuestro propósito, definimos 3 pilares claves: Social (las personas y la comunidad), Ambiental (nuestro planeta), Económico (la contrib",
+    "source": "zip",
+    "component": "Page_sostenibilidad"
+  },
+  {
+    "route": "/sostenibilidadReporte/2021",
+    "publicRoute": "/sostenibilidadReporte/2021",
+    "language": "es",
+    "alternate": "/SustainabilityReport/2021",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_sostenibilidadReporte_2021"
+  },
+  {
+    "route": "/sostenibilidadReporte/2022",
+    "publicRoute": "/sostenibilidadReporte/2022",
+    "language": "es",
+    "alternate": "/SustainabilityReport/2022",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_sostenibilidadReporte_2022"
+  },
+  {
+    "route": "/sostenibilidadReporte/2023",
+    "publicRoute": "/sostenibilidadReporte/2023",
+    "language": "es",
+    "alternate": "/SustainabilityReport/2023",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_sostenibilidadReporte_2023"
+  },
+  {
+    "route": "/sostenibilidadReporte/2024",
+    "publicRoute": "/sostenibilidadReporte/2024",
+    "language": "es",
+    "alternate": "/SustainabilityReport/2024",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_sostenibilidadReporte_2024"
+  },
+  {
+    "route": "/sostenibilidadReporte/2025",
+    "publicRoute": "/sostenibilidadReporte/2025",
+    "language": "es",
+    "alternate": "/SustainabilityReport/2025",
+    "title": "Informe Sostenibilidad - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_sostenibilidadReporte_2025"
+  },
+  {
+    "route": "/speciality",
+    "publicRoute": "/speciality",
+    "language": "es",
+    "alternate": "/_localized/en/speciality",
+    "title": "Speciality - Crystal S.A.S",
+    "description": "",
+    "source": "production-recovery",
+    "component": "Page_speciality"
+  },
+  {
+    "route": "/sustainabilityReports",
+    "publicRoute": "/sustainabilityReports",
+    "language": "en",
+    "alternate": "/informesDeSostenibilidad",
+    "title": "Crystal S.A.S",
+    "description": "We compile all of the Company's annual initiatives, aligned with the social, economic and environmental pillars that support our commitment to sustainability, i",
+    "source": "zip",
+    "component": "Page_sustainabilityReports"
+  },
+  {
+    "route": "/ubicacion",
+    "publicRoute": "/ubicacion",
+    "language": "es",
+    "alternate": "/Location",
+    "title": "Ubicación - Crystal S.A.S",
+    "description": "Estamos integrados a través de 6 plantas manufacturas en Colombia con un sistema vertical que abarca procesos de hilandería, tintorería, textiles, confección y ",
+    "source": "zip",
+    "component": "Page_ubicacion"
+  },
+  {
+    "route": "/unidades",
+    "publicRoute": "/unidades",
+    "language": "es",
+    "alternate": "/BusinessUnits",
+    "title": "Unidades de negocio - Crystal S.A.S",
+    "description": "Establecida en 2004 como una alianza estratégica con Parkdale Mills. Ubicación: Zona Franca Rionegro Área: 200.000 pies cuadrados Capacidad: 22 toneladas / día ",
+    "source": "zip",
+    "component": "Page_unidades"
+  }
+]

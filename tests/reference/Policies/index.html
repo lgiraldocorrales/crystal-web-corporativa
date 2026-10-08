@@ -1,0 +1,1174 @@
+
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NPZJGXM');</script>
+    <!-- End Google Tag Manager -->
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="https://crystal.com.co/static/store/images/Logos/crystal-sas.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        function getToken(name){
+            var cookieValue=null;
+            if(document.cookie && document.cookie !==''){
+                var cookies=document.cookie.split(';');
+                for(var i=0; i<cookies.length;i++){
+                    var cookie=cookies[i].trim();
+                    if(cookie.substring(0,name.length+1)===(name+'=')){
+                        cookieValue=decodeURIComponent(cookie.substring(name.length+1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken=getToken('csrftoken');
+
+        function getCookie(name){
+            var cookieArr=document.cookie.split(";");
+            for(var i = 0; i<cookieArr.length;i++){
+                var cookiePair=cookieArr[i].split("=");
+
+                if (name==cookiePair[0].trim()){
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+
+        var cart=JSON.parse(getCookie('cart'))
+        if(cart==undefined){
+            cart={}
+            console.log('Cart was created!')
+            document.cookie='cart='+JSON.stringify(cart)+";domain=;path=/"
+        }
+        console.log('Cart:',cart)
+    </script>
+	<style>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("https://crystal.com.co/static/store/images/Empresa/reconocimientos.jpg");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container-fluid">
+        <div class="row" style="margin-block-end: 0%;">
+            <div class="container-fluid">
+                <div class="row"  style="margin-block-end: 0%;">                    
+                    <div class="col s12" style="padding: 0%;">
+                        <div class="navbar-fixed">
+                            <nav class="nav-extended" style="box-shadow: none;background: white;">
+                                <div class="nav-wrapper" style="height: 100%;border-bottom: 2px solid black;">
+                                    <div class="container-fluid" style="padding-left: 1%; padding-right: 1%;">
+                                        <div class="row" style="margin-block-end: 0%;">
+                                            <div class="col l2 s2">
+                                                <ul id="nav-mobile" class="hide-on-med-and-down">
+                                                    <li style="display: flex;">
+                                                        
+                                                        
+                                                        
+                                                        <form action="#" method="post">
+                                                            <div class="row">
+                                                                
+                                                                    <div class="col l6">
+                                                                        <button title="Español" 
+                                                                            name="language" 
+                                                                            class="btn-flat" 
+                                                                             
+                                                                            style="color: rgb(70, 70, 70);text-transform: capitalize;padding: 0;" 
+                                                                            onMouseover="this.style.background='rgb(226, 226, 226)'"
+                                                                            onMouseout="this.style.background='white'"
+                                                                             
+                                                                            value="es"../politicas/index.html'" type="button" onclick="window.location.href='#' data-demo-unmapped='/politicas/index.html'">español
+                                                                        </button>
+                                                                    </div>
+                                                                
+                                                                    <div class="col l6">
+                                                                        <button title="English" 
+                                                                            name="language" 
+                                                                            class="btn-flat" 
+                                                                             
+                                                                            style="color: red;text-transform: capitalize;padding: 0;"
+                                                                            onMouseover="this.style.background='rgb(226, 226, 226)'"
+                                                                            onMouseout="this.style.background='white'"
+                                                                             
+                                                                            value="en"index.html'" type="button" onclick="window.location.href='#' data-demo-unmapped='/Policies/index.html'">English
+                                                                        </button>
+                                                                    </div>
+                                                                
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l7 s12 logo-crystal center" style="padding:0.5%;display: flex;justify-content: center;align-items: center;"> 
+                                                <a href="../index.html" data-demo-unmapped="/index.html"><img style="margin-left: 10%;" src="https://crystal.com.co/static/store/images/Logos/Logo-crystal.png" alt="Logo Crystal"></a>
+                                            </div>
+                                            <div class="col s2.5 right" style="display: flex;justify-content: space-between;align-items: center;">
+                                                <ul id="nav-mobile" class="hide-on-med-and-down">
+                                                    <li style="display: flex; padding: 0;">
+                                                        <a style="color: #797979; font-size: 90%; margin-right:10px; padding: 0;" target="_blank" href="https://www.magneto365.com/co/empresas/crystal">Employment</a>
+                                                        <a style="color: #797979; font-size: 90%; margin-right:10px; padding: 0;" target="_blank" href="https://www.innovacrystal.co/">INNOVA</a>
+                                                        <a style="color: #797979; font-size: 90%; margin-right:10px; padding: 0;" target="_blank" href="https://numrot7.net/crystal/login">Suppliers</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" style="margin-block-end: 0%;"> 
+                    <div class="col s12" style="padding: 0%;">
+                        <div class="navbar-fixed">
+                            <nav class="nav-extended" style="height: 65px; box-shadow: none; background: white;">
+                                <div class="nav-wrapper" style="height: 100%;">                            
+                                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons " style=" color:black;">menu</i></a>
+                                    <ul id="nav-mobile" class="hide-on-med-and-down letra-mobile" style="display: flex;justify-content: center;align-items: center;">
+                                        <li>
+                                            <a style=" color:black;" class='dropdown-trigger' data-target='dropdown1'>
+                                                ABOUT US
+                                            </a>
+                                            <ul id='dropdown1' class='dropdown-content dropdown-nested'>
+                                                <li><a style="color: black;"  href="../WhoWeAre/index.html" data-demo-unmapped="/WhoWeAre/index.html" >WHO WE ARE</a></li>
+                                                <li><a style="color: black;" class='dropdown-trigger sub' href='#' data-target='dropdown2' >BUSINESS MODEL<i class="tiny material-icons right" style="margin-right: 0%;">keyboard_arrow_right</i></a></li>
+                                                <li><a style="color: black;"  href="../Location/index.html" data-demo-unmapped="/Location/index.html" >LOCATION</a></li>
+                                            </ul>
+                            
+                                            <ul id='dropdown2' class='dropdown-content dropdown-nested'>
+                                                <li><a style="color: black;"  href="../Spinning/index.html" data-demo-unmapped="/Spinning/index.html" >SPINNING</a></li>
+                                                <li><a style="color: black;"  href="../FullPackage/index.html" data-demo-unmapped="/FullPackage/index.html" >FULL PACKAGE</a></li>
+                                                <li><a style="color: black;"  href="../marcas/index.html" >BRANDS</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- TODO: IMPLEMENTAR NUEVA SECCIÓN DE INFORME DE SOSTENIBILIDAD -->
+                                        <li>   
+                                            <a style=" color:black;" class=" dropdown-trigger3" data-target="dropdown3">
+                                                SUSTAINABILITY
+                                            </a>
+                                            <ul id='dropdown3' class='dropdown-content'>
+                                                <li><a style="color: black;"  href="../Sustainability/index.html" data-demo-unmapped="/Sustainability/index.html" >OUR COMMITMENT</a></li>
+                                                <li><a style="color: black;"  href="../SocialCommitment/index.html" data-demo-unmapped="/SocialCommitment/index.html" >SOCIAL COMMITMENT</a></li>
+                                                <li><a style="color: black;"  href="../EnvironmentalCommitment/index.html" data-demo-unmapped="/EnvironmentalCommitment/index.html" >ENVIRONMENTAL COMMITMENT</a></li>
+                                                <li><a style="color: black;"  href="../Certifications/index.html" data-demo-unmapped="/Certifications/index.html" >CERTIFICATIONS</a></li>
+                                                <!-- TODO: HACER UNA VIEW Y UNA URL CORRESPONDIENTE PATA ESA SECCIÓN -->
+                                                <li><a style="color: black;"  href="../sustainabilityReports/index.html" data-demo-unmapped="/sustainabilityReports/index.html" >SUSTAINABILITY REPORT</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a style=" color:black;" class=" dropdown-trigger331" data-target="dropdown331">
+                                                COMPLIANCE
+                                            </a>
+                                            <ul id="dropdown331" class="dropdown-content">
+                                                <li><a style="color: black;"  href="../CorporateGovernance/index.html" data-demo-unmapped="/CorporateGovernance/index.html" >CORPORATE GOVERNANCE</a></li>
+                                                <li><a style="color: black;"  href="../ThisIsWhoWeAre/index.html" data-demo-unmapped="/ThisIsWhoWeAre/index.html" >ASÍ SOMOS ETHICAL PROGRAM</a></li>
+                                                <li><a style="color: black;"  href="index.html" data-demo-unmapped="/Policies/index.html" >POLICIES</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a style=" color:black;"  href="../CustomerService/index.html" data-demo-unmapped="/CustomerService/index.html" >
+                                                CONTACT US
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <ul class="sidenav" id="mobile-demo">
+                            <div class="row" style="margin-block-end: 4%;margin-top: 2%;">
+                                <div class="col l6 right">                            
+                                    <a href="#" data-demo-unmapped="/Policies/index.html" class="cerrar">Close</a>
+                                </div>
+                                <div class="col l6 left"  style="margin-left: 2.5%;">
+                                    
+                                    
+                                    
+                                    <form action="#" method="post">
+                                        <div class="row">
+                                            
+                                                <div class="col l6" style="padding: 0%;">
+                                                    <button title="Español" 
+                                                        name="language" 
+                                                        class="btn-flat" 
+                                                         
+                                                        style="color: rgb(70, 70, 70);text-transform: capitalize;" 
+                                                        onMouseover="this.style.background='rgb(226, 226, 226)'"
+                                                        onMouseout="this.style.background='white'"
+                                                         
+                                                        value="es"../politicas/index.html'" type="button" onclick="window.location.href='#' data-demo-unmapped='/politicas/index.html'">español
+                                                    </button>
+                                                </div>
+                                            
+                                                <div class="col l6" style="padding: 0%;">
+                                                    <button title="English" 
+                                                        name="language" 
+                                                        class="btn-flat" 
+                                                         
+                                                        style="color: red;text-transform: capitalize;"
+                                                        onMouseover="this.style.background='rgb(226, 226, 226)'"
+                                                        onMouseout="this.style.background='white'"
+                                                         
+                                                        value="en"index.html'" type="button" onclick="window.location.href='#' data-demo-unmapped='/Policies/index.html'">English
+                                                    </button>
+                                                </div>
+                                            
+                                        </div>
+                                    </form> 
+                                </div>
+                            </div>
+                            <li>
+                                <a style="margin-left: -6%;color: black;cursor: pointer;" class="submenu1" id="submenu1">ABOUT US<i class="Small material-icons right" id="iconSobreDown">arrow_drop_down</i><i class="Small material-icons right" id="iconSobreUp" style="display: none;">arrow_drop_up</i></a>
+                                <ul style="display: none;" id="sobre">
+                                    <li><a class="submenu3" id="submenu3" style="color: black;margin-left: -3%;cursor: pointer;">• Who we are<i class="Small material-icons right" id="iconQuieDown">arrow_drop_down</i><i class="Small material-icons right" id="iconQuieUp" style="display: none;">arrow_drop_up</i></a>
+                                        <ul style="display: none;" id="quienes">
+                                            <li><a style="color: black;cursor: pointer;"  href="../WhoWeAre/index.html" data-demo-unmapped="/WhoWeAre/index.html" >- Who we are</a></li>
+                                            <li><a style="color: black;cursor: pointer;"  href="../PurposeAndEssence/index.html" data-demo-unmapped="/PurposeAndEssence/index.html" >- Our purpose and essence</a></li>
+                                            <li><a style="color: black;cursor: pointer;"  href="../OurHistory/1938-1948/index.html" data-demo-unmapped="/OurHistory/1938-1948/index.html" >- Our history</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a style="margin-left: -3%;color: black;cursor: pointer;" id="submenu2" class="submenu2">• Business model<i class="Small material-icons right" id="iconModelDown">arrow_drop_down</i><i class="Small material-icons right" id="iconModelUp" style="display: none;">arrow_drop_up</i></a>
+                                        <ul style="display: none;" id="modelo">
+                                            <li><a style="color: black;cursor: pointer;" id="submenu4" class="submenu4">- Spinning<i class="Small material-icons right" id="iconHilDown">arrow_drop_down</i><i class="Small material-icons right" id="iconHilUp" style="display: none;">arrow_drop_up</i></a>
+                                                <ul style="display: none;" id="hilanderia">
+                                                    <li><a style="color: black;margin-left: 4%;cursor: pointer;"  href="../Spinning/index.html" data-demo-unmapped="/Spinning/index.html" >• About</a></li>
+                                                    <li><a style="color: black;margin-left: 4%;cursor: pointer;"  href="../Spinning/index.html" >• Products</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a style="color: black;cursor: pointer;" id="submenu5" class="submenu5">- Full package<i class="Small material-icons right" id="iconPaqDown">arrow_drop_down</i><i class="Small material-icons right" id="iconPaqUp" style="display: none;">arrow_drop_up</i></a>
+                                                <ul style="display: none;" id="paquete">
+                                                    <li><a style="color: black;margin-left: 4%;cursor: pointer;"  href="../FullPackage/index.html" data-demo-unmapped="/FullPackage/index.html" >• Full package</a></li>
+                                                    <li><a style="color: black;margin-left: 4%;cursor: pointer;"  href="../BusinessUnits/index.html" data-demo-unmapped="/BusinessUnits/index.html" >• Business units</a></li>
+                                                    <li><a style="color: black;margin-left: 4%;cursor: pointer;"  href="../Others/index.html" data-demo-unmapped="/Others/index.html" >• Others</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a style="color: black;cursor: pointer;"  href="../marcas/index.html" >- Brands</a></li>
+                                        </ul>                                
+                                    </li>
+                                    <li><a style="color: black;margin-left: -3%;cursor: pointer;"  href="../Location/index.html" data-demo-unmapped="/Location/index.html" >• Location</a></li>
+                                </ul>
+                                <div class="divider"></div>
+                            </li>
+                            <li >
+                                <a style="margin-left: -6%;color: black;cursor: pointer;" id="submenu6" class="submenu6">SUSTAINABILITY<i class="Small material-icons right" id="iconSosDown">arrow_drop_down</i><i class="Small material-icons right" id="iconSosUp" style="display: none;">arrow_drop_up</i></a>
+                                <ul style="display: none;margin-left: -3%;" id="sostenibilidad">
+                                    <li><a style="color: black;cursor: pointer;"  href="../Sustainability/index.html" data-demo-unmapped="/Sustainability/index.html" >• Our commitment</a></li>
+                                    <li><a style="color: black;cursor: pointer;"  href="../SocialCommitment/index.html" data-demo-unmapped="/SocialCommitment/index.html" >• Social commitment</a></li>
+                                    <li><a style="color: black;cursor: pointer;"  href="../EnvironmentalCommitment/index.html" data-demo-unmapped="/EnvironmentalCommitment/index.html" >• Environmental commitment</a></li>
+                                    <li><a style="color: black;cursor: pointer;"  href="../Certifications/index.html" data-demo-unmapped="/Certifications/index.html" >• Certifications</a></li>
+                                    <!-- TODO: Implementar el botón con la URL de Informe de Sostenibilidad -->
+                                    <li><a style="color: black;cursor: pointer;"  href="../sustainabilityReports/index.html" data-demo-unmapped="/sustainabilityReports/index.html" >• Sustainability Reports</a></li>
+                                </ul>
+                                <div class="divider"></div>
+                            </li>
+                            <li >
+                                <a style="margin-left: -6%;color: black;cursor: pointer;" id="submenu7" class="submenu7">COMPLIANCE<i class="Small material-icons right" id="iconCumpDown">arrow_drop_down</i><i class="Small material-icons right" id="iconCumpUp" style="display: none;">arrow_drop_up</i></a>
+                                <ul style="display: none;margin-left: -3%;" id="cumplimiento">
+                                    <li><a style="color: black;cursor: pointer;"  href="../CorporateGovernance/index.html" data-demo-unmapped="/CorporateGovernance/index.html" >• Corporate governance</a></li>
+                                    <li><a style="color: black;cursor: pointer;"  href="../ThisIsWhoWeAre/index.html" data-demo-unmapped="/ThisIsWhoWeAre/index.html" >• Así Somos Ethical program</a></li>
+                                    <li><a style="color: black;cursor: pointer;"  href="index.html" data-demo-unmapped="/Policies/index.html" >• Policies</a></li>
+                                </ul>
+                                <div class="divider"></div>
+                            </li>
+                            <li>
+                                <a style="margin-left: -6%;color:black;cursor: pointer;"  href="../CustomerService/index.html" data-demo-unmapped="/CustomerService/index.html" >
+                                    CONTACT US
+                                </a>
+                                <div class="divider"></div>
+                            </li>
+                            <li>
+                                <a style="margin-left: -6%;color:black;cursor: pointer;" target="_blank" href="https://www.magneto365.com/crystal">
+                                    EMPLOYMENT
+                                </a>
+                                <div class="divider"></div>
+                            </li>
+                            <li>
+                                <a style="margin-left: -6%;color:black;cursor: pointer;" target="_blank" href="https://www.innovacrystal.co/">
+                                    INNOVA
+                                </a>
+                                <div class="divider"></div>
+                            </li>
+                            <li>
+                                <a style="margin-left: -6%;color:black;cursor: pointer;" target="_blank" href="#" data-demo-unmapped="/Consejo%20de%20Familia/Paginas/default.aspx">
+                                    LOG IN
+                                </a>
+                                <div class="divider"></div>
+                            </li>
+                            <li>
+                                <a style="margin-left: -6%;color:black;cursor: pointer;" href="https://numrot7.net/crystal/login" target="_blank">
+                                    SUPPLIERS
+                                </a>
+                                <div class="divider"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+<head>
+    <title>Policies - Crystal S.A.S</title>
+</head>
+<div class="container-fluid">
+    <div class="row" style="margin-block-end: 0%;">
+        <div class="col s12" >
+            <div class="slider" style="height: 100%;">
+                <ul class="slides">            
+                <li>
+                    <img src="https://crystal.com.co/static/store/images/cumplimiento/Banner_Politicas1.png">
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> 
+<div class="container-fluid">
+    <div class="row" style="margin-block-end: 0%;">
+        <div class="col s12" style="padding: 1%;font-weight: 300;" >   
+            <a style="color: #4c4c4c;font-size: large;" href="../index.html" data-demo-unmapped="/index.html" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='#4c4c4c'">Home / </a>    
+            <a style="color: #4c4c4c;font-size: large;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='#4c4c4c'">Compliance / </a> 
+            <a style="color: #4c4c4c;font-size: large;"  href="index.html" data-demo-unmapped="/Policies/index.html"  onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='#4c4c4c'">Policies</a> 
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row" style="margin-block-end: 0%;">
+        <div class="col s12" style="font-weight: 300;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col l10 m10 s12">
+                        <div class="container-fluid" style="padding: 2%;">
+                            <div class="row">
+                                <div class="col s12" style="font-size: x-large;">
+                                    <h2 style="margin: 0%;">Policies</h2> 
+                                </div>
+                                <div id="politicas" class="col s12 section scrollspy" style="text-align: left;margin-top: 2%;">
+                                    
+                                    <div style="margin-block-end: 2%;">
+                                        <p style="font-size: large;">
+                                            We acknowledge that information is a valuable resource that requires protection and safekeeping by all of our Company's employees, partners, customers and suppliers. 
+                                            <br><br>
+                                            The ability to manage it properly helps us to take care of it, and this also validates us as a reliable company at an international level. Therefore, we have policies and processes that help us maintain the confidentiality, integrity and availability of corporate and customer information.
+                                        </p>
+                                    </div>
+                                    <div class="container" style="margin-top: 2%; margin-block-end: 4%;">
+                                        <div class="row">
+                                            <div class="col l12 m12 s12">
+                                                <a style="width: 100%; height: auto;color: black;"  href="https://crystal.com.co/static/store/pdf/Politica_de_tratamiento_de_datos_personales_en.pdf"  target="_blank">
+                                                    <p class="gobierno-hover" style="font-size: large;"><i class="material-icons" style="color: red;margin-block-end: 0%;">file_download</i> Personal data protection policy</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2 m2 s12 list_content_menu hide-on-med-and-down" style="text-align: center; position: sticky;top: 100px;float: left;flex-direction: column;background-color: #fff;">
+                        <ul class="section table-of-contents">
+                            <li><a style="font-size: large;">Compliance</a></li>
+                            <br>
+                            <li><a  href="../CorporateGovernance/index.html" data-demo-unmapped="/CorporateGovernance/index.html" >Corporate governance</a></li>
+                            <br>
+                            <li><a  href="../ThisIsWhoWeAre/index.html" data-demo-unmapped="/ThisIsWhoWeAre/index.html" >Asi Somos Ethical Program</a></li>
+                            <br>
+                            <li><a  href="index.html" data-demo-unmapped="/Policies/index.html"  class="active">Policies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+$('.modal-trigger').leanModal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+    }
+  );
+</script>
+
+
+
+            <div class="container-fluid footer-desktop">
+                <div class="row" style="margin-block-end: 0%;">
+                    <div class="col s12 #f5f5f5 grey lighten-4">
+                        <div class="container-fluid">
+                            <div style="margin-block-end:0%;" class="row">
+                                <div class="col s12">
+                                    <div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+                                        <div class="row" style="margin-block-end: 0%;">
+                                            <div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">                                                
+                                                <div class="col l3 m3 s6">
+                                                    <a style="color:black;">About us</a><br><br>
+                                                    <div style="font-weight: 300;">
+                                                        <a  href="../WhoWeAre/index.html" data-demo-unmapped="/WhoWeAre/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Who we are</a><br>
+                                                        <a  href="../PurposeAndEssence/index.html" data-demo-unmapped="/PurposeAndEssence/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Purpose and essence</a><br>
+                                                        <a  href="../OurHistory/1938-1948/index.html" data-demo-unmapped="/OurHistory/1938-1948/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Our history</a><br>
+                                                        <a  href="../Spinning/index.html" data-demo-unmapped="/Spinning/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Spinning</a><br>
+                                                        <a  href="../FullPackage/index.html" data-demo-unmapped="/FullPackage/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Full package</a><br>
+                                                        <a  href="../marcas/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Brands</a><br>
+                                                        <a  href="../Location/index.html" data-demo-unmapped="/Location/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Location</a>                             
+                                                    </div>
+                                                </div>
+                                                <div class="col l3 m3 s6">
+                                                    <a style="color:black;">Sustainability</a><br><br>
+                                                    <div style="font-weight: 300;">
+                                                        <a  href="../Sustainability/index.html" data-demo-unmapped="/Sustainability/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Our commitment</a><br>
+                                                        <a  href="../SocialCommitment/index.html" data-demo-unmapped="/SocialCommitment/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Social commitment</a><br>
+                                                        <a  href="../EnvironmentalCommitment/index.html" data-demo-unmapped="/EnvironmentalCommitment/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Environmental commitment</a></br<br>
+                                                        <a  href="../Certifications/index.html" data-demo-unmapped="/Certifications/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Certifications</a><br>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <div class="col l3 m3 s6">
+                                                    <a style="color:black;">Compliance</a><br><br>
+                                                    <div style="font-weight: 300;">
+                                                        <a  href="../CorporateGovernance/index.html" data-demo-unmapped="/CorporateGovernance/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Corporate governance</a><br>
+                                                        <a  href="../ThisIsWhoWeAre/index.html" data-demo-unmapped="/ThisIsWhoWeAre/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Así Somos Ethical program</a></br>
+                                                        <a  href="index.html" data-demo-unmapped="/Policies/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Policies</a><br>
+                                                    </div>
+                                                </div>
+                                                <div class="col l3 m3 s6">
+                                                    <a  href="../CustomerService/index.html" data-demo-unmapped="/CustomerService/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">Contact us</a><br><br>
+                                                    <a href="https://www.magneto365.com/co/empresas/crystal" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">Employment</a><br><br>
+                                                    <a href="https://www.innovacrystal.co/" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">INNOVA</a><br><br>
+                                                    <a href="https://numrot7.net/crystal/login" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">Suppliers</a><br><br>
+                                                    <a href="../pqrs/index.html" data-demo-unmapped="/pqrs/index.html" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">PQRS</a><br>
+                                                </div>
+                                            </div>
+                                            <div class="col l4 m8 s8">                                        
+                                                <a style="color:black;">Social Media</a>
+                                                <section class="container-fluid box">            
+                                                    <div class="box">
+                                                        <a href="https://web.facebook.com/grupocrystalsas" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" style="border-radius: 48%;" src="https://crystal.com.co/static/store/images/Logos/facebook.png"></a>
+                                                    </div>
+                                                    <div class="box">
+                                                        <a href="https://www.instagram.com/crystals.a.s/" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" style="border-radius: 48%;" src="https://crystal.com.co/static/store/images/Logos/instagram.png"></a>                                                        
+                                                    </div>
+                                                    <div class="box">
+                                                        <a href="https://www.linkedin.com/company/crystal-s-a-s/" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" src="https://crystal.com.co/static/store/images/Logos/linkedin.png"></a><br>
+                                                    </div>
+                                                    <div class="box">
+                                                        <a href="https://vimeo.com/user74044025" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" style="border-radius: 48%;" src="https://crystal.com.co/static/store/images/Logos/vimeo.png"></a><br>                                                        
+                                                    </div>
+                                                </section>
+                                                <a style="color:black;">Find us as Crystal S.A.S</a><br>
+                                                <h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer-mobile">
+                <div class="row" style="margin-block-end: 0%;">
+                    <div class="col s12 #f5f5f5 grey lighten-4">
+                        <div class="container-fluid">
+                            <div style="margin-block-end:0%;" class="row">
+                                <div class="col s12">
+                                    <div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+                                        <div class="row" style="margin-block-end: 0%;">
+                                            <div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">                                                
+                                                <div class="col l3 m3 s6">
+                                                    <a style="color:black;">About us</a><br><br>
+                                                    <div style="font-weight: 300;">
+                                                        <a  href="../WhoWeAre/index.html" data-demo-unmapped="/WhoWeAre/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Who we are</a><br>
+                                                        <a  href="../PurposeAndEssence/index.html" data-demo-unmapped="/PurposeAndEssence/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Purpose and essence</a><br>
+                                                        <a  href="../OurHistory/1938-1948/index.html" data-demo-unmapped="/OurHistory/1938-1948/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Our history</a><br>
+                                                        <a  href="../Spinning/index.html" data-demo-unmapped="/Spinning/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Spinning</a><br>
+                                                        <a  href="../FullPackage/index.html" data-demo-unmapped="/FullPackage/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Full package</a><br>
+                                                        <a  href="../marcas/index.html"  style="color:black" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Brands</a><br>
+                                                        <a  href="../Location/index.html" data-demo-unmapped="/Location/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Location</a>                             
+                                                    </div>
+                                                </div>
+                                                <div class="col l3 m3 s6">
+                                                    <a style="color:black;">Sustainability</a><br><br>
+                                                    <div style="font-weight: 300;">
+                                                        <a  href="../Sustainability/index.html" data-demo-unmapped="/Sustainability/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Our commitment</a><br>
+                                                        <a  href="../SocialCommitment/index.html" data-demo-unmapped="/SocialCommitment/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Social commitment</a><br>
+                                                        <a  href="../EnvironmentalCommitment/index.html" data-demo-unmapped="/EnvironmentalCommitment/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Environmental commitment</a></br<br>
+                                                        <a  href="../Certifications/index.html" data-demo-unmapped="/Certifications/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Certifications</a><br>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+                                                <div class="col l3 m3 s6">
+                                                    <a style="color:black;">Compliance</a><br><br>
+                                                    <div style="font-weight: 300;">
+                                                        <a  href="../CorporateGovernance/index.html" data-demo-unmapped="/CorporateGovernance/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Corporate governance</a><br>
+                                                        <a  href="../ThisIsWhoWeAre/index.html" data-demo-unmapped="/ThisIsWhoWeAre/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Así Somos Ethical program</a></br>
+                                                        <a  href="index.html" data-demo-unmapped="/Policies/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" >Policies</a><br>
+                                                    </div>
+                                                </div>
+                                                <div class="col l3 m3 s6">
+                                                    <a  href="../CustomerService/index.html" data-demo-unmapped="/CustomerService/index.html"  style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">Contact us</a><br>
+                                                    <a href="https://www.magneto365.com/co/empresas/crystal" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">Employment</a><br>
+                                                    <a href="https://www.innovacrystal.co/" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">INNOVA</a><br>
+                                                    <a href="https://numrot7.net/crystal/login" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">Suppliers</a><br>
+                                                    <a href="../pqrs/index.html" data-demo-unmapped="/pqrs/index.html" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'">PQRS</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-block-end: 0%;">
+                                            <div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+                                                <div class="col l3 m3 s6">                                        
+                                                    <a style="color:black;">Social Media</a>
+                                                    <section class="container-fluid box" style = "width:100%;justify-content:flex-start;">            
+                                                        <div class="box">
+                                                            <a href="https://web.facebook.com/grupocrystalsas" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" style="border-radius: 48%;" src="https://crystal.com.co/static/store/images/Logos/facebook.png"></a>
+                                                        </div>
+                                                        <div class="box">
+                                                            <a href="https://www.instagram.com/crystals.a.s/" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" style="border-radius: 48%;" src="https://crystal.com.co/static/store/images/Logos/instagram.png"></a>                                                        
+                                                        </div>
+                                                        <div class="box">
+                                                            <a href="https://www.linkedin.com/company/crystal-s-a-s/" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" src="https://crystal.com.co/static/store/images/Logos/linkedin.png"></a><br>
+                                                        </div>
+                                                        <div class="box">
+                                                            <a href="https://vimeo.com/user74044025" target="_blank" style="color:black;" onMouseover="this.style.color='#c1bbbb'" onMouseout="this.style.color='black'" ><img width="30px" style="border-radius: 48%;" src="https://crystal.com.co/static/store/images/Logos/vimeo.png"></a><br>                                                        
+                                                        </div>
+                                                    </section>
+
+                                                </div>
+                                                <div class="col l3 m3 s6"> 
+                                                    <a style="color:black;">Find us as Crystal S.A.S</a><br>
+                                                    <h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-block-end:0%;" class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" style="margin-block-end: 0%;">
+                    <div class="col s12 lighten-2" style="background-color: #eaeaea;">
+                        <div class="container-fluid">
+                            <div style="margin-block-end:0%;" class="row">
+                                <div class="col l2 m2 s12">
+                                    <a href="../index.html" data-demo-unmapped="/index.html"><img style="width:100%; margin-top:4%;" src="https://crystal.com.co/static/store/images/Logos/Logo-crystal-transparente.png" alt="Categoria Accesorios"></a>
+                                </div>
+                                <div style="margin-top:2%;margin-right: 0%;" class="col l5 m5 s12">
+                                    <strong style="color:grey">Colombia | &copy 2021 Crystal S.A.S | </strong>
+                                    <a target="_blank"  href="https://crystal.com.co/static/store/pdf/Terms_and_Conditions_.pdf" ><strong style="color:grey">Terms and Conditions |</strong></a>
+                                    <a target="_blank"  href="https://crystal.com.co/static/store/pdf/Personal_data_processing_policy_.pdf" ><strong style="color:grey">Privacy Policy and Notice</strong></a>
+                                </div>
+                                <div class="col l5 m5 s12">
+                                    <div style="margin-top:3%;" class="container-fluid">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <img style="width:100%;" src="https://crystal.com.co/static/store/images/Logos/Logo-multimarca-redondo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://crystal.com.co/static/store/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.btn-flotante');
+            var instances = M.FloatingActionButton.init(elems, {
+                hoverEnabled: false,
+            });
+        });
+        $('.sub').dropdown(
+        {
+            hover:true
+        });
+        $(".submenu1").click(function(){
+            if (document.getElementById("sobre").style.display == "block"){
+                document.getElementById("sobre").style.display = "none";
+                document.getElementById("submenu1").style.color = "black";
+                document.getElementById("iconSobreDown").style.display = "";
+                document.getElementById("iconSobreUp").style.display = "none";
+
+            }else{
+                document.getElementById("sobre").style.display = "block";
+                document.getElementById("submenu1").style.color = "grey";
+                document.getElementById("iconSobreDown").style.display = "none";
+                document.getElementById("iconSobreUp").style.display = "";
+                document.getElementById("iconSobreUp").style.color = "grey";
+
+
+            }
+        })
+        $(".submenu2").click(function(){
+            if (document.getElementById("modelo").style.display == "block"){
+                document.getElementById("sobre").style.display = "block";
+                document.getElementById("modelo").style.display = "none";
+                document.getElementById("submenu2").style.color = "black";
+                document.getElementById("iconModelDown").style.display = "";
+                document.getElementById("iconModelUp").style.display = "none";
+            }else{
+                document.getElementById("modelo").style.display = "block";
+                document.getElementById("submenu2").style.color = "grey";
+                document.getElementById("iconModelDown").style.display = "none";
+                document.getElementById("iconModelUp").style.display = "";
+                document.getElementById("iconModelUp").style.color = "grey";
+            }
+        })
+        $(".submenu3").click(function(){
+            if (document.getElementById("quienes").style.display == "block"){
+                document.getElementById("sobre").style.display = "block";
+                document.getElementById("quienes").style.display = "none";
+                document.getElementById("submenu3").style.color = "black";
+                document.getElementById("iconQuieDown").style.display = "";
+                document.getElementById("iconQuieUp").style.display = "none";
+            }else{
+                document.getElementById("quienes").style.display = "block";
+                document.getElementById("submenu3").style.color = "grey";
+                document.getElementById("iconQuieDown").style.display = "none";
+                document.getElementById("iconQuieUp").style.display = "";
+                document.getElementById("iconQuieUp").style.color = "grey";
+            }
+        })
+        $(".submenu4").click(function(){
+            if (document.getElementById("hilanderia").style.display == "block"){
+                document.getElementById("sobre").style.display = "block";
+                document.getElementById("hilanderia").style.display = "none";
+                document.getElementById("submenu4").style.color = "black";
+                document.getElementById("iconHilDown").style.display = "";
+                document.getElementById("iconHilUp").style.display = "none";
+            }else{
+                document.getElementById("hilanderia").style.display = "block";
+                document.getElementById("submenu4").style.color = "grey";
+                document.getElementById("iconHilDown").style.display = "none";
+                document.getElementById("iconHilUp").style.display = "";
+                document.getElementById("iconHilUp").style.color = "grey";
+            }
+        })
+        $(".submenu5").click(function(){
+            if (document.getElementById("paquete").style.display == "block"){
+                document.getElementById("sobre").style.display = "block";
+                document.getElementById("paquete").style.display = "none";
+                document.getElementById("submenu5").style.color = "black";
+                document.getElementById("iconPaqDown").style.display = "";
+                document.getElementById("iconPaqUp").style.display = "none";
+
+            }else{
+                document.getElementById("paquete").style.display = "block";
+                document.getElementById("submenu5").style.color = "grey";
+                document.getElementById("iconPaqDown").style.display = "none";
+                document.getElementById("iconPaqUp").style.display = "";
+                document.getElementById("iconPaqUp").style.color = "grey";
+            }
+        })
+        $(".submenu6").click(function(){
+            if (document.getElementById("sostenibilidad").style.display == "block"){
+                document.getElementById("sostenibilidad").style.display = "none";
+                document.getElementById("submenu6").style.color = "black";
+                document.getElementById("iconSosDown").style.display = "";
+                document.getElementById("iconSosUp").style.display = "none";
+
+            }else{
+                document.getElementById("sostenibilidad").style.display = "block";
+                document.getElementById("submenu6").style.color = "grey";
+                document.getElementById("iconSosDown").style.display = "none";
+                document.getElementById("iconSosUp").style.display = "";
+                document.getElementById("iconSosUp").style.color = "grey";
+            }
+        })
+        $(".submenu7").click(function(){
+            if (document.getElementById("cumplimiento").style.display == "block"){
+                document.getElementById("cumplimiento").style.display = "none";
+                document.getElementById("submenu7").style.color = "black";
+                document.getElementById("iconCumpDown").style.display = "";
+                document.getElementById("iconCumpUp").style.display = "none";
+
+            }else{
+                document.getElementById("cumplimiento").style.display = "block";
+                document.getElementById("submenu7").style.color = "grey";
+                document.getElementById("iconCumpDown").style.display = "none";
+                document.getElementById("iconCumpUp").style.display = "";
+                document.getElementById("iconCumpUp").style.color = "grey";
+            }
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+        </script>
+    <script>
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            indicators: false,
+            duration: 500,
+            interval: 6000,
+        });
+    </script>
+    <script>
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {
+            responsiveThreshold:0,
+        });
+    </script>
+    <script>
+        var elems = document.querySelectorAll('.fixed-action-btn-wpp');
+        var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false,
+        }
+        );
+    </script>
+    <script>
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false,
+        }
+        );
+    </script>
+    <script>
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, {
+        });
+    </script>    
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+    </script>
+    <script>   
+        $('i#prev').click(function() {
+            $('.slider').slider('prev');
+        });
+
+        $('i#next').click(function() {
+            $('.slider').slider('next');
+        });
+    </script>
+    <script>
+        var updateBtns=document.getElementsByClassName('update-cart')
+
+
+        for(var i = 0; i < updateBtns.length; i++){
+            updateBtns[i].addEventListener('click', function(){
+                var unidad =this.dataset.unidad
+                var productId = this.dataset.product
+                var action = this.dataset.action
+                console.log('productId:', productId, action)
+
+            })
+        }
+
+        function addCookieItem(productId, action,unidad){
+            console.log('hot logged in..')
+            
+            if(action == 'add'){
+                
+                
+                if(cart[productId] == undefined){
+                    M.toast({html: 'Adicionó un producto', classes: 'rounded'})
+                    cart[productId] = {'quantity':1}
+                }else{
+                    if(cart[productId]['quantity']==unidad){
+                        M.toast({html: 'Excedes el limite de compra de este producto', classes: 'rounded'})
+                        cart[productId]['quantity']
+                    }else{
+                        M.toast({html: 'Adicionó un producto', classes: 'rounded'})
+                        cart[productId]['quantity'] += 1
+                    }
+                    
+                }
+            }
+
+            if(action == 'remove'){
+                M.toast({html: 'Eliminó un producto', classes: 'rounded'})
+                cart[productId]['quantity'] -= 1
+
+                if(cart[productId]['quantity'] <= 0){
+                    console.log('Remove Item')
+                    delete cart[productId]
+                }
+            }
+            console.log('Cart:', cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+            
+            setTimeout(function(){ location.reload(); }, 1000);
+           
+        }
+
+        function updateUserOrder(productId,action){
+            console.log('User is logged in, sending data..')
+
+            var url='/update_item/'
+
+            fetch(url, {
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    'X-CSRFToken':csrftoken,
+                },
+                body:JSON.stringify({'productId': productId, 'action':action})
+            })
+
+            .then((response)=>{
+                return response.json()
+            })
+
+            .then((data)=>{
+                console.log('data:',data)
+                location.reload()
+            })
+        }
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+    </script>
+<script id="crystal-reviewed-language-switch">
+document.addEventListener("click",function(e){
+ var b=e.target.closest('button[name="language"][value="es"]');
+ if(!b)return;
+ e.preventDefault(); e.stopImmediatePropagation();
+ window.location.href="../politicas/index.html";
+},true);
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/SustainabilityReport/2021">
+<Fragment slot="head">
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/static/store/css/pdf-preview.css" rel="stylesheet"/>
+</Fragment>
+<h1 class="sr-only" id="main-content" tabindex="-1">Informe Sostenibilidad - Crystal S.A.S</h1>
+<div class="container" style="background: url(&quot;/static/store/images/Logos/Logo-crystal.png&quot;)') center no-repeat; background-size:80%;">
+<div class="loader" id="loader"></div>
+</div>
+<div id="holder"></div>
+
+<script is:inline src="/assets/vendor/337c5e09941dbc8d.js"></script>
+<script is:inline src="/static/store/js/pdfPreviewRender.js"></script>
+<script is:inline src="/assets/scripts/69fccec42a48a8d7.js"></script>
+
+</OriginalLayout>

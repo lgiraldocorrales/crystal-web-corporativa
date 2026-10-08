@@ -1,0 +1,14 @@
+{
+  "source_zip": "crystal_page_demo-main(1).zip",
+  "sha256": "eef5417c7f2557c15af7a9e926b803827fcac8dab6129e9bbf8e7dc100a7134e",
+  "pages_in_zip": 38,
+  "original_repository": "lgiraldocorrales/crystal-web-corporativa",
+  "audited_dev_head": "d0515d30168f70f91f95ffb6af43cd251465e4de",
+  "main_modified": false,
+  "routes_file": "src/data/routes.json",
+  "original_media_preserved": true,
+  "modified_legacy_assets": [
+    "static/store/js/pdfPreviewRender.js: disable eval and use local worker"
+  ],
+  "dev_published": false
+}

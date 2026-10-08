@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> crystal-web-corporativa@1.0.0 test
+> node --import tsx --test tests/*.test.ts
+
+✔ health works independently of SMTP (209.892012ms)
+✔ mock SMTP receives all source fields, two recipients, HTML and text and localized confirmation (105.418667ms)
+✔ origin, invalid fields, consent, oversized bodies, honeypot and rate limit (178.618595ms)
+✔ verification and SMTP failures return generic errors without secrets (149.316274ms)
+✔ missing production configuration fails without printing values (0.576117ms)
+✔ all retained and recovered routes respond, plus SEO files and legacy index redirects (358.742264ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 994.739608

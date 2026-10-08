@@ -1,0 +1,32 @@
+[
+  {
+    "width": 1440,
+    "motion": "no-preference",
+    "skipLinkFirst": true,
+    "mobileKeyboardMenu": false,
+    "mobileLanguageSwitch": false,
+    "autoplayDisabled": false,
+    "contactSpanishAndEnglish": true,
+    "runtimeErrors": []
+  },
+  {
+    "width": 390,
+    "motion": "no-preference",
+    "skipLinkFirst": true,
+    "mobileKeyboardMenu": true,
+    "mobileLanguageSwitch": true,
+    "autoplayDisabled": false,
+    "contactSpanishAndEnglish": true,
+    "runtimeErrors": []
+  },
+  {
+    "width": 390,
+    "motion": "reduce",
+    "skipLinkFirst": true,
+    "mobileKeyboardMenu": true,
+    "mobileLanguageSwitch": true,
+    "autoplayDisabled": true,
+    "contactSpanishAndEnglish": true,
+    "runtimeErrors": []
+  }
+]

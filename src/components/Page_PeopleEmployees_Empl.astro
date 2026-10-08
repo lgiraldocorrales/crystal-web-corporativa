@@ -1,0 +1,871 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopHeaderEn48bb8d9c from '../components/DesktopHeaderEn48bb8d9c.astro';
+import MobileHeaderEn63aeed8f from '../components/MobileHeaderEn63aeed8f.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/PeopleEmployees/Empl">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEn48bb8d9c />
+<MobileHeaderEn63aeed8f />
+<head>
+
+</head>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12">
+<div class="slider" style="height: 100%;">
+<ul class="slides">
+<li>
+<img src="/static/store/images/compromisoSocial/Sostenibilidad_3.png"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 1%; font-weight: 300;letter-spacing: 1px;">
+<a href="/" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Home / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Sustainability / </a>
+<a href="/SocialCommitment" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Social commitment</a>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="font-weight: 300; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l10 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12 section scrollspy" id="Empl" style="padding: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h1 class="source-h2" id="main-content" style="margin: 0%;margin-block-end: 2%;" tabindex="-1">Our employees</h1>
+</div>
+<div class="col s12">
+<h5 style="font-weight: 500; text-align: left;">
+                                                        Committed to healthy work environments
+                                                    </h5>
+<p style="font-size: large;">
+                                                        We value the contribution of our employees in the Company's strategy as a fundamental part of it, therefore, we seek that their working conditions have a positive impact on their health and welfare, through a management system in occupational safety and health that goes beyond compliance with legal requirements, addressing the issue from 5 management axes:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>1.</b> Accident prevention: the safety of our employees in their workplace, comes first for us, that´s why we seek to minimize the risk and the occurrence of accidents and incidents at work through these programs:
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •	Hazard and chemical risk management program 
+                                                        <br/>
+                                                        •	Mechanical hazard intervention program 
+                                                        <br/>
+                                                        •	Musculoskeletal risk management program
+                                                        <br/>
+                                                        •	Hazardous energy insurance program
+                                                        <br/>
+                                                        •	Confined space hazard management program
+                                                        <br/>
+                                                        •	Program for protection against falls from height
+                                                        <br/>
+                                                        •	Hot work safety program
+                                                        <br/>
+                                                        •	Strategic road safety plan
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>2.</b>	Prevention of occupational disease: we are jointly responsible for the welfare of our employees, therefore, we implement strategies that seek to reduce or prevent the occurrence of occupational diseases through programs such as:
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •	Vision zero osteomuscular occupational diseases program.
+                                                        <br/>
+                                                        •	Auditory surveillance program
+                                                        <br/>
+                                                        •	Respiratory surveillance program
+                                                        <br/>
+                                                        •	Psychosocial risk surveillance program
+                                                        <br/>
+                                                        •	Hazard and chemical risk management program 
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>3.</b>	Integral Health: we understand the health of our employees as a fundamental pillar for their wellbeing and development, that is why we have promotion and prevention strategies with which we accompany them every day so that they can have the tools available at hand to always ensure their wellbeing.
+                                                          
+
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        Prevention and promotion program:
+                                                        <br/>
+                                                        •   SanaMente: Prevention and intervention strategies on all factors that influence people's health.
+                                                        <br/>
+                                                        •   Surveillance of absenteeism and return to work.
+                                                        <br/>
+                                                        •   Promotion and prevention programs 
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>4.</b>	Emergency preparedness and prevention: we have designed programs of emergency prevention, preparedness and attention , articulated to the Company's business continuity plan, which allow us to anticipate events that may occur, putting above all, the protection of the lives of our employees, the environment, the impact on our neighbors and, finally, the safety and continuity of our processes.
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<b>5.</b>	 Compliance with legal requirements: we are committed to complying with current regulations on occupational health and safety, as well as with the requirements of our customers and certifying entities, with the commitment of management to execute all necessary actions to implement them.
+                                                    
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">                                               
+                                                   
+                                                        We have support groups that facilitate the management of health and safety at work such as:
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •   Copasst
+                                                        <br/>
+                                                        •   Coexistence Committee
+                                                        <br/>
+                                                        •   PESV Committee
+                                                        <br/>
+                                                        •   Emergency Committee
+                                                        <br/>
+                                                        •   Emergency Brigade
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12 section scrollspy" id="Fami" style="padding: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12">
+<h5 style="font-weight: 500; ">
+                                                        We are committed to our employees and their families
+                                                    </h5>
+<p style="font-size: large;">
+                                                        At Crystal we conceive well-being as a fundamental factor for the integral development of our employees and, through programs and activities that promote the development of physical, emotional and social skills, we provide them with tools and support for this purpose.
+                                                    </p>
+<p style="font-size: large;">
+
+                                                        We think of the family as the basic nucleus of society and to that extent, we accompany our employees and their families in the different stages of life, as follows:
+                                                    </p>
+<p style="margin-left: 2%;font-size: large;">
+<strong>Friends of the breastfeeding family: </strong>
+                                                        we are aware of the importance of this stage of life, in the nutrition of our employees' babies and the emotional bond in their families, for this reason we have spaces and programs that promote healthy breastfeeding
+                                                        
+                                                    </p>
+<p style="margin-left: 4%;font-size: large;">
+                                                        •   Breastfeeding rooms at all our production plants
+                                                        <br/>
+                                                        •   Support and training workshops for pregnant and breastfeeding mothers and fathers and caregivers.
+
+                                                    </p>
+<p style="font-size: large;margin-left: 2%;">
+<strong>Walkers: </strong>
+                                                        We know that healthy and happy families contribute positively to the society in which we live, so we train the families of our employees through workshops on parenting guidelines from the approach of positive discipline.
+                                                        <br/><br/>
+<strong>Children's seedbed:</strong>  
+                                                        we contribute in the upbringing and development of the children of our employees' families, with spaces healthy recreation and training for them and their guardians.
+                                                        <br/><br/>
+<strong>Youth SeedBed</strong> 
+                                                        we provide guidance to teenagers from the families of our employees, to through creative, playful and formative spaces that allow socialization and development in a healthy environment. 
+                                                        <br/><br/>
+<strong>Psychosocial counseling:</strong> 
+                                                        we know that people's mental health is related to many aspects of their lives, the way they think, act, make decisions and relate to others, so we provide our employees and their families with healthy environments for their mental well-being.
+                                                       
+                                                    </p>
+<p style="font-size: large;margin-left: 4%;">
+
+                                                        •   Active listening: space for psychological support
+                                                        <br/>
+                                                        •   In Family: training on important topics in family dynamics. 
+                                                        <br/>
+                                                        •   Grief: accompaniment in processes of loss or changes 
+                                                        <br/>
+                                                        •   Addictions: prevention of psychoactive and behavioral addictions 
+                                                        <br/>
+</p>
+<p style="font-size: large;margin-left: 2%;">
+<strong>Purpose and life project: </strong>
+                                                        having a purpose drives us, that is why we guide our collaborators in the construction and achievement of their personal projects.
+                                                        <br/><br/>
+<strong>ABC Housing Program: </strong>
+                                                         for many of our employees and their families, owning their own house is an important part of their life projects, so we accompany them to make this dream come true, with permanent advice on these three lines: savings, benefits and credit.
+                                                        <br/><br/>
+<strong>Happy and meaningful time:</strong> 
+                                                         we promote and manage healthy leisure time for our close to 7,000 employees and their families. 
+                                                        <br/><br/>
+<strong>Allies with care:</strong> 
+                                                        we promote healthy lifestyles through sports and guarantee the nutrition of our employees through our own food service. 
+                                                        <br/><br/>
+<strong>Our day:</strong> 
+                                                        we share a space for integration in which employees, families and management celebrate life and give thanks for all that has been achieved during the year, providing a day of happiness, family recreation and special gifts for our employees' children at Christmas.
+                                                        <br/><br/>
+<strong>Recognition night:</strong> 
+                                                        a special moment where the Company thanks the dedication, collaboration, contribution and support of our employees in the fulfillment of our objectives, to those who have been with us for more than 20 years. 
+                                                        <br/><br/>
+<strong>Preparation for retirement:</strong> 
+                                                        fulfilling our purpose of accompanying all our employees at every stage of their lives, we guide this change, achieving a healthy transition process for them and their families. 
+                                                        <br/><br/>
+<strong>Education: </strong>
+                                                        we are committed to the development of our employees, so we accompany them by managing their learning processes, to contribute not only to the fulfillment of the Company's strategy, but also to their professional growth. 
+                                                    </p>
+</div>
+</div>
+<div class="row">
+<div class="col s12">
+<div class="col l6 m6 s12 center">
+<img src="/static/store/images/compromisoSocial/Otros_beneficios.png" style="width: 80%;"/>
+</div>
+<div class="col l6 m6 s12">
+<h5 style="font-weight: 500; ">
+                                                            Other benefits
+                                                        </h5>
+<p style="padding: 1%;">
+<strong>Financial support: </strong>
+<br/>
+                                                            Employee Education 
+                                                            <br/>
+                                                            Education for the family group 
+                                                            <br/>
+                                                            Support for eyeglasses and frames 
+                                                            <br/>
+                                                            Support for death of employees and their families 
+                                                            <br/>
+                                                            Vacation bonus 
+                                                            <br/><br/>
+<strong>Loan line to our employees: </strong>
+<br/>
+                                                            School supplies 
+                                                            <br/>
+                                                            Education  
+                                                            <br/>
+                                                            Housing 
+                                                            <br/>
+                                                            Calamity 
+                                                            <br/><br/>
+<strong>Discounts and loans in our own stores: 
+                                                            </strong>
+<br/>
+                                                            With the intention of facilitating full access to the experience of our brands to all our employees and their families, so that they can proudly wear what they work for every day, we give them a significant discount and offer them the possibility of paying for their purchases by loan installments.
+                                                        </p>
+</div>
+</div>
+</div>
+<div></div>
+</div>
+<div class="col s12 section scrollspy" id="Com" style="padding: 3%;text-align: justify;">
+<div class="container-fluid">
+<div class="row" style="font-size: large;text-align: justify;">
+<div class="col s12" style="font-size: x-large;">
+<h2 style="margin: 0%; margin-block-end: 2%;">Our Community</h2>
+</div>
+<div class="col s12">
+<p>
+                                                        Aligned with our purpose of weaving life for our planet, transforming the future from the people, we contribute to the development of the country through programs with social sense as a guiding thread of our actions and the relationship with the world around us.
+                                                    </p>
+<p style="margin-left: 2%;">
+<strong>"Hilos de Esperanza": </strong>
+                                                        in 2014 was born in our textile plant located in the municipality of Marinilla, a social business project, which seeks to give a new disposition to the Company's production surpluses that are no longer marketable, thus providing the opportunity to the communities surrounding our plant, for the creation of enterprises.
+                                                        <br/><br/>
+                                                        Today, the program has 5 strategic lines of operation:
+                                                        <br/>
+<b>1.</b> Donation of products that are not marketable but that can be used as clothing.
+                                                        <br/>
+<b>2.</b> Transformation of garments that become raw material for handcrafted products made by community groups, who then obtain economic resources from them in workshops that we call "costureros" (sewing workshops).
+                                                        <br/>
+<b>3.</b>  Adaptation of garments that are repaired so that they can later be used as clothing.
+                                                        <br/>
+<b>4.</b> Washing products that are in good condition but need to be washed before use.
+                                                        <br/>
+<b>5.</b> Final destination of products that remain after being filtered in the other lines and are donated to some institutions that find utility in these or are arranged to be classified and finally destined in an appropriate manner by the waste separation entity of the municipality of Marinilla.
+                                                        <br/><br/>
+                                                        In 2020, we participated in a contest organized by Lacoste, one of our allied clients, which sought to benefit with economic resources a social project of its suppliers. Six projects from different organizations around the world participated in this contest, and at Lacoste's head office in France, our project, "Hilos de Esperanza", was unanimously chosen as the winner by the contest's evaluation committee.  ​
+                                                        <br/><br/>
+                                                        In 2022 we participated again in the call from the Lacoste Foundation and, thanks to the
+program's excellent results in the region, we were once again selected to receive additional
+resources. These allowed us to strengthen the program and expand our capacity to make a
+positive impact on its beneficiaries. ​
+                                                        <br/><br/>
+<strong>"Opción DEVBIDA" (C.E.O. Program):</strong> 
+                                                        We continued making joint efforts with C.E.O. and
+other 9 companies in the East of Antioquia so
+that more and more people, including young
+ones, can use the program to find better living
+conditions for themselves, their families, and rural
+communities in the East of Antioquia.
+                                                        <br/>
+<br/>
+<strong>"Fundación Golondrinas":</strong> 
+                                                        Continuing with our purpose of helping early childhood, we actively support the Golondrinas Foundation, located in the departments of Antioquia and Cordoba, who serve more than 19 thousand children with comprehensive early childhood care, educational and community development projects. 
+                                                        <br/><br/>
+<strong>FAN Sponsor Plan:</strong> 
+                                                        We are managers of happiness and we promote among our employees, the participation in the FAN Foundation sponsor plan, in which, with a monthly contribution, they contribute to the welfare and future of the children who are part of this support entity. 
+                                                        <br/><br/>
+<strong>Camilo C Restrepo School:</strong> 
+                                                         For us, education is fundamental to build a country, therefore, consistent with this vision, the Company manages social investment activities that are committed to improving the level and quality of life of hundreds of young people in the Camilo C Restrepo School. 
+                                                        <br/><br/>
+<strong>"Fundación Juanfe":</strong> 
+                                                        under the conviction that by creating synergies we always achieve the best results, we join the social work done by the Juanfe Foundation and under its commitment to break the cycles of poverty of marginalized teenage mothers and improve their living conditions, building a better future for them and for future generations, we contribute our bit to make possible their social projects and additionally, we provide uniforms for both beneficiary teenage mothers and for the foundation's staff.
+                                                        <br/><br/>
+<strong>Baby Fresh x Unicef:</strong> 
+                                                        "seres de cuidado" is an initiative that we support since 2017, we have impacted more than 700 families accompanying and helping them hand in hand with UNICEF. Our stores are donation centers where you can make contributions and buy the products whose 100% of the price are donated.
+                                                        <br/><br/>
+<strong>Vamos Pa Lante Scholarships:</strong> 
+                                                        we believe in education as the main engine for the development of our country, that is why we joined the Vamos Pa Lante program, which provides scholarships to undergraduate students from different financial capacity and regions of the country, who are at risk of dropping out of their careers for economic reasons, and thanks to this program they can continue their studies and realize their professional dreams.
+                                                        <br/><br/>
+<strong>Tejer para Creer:</strong> 
+                                                        We provide comprehensive support to people who wish to have alternative employment or entrepreneurship to generate economic resources for themselves and their families, under 3 lines of work: technical training support from SENA - National Learning Service, strengthening of the "Taller de Tina" - productive unit of the Las Golondrinas Foundation of Medellin that accompanies low-income families in the country and entrepreneurship, through training on specific topics that help them develop their own business ideas. All this, under psychosocial accompaniment for all participants.
+                                                        Between 2022 and 2023 we have had 97 participants of which 85% are heads of household.
+                                                        <br/><br/>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l2 m2 s12 list_content_menu hide-on-med-and-down" style="text-align: center; position: sticky;top: 100px;float: left;flex-direction: column;background-color: #fff;">
+<ul class="section table-of-contents">
+<li><a style="font-size: large;">Sustainability</a></li>
+<br/>
+<li><a class="active" href="/SocialCommitment">Social commitment</a></li>
+<br/>
+<li><a href="/EnvironmentalCommitment">Environmental commitment</a></li>
+<br/>
+<li><a href="/Certifications">Certifications</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/assets/scripts/d3d8670133f31b6a.js"></script>
+<div class="container-fluid footer-desktop">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 #f5f5f5 grey lighten-4">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col s12">
+<div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">About us</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/WhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Who we are</a><br/>
+<a href="/PurposeAndEssence" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Purpose and essence</a><br/>
+<a href="/OurHistory/1938-1948" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Our history</a><br/>
+<a href="/Spinning" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Spinning</a><br/>
+<a href="/FullPackage" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Full package</a><br/>
+<a href="/Brands" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Brands</a><br/>
+<a href="/Location" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Location</a>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Sustainability</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/Sustainability" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Our commitment</a><br/>
+<a href="/SocialCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Social commitment</a><br/>
+<a href="/EnvironmentalCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Environmental commitment</a>
+<a href="/Certifications" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Certifications</a><br/>
+<br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Compliance</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/CorporateGovernance" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Corporate governance</a><br/>
+<a href="/ThisIsWhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Así Somos Ethical program</a><br/>
+<a href="/Policies" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Policies</a><br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a href="/CustomerService" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Contact us</a><br/><br/>
+<a href="https://www.magneto365.com/co/empresas/crystal" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Employment</a><br/><br/>
+<a href="https://www.innovacrystal.co/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">INNOVA</a><br/><br/>
+<a href="https://numrot7.net/crystal/login" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Suppliers</a><br/><br/>
+<a href="/pqrs" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">PQRS</a><br/>
+</div>
+</div>
+<div class="col l4 m8 s8">
+<a style="color:black;">Social Media</a>
+<section class="container-fluid box">
+<div class="box">
+<a href="https://web.facebook.com/grupocrystalsas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/facebook.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.instagram.com/crystals.a.s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/instagram.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.linkedin.com/company/crystal-s-a-s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/linkedin.png" width="30px"/></a><br/>
+</div>
+<div class="box">
+<a href="https://vimeo.com/user74044025" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/vimeo.png" style="border-radius: 48%;" width="30px"/></a><br/>
+</div>
+</section>
+<a style="color:black;">Find us as Crystal S.A.S</a><br/>
+<h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid footer-mobile">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 #f5f5f5 grey lighten-4">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col s12">
+<div class="container-fluid" style="font-size: 90%;padding-top: 2%;margin-left: 10%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">About us</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/WhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Who we are</a><br/>
+<a href="/PurposeAndEssence" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Purpose and essence</a><br/>
+<a href="/OurHistory/1938-1948" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Our history</a><br/>
+<a href="/Spinning" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Spinning</a><br/>
+<a href="/FullPackage" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Full package</a><br/>
+<a href="/Brands" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black">Brands</a><br/>
+<a href="/Location" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Location</a>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Sustainability</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/Sustainability" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Our commitment</a><br/>
+<a href="/SocialCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Social commitment</a><br/>
+<a href="/EnvironmentalCommitment" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Environmental commitment</a>
+<a href="/Certifications" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Certifications</a><br/>
+<br/>
+</div>
+</div>
+</div>
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Compliance</a><br/><br/>
+<div style="font-weight: 300;">
+<a href="/CorporateGovernance" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Corporate governance</a><br/>
+<a href="/ThisIsWhoWeAre" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Así Somos Ethical program</a><br/>
+<a href="/Policies" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Policies</a><br/>
+</div>
+</div>
+<div class="col l3 m3 s6">
+<a href="/CustomerService" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;">Contact us</a><br/>
+<a href="https://www.magneto365.com/co/empresas/crystal" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Employment</a><br/>
+<a href="https://www.innovacrystal.co/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">INNOVA</a><br/>
+<a href="https://numrot7.net/crystal/login" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">Suppliers</a><br/>
+<a href="/pqrs" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank">PQRS</a><br/>
+</div>
+</div>
+</div>
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l8 s12" style="margin-block-end: 5%;padding: 0%;">
+<div class="col l3 m3 s6">
+<a style="color:black;">Social Media</a>
+<section class="container-fluid box" style="width:100%;justify-content:flex-start;">
+<div class="box">
+<a href="https://web.facebook.com/grupocrystalsas" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/facebook.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.instagram.com/crystals.a.s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/instagram.png" style="border-radius: 48%;" width="30px"/></a>
+</div>
+<div class="box">
+<a href="https://www.linkedin.com/company/crystal-s-a-s/" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/linkedin.png" width="30px"/></a><br/>
+</div>
+<div class="box">
+<a href="https://vimeo.com/user74044025" onmouseout="this.style.color='black'" onmouseover="this.style.color='#c1bbbb'" style="color:black;" target="_blank"><img src="/static/store/images/Logos/vimeo.png" style="border-radius: 48%;" width="30px"/></a><br/>
+</div>
+</section>
+</div>
+<div class="col l3 m3 s6">
+<a style="color:black;">Find us as Crystal S.A.S</a><br/>
+<h6><i class="material-icons">phone_in_talk</i>    (604) 604 96 00</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-block-end:0%;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terms_and_Conditions_.pdf" target="_blank"><strong style="color:grey">Terms and Conditions |</strong></a>
+<a href="/static/store/pdf/Personal_data_processing_policy_.pdf" target="_blank"><strong style="color:grey">Privacy Policy and Notice</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+</div>
+</OriginalLayout>

@@ -1,0 +1,169 @@
+---
+/** Static source fragment. No client hydration: the original DOM/scripts provide behavior. */
+interface Props {}
+// No frontmatter transformation: retain the audited original markup.
+---
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 0%;">
+<div class="navbar-fixed">
+<nav class="nav-extended" style="height: 65px; box-shadow: none; background: white;">
+<div class="nav-wrapper" style="height: 100%;">
+<a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons" style=" color:black;">menu</i></a>
+<ul class="hide-on-med-and-down letra-mobile" id="nav-mobile" style="display: flex;justify-content: center;align-items: center;">
+<li>
+<a class="dropdown-trigger" data-target="dropdown1" style=" color:black;">
+                                                SOBRE NOSOTROS
+                                            </a>
+<ul class="dropdown-content dropdown-nested" id="dropdown1">
+<li><a href="/quienesSomos" style="color: black;">QUIÉNES SOMOS</a></li>
+<li><a class="dropdown-trigger sub" data-target="dropdown2" href="#" style="color: black;">MODELO DE NEGOCIO<i class="tiny material-icons right" style="margin-right: 0%;">keyboard_arrow_right</i></a></li>
+<li><a href="/ubicacion" style="color: black;">UBICACIÓN</a></li>
+</ul>
+<ul class="dropdown-content dropdown-nested" id="dropdown2">
+<li><a href="/hilanderia" style="color: black;">HILANDERÍA</a></li>
+<li><a href="/paquete" style="color: black;">PAQUETE COMPLETO</a></li>
+<li><a href="/marcas" style="color: black;">MARCAS</a></li>
+</ul>
+</li>
+
+<li>
+<a class="dropdown-trigger3" data-target="dropdown3" style=" color:black;">
+                                                SOSTENIBILIDAD
+                                            </a>
+<ul class="dropdown-content" id="dropdown3">
+<li><a href="/sostenibilidad" style="color: black;">NUESTRO COMPROMISO</a></li>
+<li><a href="/compromisoSocial" style="color: black;">COMPROMISO SOCIAL</a></li>
+<li><a href="/compromisoAmbiental" style="color: black;">COMPROMISO AMBIENTAL</a></li>
+<li><a href="/certificaciones" style="color: black;">CERTIFICACIONES</a></li>
+
+<li><a href="/informesDeSostenibilidad" style="color: black;">INFORME DE SOSTENIBILIDAD</a></li>
+</ul>
+</li>
+<li>
+<a class="dropdown-trigger331" data-target="dropdown331" style=" color:black;">
+                                                CUMPLIMIENTO
+                                            </a>
+<ul class="dropdown-content" id="dropdown331">
+<li><a href="/gobiernoCorp" style="color: black;">GOBIERNO CORPORATIVO</a></li>
+<li><a href="/asiSomos" style="color: black;">PROGRAMA ÉTICO ASÍ SOMOS</a></li>
+<li><a href="/politicas" style="color: black;">POLÍTICAS</a></li>
+</ul>
+</li>
+<li>
+<a href="/ServicioAlCliente" style=" color:black;">
+                                                CONTÁCTANOS
+                                            </a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<ul class="sidenav" id="mobile-demo">
+<div class="row" style="margin-block-end: 4%;margin-top: 2%;">
+<div class="col l6 right">
+<a class="cerrar" href="/politicas">Cerrar</a>
+</div>
+<div class="col l6 left" style="margin-left: 2.5%;">
+<form action="#" method="get">
+<div class="row">
+<div class="col l6" style="padding: 0%;">
+<button class="btn-flat" name="language" onclick='document.cookie="django_language=es;path=/;SameSite=Lax";window.location.href="/politicas"' onmouseout="this.style.background='white'" onmouseover="this.style.background='rgb(226, 226, 226)'" style="color: red;text-transform: capitalize;" title="Español" type="button" value="es">español
+                                                    </button>
+</div>
+<div class="col l6" style="padding: 0%;">
+<button class="btn-flat" name="language" onclick='document.cookie="django_language=en;path=/;SameSite=Lax";window.location.href="/Policies"' onmouseout="this.style.background='white'" onmouseover="this.style.background='rgb(226, 226, 226)'" style="color: rgb(70, 70, 70);text-transform: capitalize;" title="English" type="button" value="en">English
+                                                    </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<li>
+<a class="submenu1" id="submenu1" style="margin-left: -6%;color: black;cursor: pointer;">SOBRE NOSOTROS<i class="Small material-icons right" id="iconSobreDown">arrow_drop_down</i><i class="Small material-icons right" id="iconSobreUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="sobre" style="display: none;">
+<li><a class="submenu3" id="submenu3" style="color: black;margin-left: -3%;cursor: pointer;">• Quiénes somos<i class="Small material-icons right" id="iconQuieDown">arrow_drop_down</i><i class="Small material-icons right" id="iconQuieUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="quienes" style="display: none;">
+<li><a href="/quienesSomos" style="color: black;cursor: pointer;">- Quiénes somos</a></li>
+<li><a href="/propositoyesencia" style="color: black;cursor: pointer;">- Nuestro propósito y esencia</a></li>
+<li><a href="/historiaC/1938-1948" style="color: black;cursor: pointer;">- Nuestra historia</a></li>
+</ul>
+</li>
+<li>
+<a class="submenu2" id="submenu2" style="margin-left: -3%;color: black;cursor: pointer;">• Modelo de negocio<i class="Small material-icons right" id="iconModelDown">arrow_drop_down</i><i class="Small material-icons right" id="iconModelUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="modelo" style="display: none;">
+<li><a class="submenu4" id="submenu4" style="color: black;cursor: pointer;">- Hilandería<i class="Small material-icons right" id="iconHilDown">arrow_drop_down</i><i class="Small material-icons right" id="iconHilUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="hilanderia" style="display: none;">
+<li><a href="/hilanderia" style="color: black;margin-left: 4%;cursor: pointer;">• Acerca de</a></li>
+<li><a href="/hilanderia" style="color: black;margin-left: 4%;cursor: pointer;">• Productos</a></li>
+</ul>
+</li>
+<li><a class="submenu5" id="submenu5" style="color: black;cursor: pointer;">- Paquete completo<i class="Small material-icons right" id="iconPaqDown">arrow_drop_down</i><i class="Small material-icons right" id="iconPaqUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="paquete" style="display: none;">
+<li><a href="/paquete" style="color: black;margin-left: 4%;cursor: pointer;">• Paquete completo</a></li>
+<li><a href="/unidades" style="color: black;margin-left: 4%;cursor: pointer;">• Unidades de negocio</a></li>
+<li><a href="/otros" style="color: black;margin-left: 4%;cursor: pointer;">• Otros</a></li>
+</ul>
+</li>
+<li><a href="/marcas" style="color: black;cursor: pointer;">- Marcas</a></li>
+</ul>
+</li>
+<li><a href="/ubicacion" style="color: black;margin-left: -3%;cursor: pointer;">• Ubicación</a></li>
+</ul>
+<div class="divider"></div>
+</li>
+<li>
+<a class="submenu6" id="submenu6" style="margin-left: -6%;color: black;cursor: pointer;">SOSTENIBILIDAD<i class="Small material-icons right" id="iconSosDown">arrow_drop_down</i><i class="Small material-icons right" id="iconSosUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="sostenibilidad" style="display: none;margin-left: -3%;">
+<li><a href="/sostenibilidad" style="color: black;cursor: pointer;">• Nuestro compromiso</a></li>
+<li><a href="/compromisoSocial" style="color: black;cursor: pointer;">• Compromiso social</a></li>
+<li><a href="/compromisoAmbiental" style="color: black;cursor: pointer;">• Compromiso ambiental</a></li>
+<li><a href="/certificaciones" style="color: black;cursor: pointer;">• Certificaciones</a></li>
+
+<li><a href="/informesDeSostenibilidad" style="color: black;cursor: pointer;">• Informes de Sostenibilidad</a></li>
+</ul>
+<div class="divider"></div>
+</li>
+<li>
+<a class="submenu7" id="submenu7" style="margin-left: -6%;color: black;cursor: pointer;">CUMPLIMIENTO<i class="Small material-icons right" id="iconCumpDown">arrow_drop_down</i><i class="Small material-icons right" id="iconCumpUp" style="display: none;">arrow_drop_up</i></a>
+<ul id="cumplimiento" style="display: none;margin-left: -3%;">
+<li><a href="/gobiernoCorp" style="color: black;cursor: pointer;">• Gobierno corporativo</a></li>
+<li><a href="/asiSomos" style="color: black;cursor: pointer;">• Programa ético así somos</a></li>
+<li><a href="/politicas" style="color: black;cursor: pointer;">• Políticas</a></li>
+</ul>
+<div class="divider"></div>
+</li>
+<li>
+<a href="/ServicioAlCliente" style="margin-left: -6%;color:black;cursor: pointer;">
+                                    CONTÁCTANOS
+                                </a>
+<div class="divider"></div>
+</li>
+<li>
+<a href="https://www.magneto365.com/crystal" style="margin-left: -6%;color:black;cursor: pointer;" target="_blank">
+                                    EMPLEO
+                                </a>
+<div class="divider"></div>
+</li>
+<li>
+<a href="https://www.innovacrystal.co/" style="margin-left: -6%;color:black;cursor: pointer;" target="_blank">
+                                    INNOVA
+                                </a>
+<div class="divider"></div>
+</li>
+<li>
+<a href="#" style="margin-left: -6%;color:black;cursor: pointer;" target="_blank">
+                                    INGRESO
+                                </a>
+<div class="divider"></div>
+</li>
+<li>
+<a href="https://numrot7.net/crystal/login" style="margin-left: -6%;color:black;cursor: pointer;" target="_blank">
+                                    PROVEEDORES
+                                </a>
+<div class="divider"></div>
+</li>
+</ul>
+</div>
+</div>
+</div>

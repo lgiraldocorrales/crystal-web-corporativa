@@ -1,0 +1,99 @@
+trigger:
+  branches:
+    include: [dev, main]
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  # Set these three non-secret values in Azure DevOps pipeline variables.
+  # azureServiceConnection: authorized Azure service connection name
+  # devAppName: development App Service resource name
+  # prodAppName: production App Service resource name
+  nodeVersion: '24.x'
+
+stages:
+  - stage: Validate
+    jobs:
+      - job: Build
+        steps:
+          - checkout: self
+            lfs: true
+            fetchDepth: 0
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+          - script: npm ci
+            displayName: Install locked dependencies
+          - script: npm run check
+            displayName: Validate Astro and TypeScript
+          - script: npm run build
+            displayName: Compile static Astro and Fastify
+            env:
+              PUBLIC_SITE_URL: $(publicSiteUrl)
+              PUBLIC_TURNSTILE_SITE_KEY: $(publicTurnstileSiteKey)
+          - script: npm test
+            displayName: Backend and simulated mail tests
+          - script: npx playwright install --with-deps chromium
+            displayName: Install browser for functional verification
+          - script: node --import tsx scripts/browser-interactions.mjs
+            displayName: Verify keyboard, mobile menus, languages and browser contact form
+          - script: python3 scripts/audit_site.py
+            displayName: Route, asset, link and SEO audit
+          - script: npm audit --audit-level=high
+            displayName: Dependency security audit
+          - script: |
+              mkdir -p $(Build.ArtifactStagingDirectory)/app
+              cp -R dist server-dist package.json package-lock.json $(Build.ArtifactStagingDirectory)/app/
+              cd $(Build.ArtifactStagingDirectory)/app
+              npm ci --omit=dev
+            displayName: Package frontend and backend as one Node application
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: $(Build.ArtifactStagingDirectory)/app
+              includeRootFolder: false
+              archiveFile: $(Build.ArtifactStagingDirectory)/crystal.zip
+          - publish: $(Build.ArtifactStagingDirectory)/crystal.zip
+            artifact: crystal
+  - stage: DeployDev
+    dependsOn: Validate
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev'))
+    jobs:
+      - deployment: Development
+        environment: crystal-dev
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - download: current
+                  artifact: crystal
+                - task: AzureWebApp@1
+                  inputs:
+                    azureSubscription: $(azureServiceConnection)
+                    appType: webAppLinux
+                    appName: $(devAppName)
+                    package: $(Pipeline.Workspace)/crystal/crystal.zip
+                    deploymentMethod: zipDeploy
+                - script: curl --fail --retry 12 --retry-delay 10 https://$(devAppName).azurewebsites.net/health
+                  displayName: Verify development health
+  - stage: DeployProd
+    dependsOn: Validate
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    jobs:
+      - deployment: Production
+        environment: crystal-prod
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - download: current
+                  artifact: crystal
+                - task: AzureWebApp@1
+                  inputs:
+                    azureSubscription: $(azureServiceConnection)
+                    appType: webAppLinux
+                    appName: $(prodAppName)
+                    package: $(Pipeline.Workspace)/crystal/crystal.zip
+                    deploymentMethod: zipDeploy
+                - script: curl --fail --retry 12 --retry-delay 10 https://$(prodAppName).azurewebsites.net/health
+                  displayName: Verify production health

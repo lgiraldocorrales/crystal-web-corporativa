@@ -1,0 +1,980 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopFooterEs10dff320 from '../components/DesktopFooterEs10dff320.astro';
+import DesktopHeaderEs3d7a5199 from '../components/DesktopHeaderEs3d7a5199.astro';
+import MobileFooterEs151ccb19 from '../components/MobileFooterEs151ccb19.astro';
+import MobileHeaderEsb00e3cd1 from '../components/MobileHeaderEsb00e3cd1.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEs3d7a5199 />
+<MobileHeaderEsb00e3cd1 />
+<style is:inline>
+        .opacidad{
+            opacity: 0.9;
+        }                
+        .asiSomos{
+            /* The image used */
+                background-image: url("/static/store/images/Home/asi-somos-textura.jpg")");
+
+                /* Full height */
+                height: 300px; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                width: 100%;
+        }
+
+        .slider-banner img {
+            max-inline-size: 100% !important;
+            block-size: auto !important;
+            inline-size: 100% !important;
+        }
+
+        .sliderResponsiveHome{
+            height:100% !important;
+        }
+
+        .certificaciones li{
+            width:80% !important;
+            height: 100% !important;
+            margin-left:10%;
+        }
+
+        .certificaciones slides ul{
+            width: 100%;
+        }
+
+        .slider-banner {
+            position:relative;
+        }
+
+        
+        .gefTablet{
+            display: none;
+        }
+
+        .pbTablet{
+            display: none;
+        }
+
+        .pbaTablet{
+            display: none;
+        }
+
+        .bfTablet{
+            display: none;
+        }
+
+        .glxTablet{
+            display: none;
+        }
+
+        
+        .gefMobile{
+            display: none;
+        }
+        .pbMobile{
+            display: none;
+        }
+
+        .pbaMobile{
+            display: none;
+        }
+        .bfMobile{
+            display: none;
+        }
+        .glxMobile{
+            display: none;
+        }
+
+        
+        .gefDesktop{
+            display: block;
+        }
+        .pbDesktop{
+            display: block;
+        }
+        .pbaDesktop{
+            display: block;
+        }
+        .bfDesktop{
+            display: block;
+        }
+        .glxDesktop{
+            display: block;
+        }
+
+
+        .titulo-informacion {
+            font-size:xxx-large;
+        }
+
+        @media screen and (max-width:600px) {
+            .titulo-informacion {
+                font-size:large;
+            }
+            
+            .gefDesktop{
+                display: none;
+            }
+            .pbDesktop{
+                display: none;
+            }
+            .pbaDesktop{
+                display: none;
+            }
+            .bfDesktop{
+                display: none;
+            }
+            .glxDesktop{
+                display: none;
+            }
+            
+            .gefMobile{
+                display: block;
+            }
+            .pbMobile{
+                display: block;
+            }
+    
+            .pbaMobile{
+                display: block;
+            }
+            .bfMobile{
+                display: block;
+            }
+            .glxMobile{
+                display: block;
+            }
+
+            
+            .gefTablet{
+                display: none;
+            }
+
+            .pbTablet{
+                display: none;
+            }
+
+            .pbaTablet{
+                display: none;
+            }
+
+            .bfTablet{
+                display: none;
+            }
+
+            .glxTablet{
+                display: none;
+            }
+        }
+    
+        @media screen and (min-width:601px) and (max-width:900px) {
+            .titulo-informacion {
+                font-size:x-large;
+            }
+            
+            .gefTablet{
+                display: block;
+            }
+
+            .pbTablet{
+                display: block;
+            }
+
+            .pbaTablet{
+                display: block;
+            }
+
+            .bfTablet{
+                display: block;
+            }
+
+            .glxTablet{
+                display: block;
+            }
+
+            
+            .gefMobile{
+                display: none;
+            }
+            .pbMobile{
+                display: none;
+            }
+    
+            .pbaMobile{
+                display: none;
+            }
+            .bfMobile{
+                display: noe;
+            }
+            .glxMobile{
+                display: none;
+            }
+
+            
+            .gefDesktop{
+                display: none;
+            }
+            .pbDesktop{
+                display: none;
+            }
+            .pbaDesktop{
+                display: none;
+            }
+            .bfDesktop{
+                display: none;
+            }
+            .glxDesktop{
+                display: none;
+            }
+        }
+    
+
+        @media screen and (max-width:960px)
+        {
+            .certificaciones-desktop{
+                display:none;
+            }
+
+            .titulo-principal {
+                font-size:large;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .certificaciones-mobile{
+                display:none;
+            }
+
+            .titulo-principal {
+                font-size:x-large;
+            }
+        }
+
+    </style>
+<div class="container-fluid">
+<div class="col s12 slider-banner" style="padding: 0;">
+<a class="btn-floating next" id="next" onclick="plusDivs(-1)"><i class="material-icons" id="next">keyboard_arrow_right</i> </a>
+<a class="btn-floating prev" id="prev" onclick="plusDivs(1)"><i class="material-icons" id="prev">keyboard_arrow_left</i></a>
+<ul class="slides">
+<li>
+<img class="opacidad gefDesktop mySlides" src="/static/store/images/Home/BANNERHOME_GEF.jpg"/>
+<img class="opacidad gefMobile mySlides" src="/static/store/images/Home/BANNERHOME_GEF.jpg"/>
+<img class="opacidad gefTablet mySlides" src="/static/store/images/Home/BANNERHOME_GEF.jpg"/>
+</li>
+<li>
+<img class="opacidad pbDesktop mySlides" src="/static/store/images/Home/BANNERHOME_PB.jpg"/>
+<img class="opacidad pbMobile mySlides" src="/static/store/images/Home/BANNERHOME_PB.jpg"/>
+<img class="opacidad pbTablet mySlides" src="/static/store/images/Home/BANNERHOME_PB.jpg"/>
+</li>
+<li>
+<img class="opacidad pbaDesktop mySlides" src="/static/store/images/Home/BANNERHOME_PBA.jpg"/>
+<img class="opacidad pbaMobile mySlides" src="/static/store/images/Home/BANNERHOME_PBA.jpg"/>
+<img class="opacidad pbaTablet mySlides" src="/static/store/images/Home/BANNERHOME_PBA.jpg"/>
+</li>
+<li>
+<img class="opacidad pbaDesktop mySlides" src="/static/store/images/Home/BANNERHOME_BF.jpg"/>
+<img class="opacidad pbaMobile mySlides" src="/static/store/images/Home/BANNERHOME_BF.jpg"/>
+<img class="opacidad pbaTablet mySlides" src="/static/store/images/Home/BANNERHOME_BF.jpg"/>
+</li>
+<li>
+<img class="opacidad pbaDesktop mySlides" src="/static/store/images/Home/BANNERHOME_GALAX.jpg"/>
+<img class="opacidad pbaMobile mySlides" src="/static/store/images/Home/BANNERHOME_GALAX.jpg"/>
+<img class="opacidad pbaTablet mySlides" src="/static/store/images/Home/BANNERHOME_GALAX.jpg"/>
+</li>
+<ul></ul>
+</ul></div>
+<div></div>
+<div class="col l12" style="padding: 0%;">
+<div class="container" style="margin-top: 2%; text-align: center;">
+<div class="row">
+<div class="col l12">
+<h1 class="titulo-principal source-h5" id="main-content" style="font-weight: 700;" tabindex="-1">
+                        Somos una Compañía colombiana, productora y comercializadora de marcas de vestuario y moda
+                    </h1>
+</div>
+<div class="col l12 center" style=" margin-top: 2%; margin-block-end: 5%; width: 100%;">
+<a class="mouse" href="/quienesSomos"><strong><u>VER MÁS INFORMACIÓN</u></strong> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12" style="background: #FAFAFA;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l6 m6 s12" style="padding:0%; height: 400px;">
+<div class="slider" style="height: 100%;">
+<ul class="slides">
+<li class="fondoF">
+<img class="opacidad" src="/static/store/images/Home/proposito-y-esencia-inicio.jpeg"/>
+</li>
+<li class="fondoF">
+<img class="opacidad" src="/static/store/images/Home/Nuestra_Esencia-inicio.jpeg"/>
+</li>
+</ul>
+</div>
+</div>
+<div class="col l6 m6 s12">
+<div class="container" style="margin-top: 5%;">
+<div class="row">
+<div class="col s12">
+<h3 class="titulo-informacion" style="font-weight: 400; text-align: left;">
+                                    Existir para ayudar a las personas a expresar su esencia a través de una moda consciente, es nuestro propósito
+                                </h3>
+</div>
+<div class="col s12" style="padding-top:5%;">
+<a class="mouse" href="/propositoyesencia"><strong><u>VER MÁS INFORMACIÓN</u></strong></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12 center" style=" padding: 0%; font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div class="section" style="margin-top: 2%;">
+<div class="container-fluid" style="padding-right: 4%; padding-left: 4%;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l12 m12 s12 center" style="margin-block-end: 2%;">
+<h5 style="font-weight: 500; ">
+                            Modelo de negocio
+                        </h5>
+</div>
+<div class="col l4 s12 m4" style="text-align: center;">
+<div class="container-fluid" data-aos="zoom-in-down" data-aos-delay="250">
+<div class="row">
+<div class="col l12 s12">
+<div class="card hoverable">
+<a href="/hilanderia">
+<div class="card-image" style="max-height: 100%;">
+<img src="/static/store/images/Home/dotacion-y-proteccion.jpg"/>
+</div>
+<div class="card-content" style="padding: 10px;">
+<span class="card-title activator grey-text text-darken-4">
+<h6 style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+                                                        HILANDERÍA
+                                                    </h6>
+</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l4 s12 m4" style="text-align: center;">
+<div class="container-fluid" data-aos="zoom-in-down" data-aos-delay="350">
+<div class="row">
+<div class="col l12 s12">
+<div class="card hoverable">
+<a href="/paquete">
+<div class="card-image" style="max-height: 100%;">
+<img src="/static/store/images/Home/paquete_completo.jpg"/>
+</div>
+<div class="card-content" style="padding: 10px;">
+<span class="card-title activator grey-text text-darken-4">
+<h6 style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+                                                        PAQUETE COMPLETO
+                                                    </h6>
+</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l4 s12 m4" style="text-align: center;">
+<div class="container-fluid" data-aos="zoom-in-down" data-aos-delay="450">
+<div class="row">
+<div class="col l12 s12">
+<div class="card hoverable">
+<a href="/marcas">
+<div class="card-image" style="max-height: 100%;">
+<img src="/static/store/images/Home/dotacion-y-proteccion-333.png"/>
+</div>
+<div class="card-content" style="padding: 10px;">
+<span class="card-title activator grey-text text-darken-4">
+<h6 style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+                                                        MARCAS
+                                                    </h6>
+</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12 center" style="background: #FAFAFA;">
+<div class="container-fluid" style="padding: 2%; font-weight: 300; ">
+<div class="row">
+<div class="col l12 m12 s12 center" style="margin-block-end: 2%;">
+<h5 style="font-weight: 500; ">
+                        Dónde estamos ubicados
+                    </h5>
+</div>
+<div class="col l4 m4 s12">
+<img src="/static/store/images/Logos/plantas.png"/>
+<h5 style="font-weight: 500;">Plantas y oficinas</h5>
+<p style="text-align: justify;padding: 2%;font-size: large;">Estamos integrados a través de 6 plantas manufacturas en Colombia con un sistema vertical que abarca procesos de hilandería, tintorería, textiles, confección y calcetería y, contamos con oficinas administrativas en Colombia, Estados Unidos, México y Costa Rica. </p>
+</div>
+<div class="col l4 m4 s12">
+<img src="/static/store/images/Logos/centros-distribucion.png"/>
+<h5 style="font-weight: 500;">Centros de distribución</h5>
+<p style="text-align: justify;padding: 2%;font-size: large;">También contamos con 3 centros de distribución para garantizar flexibilidad, competitividad y eficiencia.</p>
+</div>
+<div class="col l4 m4 s12">
+<img src="/static/store/images/Logos/tiendas.png"/>
+<h5 style="font-weight: 500;">Tiendas</h5>
+<p style="text-align: justify;padding: 2%;font-size: large;">Contamos con una amplia distribución de nuestros productos en puntos de venta propios y franquicias ubicados en Centroamérica, el Caribe y Suramérica.</p>
+</div>
+<div class="col l12" style="text-align: right; width: 100%; padding-top: 2%;font-size: large;">
+                    Para ver más información y nuestra ubicación en el mapa,
+                    <a class="mouse" href="/ubicacion">
+<strong><u>haz clic aquí</u></strong>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12">
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col l5 m12 s12" style="padding: 5%;">
+<h5 style="font-weight: 500; ">
+                        Sostenibilidad
+                    </h5>
+<div class="divider"></div>
+<p style="font-size: large;font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+                        Creemos en la posibilidad de trabajar en armonía con nuestro entorno, por eso, asumimos la gestión social y ambiental como una prioridad para la Compañía.
+                        <br/>
+<br/>
+<a class="mouse" href="/sostenibilidad"><strong><u>VER MÁS INFORMACIÓN</u></strong></a>
+<br/>
+<br/>
+<a class="mouse" href="/sostenibilidadReporte/2024" target="_blank"><u>Conoce nuestro Informe de Sostenibilidad 2024</u></a>
+</p>
+</div>
+<div class="col l7 m12 s12" style="padding: 0%;">
+<video autoplay="" id="myVideo" loop="" muted="" playsinline="">
+<source src="/static/store/images/videos/Crystal_sostenible_2021.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12" style=" background: #FAFAFA; padding-top: 3%;">
+<div class="container" style="color:black;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="font-size: x-large;margin-left: 2%;">
+<h5 style="font-weight: 500;margin: 0%;">Así somos</h5>
+</div>
+<div class="col s12 section scrollspy" id="asiSomos">
+<div class="col l12" style="padding: 2%;">
+<div class="container-fluid" style="color:black;">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 center">
+<p style="font-size: large;font-weight: 300;text-align: justify;">
+                                        Las acciones son la evidencia de los valores de una organización, por esto, nuestro programa ético se llama “ASI SOMOS” y es el reflejo de la responsabilidad que asumimos todos en la construcción de una Empresa que es sinónimo de los valores que la representan: <strong>constancia, honestidad, optimismo, posibilismo  y sentido social</strong>.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12" style=" background: #FAFAFA;">
+<div class="container" style="color:black;">
+<div class="row" style="margin: 0%;">
+<div class="col l12 m12 s12">
+<a href="/static/store/pdf/manual-de-gobierno-corporativo-crystal.pdf" style="height: auto;color: black;" target="_blank"><p class="gobierno-hover" style="font-size: large;"><i class="material-icons" style="color: red;margin-block-end: 0%;">file_download</i> Manual de Gobierno Corporativo</p></a>
+</div>
+<div class="col l12 m12 s12">
+<a href="/static/store/pdf/codigo-de-conducta-proveedores-final-V2.pdf" style=" height: auto;color: black;" target="_blank"><p class="gobierno-hover" style="font-size: large;"><i class="material-icons" style="color: red;margin-block-end: 0%;">file_download</i> Código de Conducta para Proveedores y Contratistas</p></a>
+</div>
+<div class="col l12 m12 s12">
+<a href="/static/store/pdf/Codigo_de_conducta_Crystal.pdf" style=" height: auto;color: black;" target="_blank"><p class="gobierno-hover" style="font-size: large;"><i class="material-icons" style="color: red;margin-block-end: 0%;">file_download</i> Código de Conducta Empleados</p></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12" style="background: #FAFAFA;margin-block-end: 2%;">
+<div class="container-fluid center" style="color:black;">
+<div class="row" style="margin: 0%;">
+<div class="col l12 center">
+<p style="margin-top: 2%; font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; font-size: large;">
+<strong>Todo esto apoyado con una línea ética que permita reportar los comportamientos indebidos, que de cualquier forma puedan involucrarnos.</strong>
+</p>
+<a class="waves-light btn btn-small modal-trigger" href="#modal1" style="background-color:#0361a9 !important;;">
+<i class="material-icons modal-close left">
+                            phone_forwarded
+                        </i>LÍNEA ÉTICA DE CRYSTAL
+                    </a>
+<div class="modal" id="modal1" style="font-weight: 300; ">
+<div class="modal-content">
+<p style="font-size: large;">La línea ética de Crystal, <strong>ASÍ SOMOS</strong>, es un medio de contacto para el seguimiento y la vigilancia de la trasparencia en el actuar de las personas que hacen parte de nuestra Compañía, empleados, proveedores y quienes tienen relación con el hacer de Crystal.<br/><br/>
+                                Si desea reportar acciones que atenten contra los principios éticos establecidos por nuestra organización puede comunicarse a la línea <strong>01-8000-180263</strong> o escribirnos al correo <strong><a href="mailto:asisomos@crystal.com.co">asisomos@crystal.com.co</a></strong></p>
+</div>
+<div class="modal-footer">
+<a class="modal-close waves-effect waves-green btn-flat" href="#!">Cerrar</a>
+</div>
+</div>
+</div>
+<div class="col s12 center" style="margin-top: 2%; font-weight: 300;font-size: large;margin-block-end: 2%;">
+                    Para conocer más de este programa y nuestra línea ética <a class="mouse" href="/asiSomos"><strong><u>haz clic aquí</u>.</strong></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12 certificaciones-mobile" style="margin-top: 2%; margin-block-end: 2%;width:100%;">
+<div class="container slider certificaciones" style="width:100%;display:flex; justify-content:center;height:50px;">
+<a class="btn-floating next" id="next"><i class="material-icons" id="next">keyboard_arrow_right</i> </a>
+<a class="btn-floating prev" id="prev"><i class="material-icons" id="prev">keyboard_arrow_left</i></a>
+<ul class="slides">
+<li class="certificacionItem" style="background-color:white;">
+<img class="opacidad" src="/static/store/images/Logos/Sello_Energia_Verde_EPM.jpg" style="background-size:contain;background-repeat:no-repeat;"/>
+<div class="caption center-align" style="margin-top: 13%;">
+</div>
+</li>
+<li class="certificacionItem" style="background-color:white;">
+<img class="opacidad" src="/static/store/images/Logos/CTPAT.png" style="background-size:contain;background-repeat:no-repeat;"/>
+<div class="caption center-align" style="margin-top: 13%;">
+</div>
+</li>
+<li class="certificacionItem" style="background-color:white;">
+<img class="opacidad" src="/static/store/images/Logos/BASC1.png" style="background-size:contain;background-repeat:no-repeat;"/>
+<div class="caption center-align" style="margin-top: 13%;">
+</div>
+</li>
+<li class="certificacionItem" style="background-color:white;">
+<img class="opacidad" src="/static/store/images/Logos/OEA.png" style="background-size:contain;background-repeat:no-repeat;"/>
+<div class="caption center-align" style="margin-top: 13%;">
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid center certificaciones-desktop">
+<div class="row align-items-center">
+<div style="width:100%;display:flex; justify-content:space-evenly;height:100px;">
+<div class="" style="width:40%;display:flex; heigth:100px; justify-content:center;">
+<div class="" style="heigth:100px;">
+<img src="/static/store/images/Logos/Sello_Energia_Verde_EPM.jpg" style="height: 100%;margin-top: 2%;"/>
+</div>
+<div class="" style="height:100px;">
+<img src="/static/store/images/Logos/CTPAT.png" style="height:55px;margin-top:20%;margin-left:10%;padding-bottom:15px;"/>
+</div>
+<div class="" style="height:100px;">
+<img src="/static/store/images/Logos/BASC1.png" style="height:90px;margin-left:30%;padding-bottom:15px;"/>
+</div>
+<div class="" style="height:100px;">
+<div class="" style="height:100px; padding-bottom:10px;">
+<img src="/static/store/images/Logos/OEA.png" style="height:90px; padding-bottom:15px;margin-left:20%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col l12 m12 s12" style="text-align: center; font-weight: 300; padding-right: 5%; ">
+<h5 style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 500;  margin-top: 3%; font-size: large;">
+                Nuestra Organización cumple con el compromiso de actuar bajo los lineamientos que estipulan las siguientes certificaciones y reconocimientos
+            </h5>
+<p style="font-size: large;">Para acceder a los documentos de acreditación y ampliar esta información, <a class="mouse" href="/certificaciones"><strong><u>haz clic aquí</u>.</strong></a> </p>
+</div>
+</div>
+<script is:inline src="/static/store/js/home.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/e1d155837a13f189.js"></script>
+<DesktopFooterEs10dff320 />
+<MobileFooterEs151ccb19 />
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terminos_y_condiciones_.pdf" target="_blank"><strong style="color:grey">Términos y condiciones | </strong></a>
+<a href="/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf" target="_blank"><strong style="color:grey">Política y aviso de privacidad</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+
+
+</OriginalLayout>

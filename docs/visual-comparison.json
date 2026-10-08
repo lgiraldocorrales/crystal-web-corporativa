@@ -1,0 +1,2128 @@
+{
+  "comparisons": 114,
+  "same_dimensions": 114,
+  "exact_pixel_matches": 45,
+  "max_mean_channel_difference_0_255": 0.058153396,
+  "application_runtime_errors": 0,
+  "notes": [
+    "Clock paused before document load, then advanced frame by frame for three seconds; fonts/images awaited and videos paused.",
+    "38 ZIP pages at 1440, 768 and 390px; 58 recovered routes have HTTP/link/asset checks but no full screenshot comparison.",
+    "External GTM, analytics, maps and widgets blocked identically; their live behavior was not validated.",
+    "Nonzero pixel differences are disclosed; this does not constitute user approval of visual parity.",
+    "Original corrupt ethical-program banner preserved; audit blocks deployment until valid original is supplied."
+  ],
+  "cases": [
+    {
+      "route": "/",
+      "width": 1440,
+      "source_size": [
+        1440,
+        4155
+      ],
+      "astro_size": [
+        1440,
+        4155
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001158243,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/BusinessUnits",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1645
+      ],
+      "astro_size": [
+        1440,
+        1645
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000877378,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Certifications",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2617
+      ],
+      "astro_size": [
+        1440,
+        2617
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/CorporateGovernance",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1659
+      ],
+      "astro_size": [
+        1440,
+        1659
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/CustomerService",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1349
+      ],
+      "astro_size": [
+        1440,
+        1349
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/EnvironmentalCommitment",
+      "width": 1440,
+      "source_size": [
+        1440,
+        3632
+      ],
+      "astro_size": [
+        1440,
+        3632
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/FullPackage",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2215
+      ],
+      "astro_size": [
+        1440,
+        2215
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Location",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1979
+      ],
+      "astro_size": [
+        1440,
+        1979
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Others",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1793
+      ],
+      "astro_size": [
+        1440,
+        1793
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/OurHistory/1938-1948",
+      "width": 1440,
+      "source_size": [
+        1440,
+        9260
+      ],
+      "astro_size": [
+        1440,
+        9260
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.013447999,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Policies",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1439
+      ],
+      "astro_size": [
+        1440,
+        1439
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/PurposeAndEssence",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1926
+      ],
+      "astro_size": [
+        1440,
+        1926
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ServicioAlCliente",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1349
+      ],
+      "astro_size": [
+        1440,
+        1349
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.00038197,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/SocialCommitment",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2545
+      ],
+      "astro_size": [
+        1440,
+        2545
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Spinning",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2265
+      ],
+      "astro_size": [
+        1440,
+        2265
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Sustainability",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1920
+      ],
+      "astro_size": [
+        1440,
+        1920
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ThisIsWhoWeAre",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1217
+      ],
+      "astro_size": [
+        1440,
+        1217
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [
+        "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "astro_missing_images": [
+        "http://127.0.0.1:8000/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/WhoWeAre",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2533
+      ],
+      "astro_size": [
+        1440,
+        2533
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/asiSomos",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1244
+      ],
+      "astro_size": [
+        1440,
+        1244
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000711005,
+      "source_missing_images": [
+        "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "astro_missing_images": [
+        "http://127.0.0.1:8000/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/certificaciones",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2617
+      ],
+      "astro_size": [
+        1440,
+        2617
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000374687,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/compromisoAmbiental",
+      "width": 1440,
+      "source_size": [
+        1440,
+        3688
+      ],
+      "astro_size": [
+        1440,
+        3688
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 6.1071e-05,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/compromisoSocial",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2625
+      ],
+      "astro_size": [
+        1440,
+        2625
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000512522,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/en",
+      "width": 1440,
+      "source_size": [
+        1440,
+        4076
+      ],
+      "astro_size": [
+        1440,
+        4076
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/gobiernoCorp",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1659
+      ],
+      "astro_size": [
+        1440,
+        1659
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000540961,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/hilanderia",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2292
+      ],
+      "astro_size": [
+        1440,
+        2292
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001742474,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/historiaC/1938-1948",
+      "width": 1440,
+      "source_size": [
+        1440,
+        9252
+      ],
+      "astro_size": [
+        1440,
+        9252
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.017559467,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/informesDeSostenibilidad",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1108
+      ],
+      "astro_size": [
+        1440,
+        1108
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000724738,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/marcas",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2417
+      ],
+      "astro_size": [
+        1440,
+        2417
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 9.3186e-05,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/otros",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1793
+      ],
+      "astro_size": [
+        1440,
+        1793
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000125617,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/paquete",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2209
+      ],
+      "astro_size": [
+        1440,
+        2209
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000101961,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/politicas",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1439
+      ],
+      "astro_size": [
+        1440,
+        1439
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001192475,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/pqrs",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1735
+      ],
+      "astro_size": [
+        1440,
+        1735
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000129816,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/propositoyesencia",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1926
+      ],
+      "astro_size": [
+        1440,
+        1926
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000116943,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/quienesSomos",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2560
+      ],
+      "astro_size": [
+        1440,
+        2560
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000676812,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/sostenibilidad",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1920
+      ],
+      "astro_size": [
+        1440,
+        1920
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002053554,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/sustainabilityReports",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1091
+      ],
+      "astro_size": [
+        1440,
+        1091
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ubicacion",
+      "width": 1440,
+      "source_size": [
+        1440,
+        2006
+      ],
+      "astro_size": [
+        1440,
+        2006
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002173687,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/unidades",
+      "width": 1440,
+      "source_size": [
+        1440,
+        1645
+      ],
+      "astro_size": [
+        1440,
+        1645
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001374254,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "source_size": [
+        768,
+        4321
+      ],
+      "astro_size": [
+        768,
+        4321
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002258933,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/BusinessUnits",
+      "width": 768,
+      "source_size": [
+        768,
+        1747
+      ],
+      "astro_size": [
+        768,
+        1747
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.027382755,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Certifications",
+      "width": 768,
+      "source_size": [
+        768,
+        2441
+      ],
+      "astro_size": [
+        768,
+        2441
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/CorporateGovernance",
+      "width": 768,
+      "source_size": [
+        783,
+        1855
+      ],
+      "astro_size": [
+        783,
+        1855
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/CustomerService",
+      "width": 768,
+      "source_size": [
+        768,
+        1568
+      ],
+      "astro_size": [
+        768,
+        1568
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/EnvironmentalCommitment",
+      "width": 768,
+      "source_size": [
+        768,
+        4062
+      ],
+      "astro_size": [
+        768,
+        4062
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/FullPackage",
+      "width": 768,
+      "source_size": [
+        768,
+        2205
+      ],
+      "astro_size": [
+        768,
+        2205
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Location",
+      "width": 768,
+      "source_size": [
+        768,
+        2259
+      ],
+      "astro_size": [
+        768,
+        2259
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Others",
+      "width": 768,
+      "source_size": [
+        768,
+        1721
+      ],
+      "astro_size": [
+        768,
+        1721
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/OurHistory/1938-1948",
+      "width": 768,
+      "source_size": [
+        768,
+        10362
+      ],
+      "astro_size": [
+        768,
+        10362
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.042798021,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Policies",
+      "width": 768,
+      "source_size": [
+        768,
+        1617
+      ],
+      "astro_size": [
+        768,
+        1617
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/PurposeAndEssence",
+      "width": 768,
+      "source_size": [
+        768,
+        1954
+      ],
+      "astro_size": [
+        768,
+        1954
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ServicioAlCliente",
+      "width": 768,
+      "source_size": [
+        768,
+        1603
+      ],
+      "astro_size": [
+        768,
+        1603
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001120404,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/SocialCommitment",
+      "width": 768,
+      "source_size": [
+        768,
+        2828
+      ],
+      "astro_size": [
+        768,
+        2828
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Spinning",
+      "width": 768,
+      "source_size": [
+        768,
+        2484
+      ],
+      "astro_size": [
+        768,
+        2484
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Sustainability",
+      "width": 768,
+      "source_size": [
+        768,
+        1741
+      ],
+      "astro_size": [
+        768,
+        1741
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002449353,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ThisIsWhoWeAre",
+      "width": 768,
+      "source_size": [
+        768,
+        1647
+      ],
+      "astro_size": [
+        768,
+        1647
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001107601,
+      "source_missing_images": [
+        "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "astro_missing_images": [
+        "http://127.0.0.1:8000/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/WhoWeAre",
+      "width": 768,
+      "source_size": [
+        768,
+        3347
+      ],
+      "astro_size": [
+        768,
+        3347
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/asiSomos",
+      "width": 768,
+      "source_size": [
+        768,
+        1709
+      ],
+      "astro_size": [
+        768,
+        1709
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001315544,
+      "source_missing_images": [
+        "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "astro_missing_images": [
+        "http://127.0.0.1:8000/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/certificaciones",
+      "width": 768,
+      "source_size": [
+        768,
+        2557
+      ],
+      "astro_size": [
+        768,
+        2557
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.0009828,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/compromisoAmbiental",
+      "width": 768,
+      "source_size": [
+        768,
+        4198
+      ],
+      "astro_size": [
+        768,
+        4198
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000254234,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/compromisoSocial",
+      "width": 768,
+      "source_size": [
+        768,
+        2968
+      ],
+      "astro_size": [
+        768,
+        2968
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000724598,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "source_size": [
+        768,
+        4231
+      ],
+      "astro_size": [
+        768,
+        4231
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/gobiernoCorp",
+      "width": 768,
+      "source_size": [
+        783,
+        1891
+      ],
+      "astro_size": [
+        783,
+        1891
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001660979,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/hilanderia",
+      "width": 768,
+      "source_size": [
+        768,
+        2574
+      ],
+      "astro_size": [
+        768,
+        2574
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002628954,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/historiaC/1938-1948",
+      "width": 768,
+      "source_size": [
+        768,
+        10488
+      ],
+      "astro_size": [
+        768,
+        10488
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.05088326,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/informesDeSostenibilidad",
+      "width": 768,
+      "source_size": [
+        768,
+        1862
+      ],
+      "astro_size": [
+        768,
+        1862
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001171782,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/marcas",
+      "width": 768,
+      "source_size": [
+        768,
+        2979
+      ],
+      "astro_size": [
+        768,
+        2979
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000358266,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/otros",
+      "width": 768,
+      "source_size": [
+        768,
+        1757
+      ],
+      "astro_size": [
+        768,
+        1757
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000607441,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/paquete",
+      "width": 768,
+      "source_size": [
+        768,
+        2264
+      ],
+      "astro_size": [
+        768,
+        2264
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000471411,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/politicas",
+      "width": 768,
+      "source_size": [
+        768,
+        1680
+      ],
+      "astro_size": [
+        768,
+        1680
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002323857,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/pqrs",
+      "width": 768,
+      "source_size": [
+        768,
+        1800
+      ],
+      "astro_size": [
+        768,
+        1800
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.00059293,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/propositoyesencia",
+      "width": 768,
+      "source_size": [
+        768,
+        1938
+      ],
+      "astro_size": [
+        768,
+        1938
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000550709,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/quienesSomos",
+      "width": 768,
+      "source_size": [
+        768,
+        3409
+      ],
+      "astro_size": [
+        768,
+        3409
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000969019,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/sostenibilidad",
+      "width": 768,
+      "source_size": [
+        768,
+        1804
+      ],
+      "astro_size": [
+        768,
+        1804
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001213305,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/sustainabilityReports",
+      "width": 768,
+      "source_size": [
+        768,
+        1826
+      ],
+      "astro_size": [
+        768,
+        1826
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ubicacion",
+      "width": 768,
+      "source_size": [
+        768,
+        2322
+      ],
+      "astro_size": [
+        768,
+        2322
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.004097843,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/unidades",
+      "width": 768,
+      "source_size": [
+        768,
+        1837
+      ],
+      "astro_size": [
+        768,
+        1837
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.027610735,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "source_size": [
+        390,
+        5961
+      ],
+      "astro_size": [
+        390,
+        5961
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002643249,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/BusinessUnits",
+      "width": 390,
+      "source_size": [
+        393,
+        2205
+      ],
+      "astro_size": [
+        393,
+        2205
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.044184799,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Certifications",
+      "width": 390,
+      "source_size": [
+        390,
+        4117
+      ],
+      "astro_size": [
+        390,
+        4117
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/CorporateGovernance",
+      "width": 390,
+      "source_size": [
+        398,
+        2284
+      ],
+      "astro_size": [
+        398,
+        2284
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/CustomerService",
+      "width": 390,
+      "source_size": [
+        390,
+        2091
+      ],
+      "astro_size": [
+        390,
+        2091
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/EnvironmentalCommitment",
+      "width": 390,
+      "source_size": [
+        390,
+        5306
+      ],
+      "astro_size": [
+        390,
+        5306
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/FullPackage",
+      "width": 390,
+      "source_size": [
+        390,
+        2410
+      ],
+      "astro_size": [
+        390,
+        2410
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Location",
+      "width": 390,
+      "source_size": [
+        390,
+        2772
+      ],
+      "astro_size": [
+        390,
+        2772
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Others",
+      "width": 390,
+      "source_size": [
+        390,
+        1674
+      ],
+      "astro_size": [
+        390,
+        1674
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/OurHistory/1938-1948",
+      "width": 390,
+      "source_size": [
+        390,
+        13984
+      ],
+      "astro_size": [
+        390,
+        13984
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.058153396,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Policies",
+      "width": 390,
+      "source_size": [
+        390,
+        1817
+      ],
+      "astro_size": [
+        390,
+        1817
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/PurposeAndEssence",
+      "width": 390,
+      "source_size": [
+        390,
+        2295
+      ],
+      "astro_size": [
+        390,
+        2295
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ServicioAlCliente",
+      "width": 390,
+      "source_size": [
+        390,
+        2127
+      ],
+      "astro_size": [
+        390,
+        2127
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001335294,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/SocialCommitment",
+      "width": 390,
+      "source_size": [
+        390,
+        3436
+      ],
+      "astro_size": [
+        390,
+        3436
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Spinning",
+      "width": 390,
+      "source_size": [
+        393,
+        3129
+      ],
+      "astro_size": [
+        393,
+        3129
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/Sustainability",
+      "width": 390,
+      "source_size": [
+        390,
+        1697
+      ],
+      "astro_size": [
+        390,
+        1697
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ThisIsWhoWeAre",
+      "width": 390,
+      "source_size": [
+        398,
+        1971
+      ],
+      "astro_size": [
+        398,
+        1971
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001785946,
+      "source_missing_images": [
+        "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "astro_missing_images": [
+        "http://127.0.0.1:8000/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/WhoWeAre",
+      "width": 390,
+      "source_size": [
+        393,
+        6643
+      ],
+      "astro_size": [
+        393,
+        6643
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/asiSomos",
+      "width": 390,
+      "source_size": [
+        398,
+        2071
+      ],
+      "astro_size": [
+        398,
+        2071
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.006174847,
+      "source_missing_images": [
+        "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "astro_missing_images": [
+        "http://127.0.0.1:8000/static/store/images/cumplimiento/banner_programa_etico1.png"
+      ],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/certificaciones",
+      "width": 390,
+      "source_size": [
+        401,
+        4190
+      ],
+      "astro_size": [
+        401,
+        4190
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000980445,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/compromisoAmbiental",
+      "width": 390,
+      "source_size": [
+        390,
+        5408
+      ],
+      "astro_size": [
+        390,
+        5408
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000256821,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/compromisoSocial",
+      "width": 390,
+      "source_size": [
+        390,
+        3463
+      ],
+      "astro_size": [
+        390,
+        3463
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001034872,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "source_size": [
+        390,
+        5768
+      ],
+      "astro_size": [
+        390,
+        5768
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/gobiernoCorp",
+      "width": 390,
+      "source_size": [
+        398,
+        2276
+      ],
+      "astro_size": [
+        398,
+        2276
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.001770716,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/hilanderia",
+      "width": 390,
+      "source_size": [
+        393,
+        3310
+      ],
+      "astro_size": [
+        393,
+        3310
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.004084572,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/historiaC/1938-1948",
+      "width": 390,
+      "source_size": [
+        390,
+        14283
+      ],
+      "astro_size": [
+        390,
+        14283
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.035161279,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/informesDeSostenibilidad",
+      "width": 390,
+      "source_size": [
+        390,
+        1721
+      ],
+      "astro_size": [
+        390,
+        1721
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.002082371,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/marcas",
+      "width": 390,
+      "source_size": [
+        390,
+        3035
+      ],
+      "astro_size": [
+        390,
+        3035
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000457624,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/otros",
+      "width": 390,
+      "source_size": [
+        390,
+        1782
+      ],
+      "astro_size": [
+        390,
+        1782
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000779399,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/paquete",
+      "width": 390,
+      "source_size": [
+        390,
+        2608
+      ],
+      "astro_size": [
+        390,
+        2608
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000532549,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/politicas",
+      "width": 390,
+      "source_size": [
+        390,
+        1917
+      ],
+      "astro_size": [
+        390,
+        1917
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.003021548,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [
+        "$(...).leanModal is not a function"
+      ],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/pqrs",
+      "width": 390,
+      "source_size": [
+        390,
+        1814
+      ],
+      "astro_size": [
+        390,
+        1814
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.00076565,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/propositoyesencia",
+      "width": 390,
+      "source_size": [
+        390,
+        2369
+      ],
+      "astro_size": [
+        390,
+        2369
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000586276,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/quienesSomos",
+      "width": 390,
+      "source_size": [
+        393,
+        6861
+      ],
+      "astro_size": [
+        393,
+        6861
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.000826913,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/sostenibilidad",
+      "width": 390,
+      "source_size": [
+        390,
+        1770
+      ],
+      "astro_size": [
+        390,
+        1770
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.00203245,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/sustainabilityReports",
+      "width": 390,
+      "source_size": [
+        390,
+        1676
+      ],
+      "astro_size": [
+        390,
+        1676
+      ],
+      "exact_pixels": true,
+      "mean_channel_difference_0_255": 0.0,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/ubicacion",
+      "width": 390,
+      "source_size": [
+        390,
+        2926
+      ],
+      "astro_size": [
+        390,
+        2926
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.005330634,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    },
+    {
+      "route": "/unidades",
+      "width": 390,
+      "source_size": [
+        393,
+        2306
+      ],
+      "astro_size": [
+        393,
+        2306
+      ],
+      "exact_pixels": false,
+      "mean_channel_difference_0_255": 0.043812395,
+      "source_missing_images": [],
+      "astro_missing_images": [],
+      "source_runtime_errors": [],
+      "astro_runtime_errors": []
+    }
+  ]
+}

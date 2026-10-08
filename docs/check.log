@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> crystal-web-corporativa@1.0.0 check
+> astro check && tsc --noEmit -p tsconfig.server.json
+
+21:08:30 [types] Generated 57ms
+21:08:30 [check] Getting diagnostics for Astro files in /workspace/scratch/0f6b3454f6cd/crystal-web-corporativa...
+Result (279 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

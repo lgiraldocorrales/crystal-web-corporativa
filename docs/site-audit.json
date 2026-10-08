@@ -1,0 +1,11 @@
+{
+  "routes": 96,
+  "failures": [
+    [
+      "static/store/images/cumplimiento/banner_programa_etico1.png",
+      "corrupt original image; valid source replacement required"
+    ]
+  ],
+  "robots_exists": true,
+  "sitemap_exists": true
+}

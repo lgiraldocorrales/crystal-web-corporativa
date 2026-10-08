@@ -1,48 +1,52 @@
-# Crystal corporate web — redesign
+# Crystal — migration of the existing corporate website
 
-Static-first bilingual website for Crystal S.A.S., with a small Python backend for the contact flow through MasterBase.
+This is a faithful migration of the supplied HAR-derived HTML capture, not the unapproved redesign. The original 38 pages remain separate. Missing linked pages were recovered from the live site with the appropriate Django language cookie. Source content, media bytes, navigation hierarchy and desktop/mobile menu differences are retained. `src/data/routes.json` records each page's provenance.
 
-## Current milestone
+## Run
 
-- Nine consolidated pages in Spanish and English: Home, Company, Purpose, Business Model, Brands, Locations, Sustainability, Compliance and Contact.
-- Locally hosted variable Raleway typography.
-- Light and dark themes with system preference detection, an accessible manual control and persisted user choice.
-- Brand-driven GSAP loader based on the textile weave, needle and Crystal thread colors.
-- Purposeful GSAP motion for image reveals, editorial rows, timelines and industrial accordions.
-- SEO foundation: one H1, canonical, hreflang, Open Graph, Organization and FAQPage JSON-LD.
-- Accessibility foundation, including keyboard navigation and reduced-motion behavior.
-- Secure Flask contact endpoint prepared for MasterBase SMTP on port 587.
-- Security headers and strict request validation.
+Requires Node.js 24 LTS and Git LFS. After cloning the original repository on `dev`:
 
-The former 38-route site has been consolidated into 18 focused routes while preserving its company history, industrial capabilities, brand portfolio, regional presence, governance, sustainability commitments and bilingual navigation.
-
-## Local build
-
-```bash
-npm install
-npm run build
+```sh
+git lfs install
+git lfs pull
+npm ci
 npm run check
-python -m venv .venv
-. .venv/bin/activate
-pip install -r requirements.txt
-gunicorn app:app --bind 0.0.0.0:8000
+npm run build
+npm test
+npm start
 ```
 
-Open `http://localhost:8000`.
+`npm run dev` builds the static site and runs the Fastify backend through Node's watcher. Refresh the build after changing Astro content. One Node process serves `dist/`, `/health` and `/api/contact`. Production listens on `process.env.PORT` and `0.0.0.0`.
 
-## Configuration
+Copy `.env.example` to `.env` for local development. Production configuration uses Azure App Service Application Settings. Missing critical production configuration prevents startup with a generic error. Never commit real credentials.
 
-Copy `.env.example` into the deployment configuration. Never commit real MasterBase credentials. In Azure, secrets should be Key Vault references resolved through the App Service managed identity.
+## Structure and fidelity
 
-## Asset migration
+- `src/components/Page_*.astro`: native page templates; no generated HTML strings or framework hydration.
+- Separate desktop/mobile header and footer components preserve each source version.
+- `src/layouts/OriginalLayout.astro`: shared language and SEO.
+- `src/data/routes.json`: exact routes, language counterparts, source titles and descriptions reused from source paragraphs.
+- `public/static`: unchanged local Crystal media/documents; tracked with Git LFS.
+- `public/assets`: locally retained vendor scripts, fonts and progressive enhancements.
+- `server`: strict TypeScript Fastify server, security, validation and mail service.
+- `tests`: simulated mail, security and route verification.
 
-The prototype deliberately references the current verified Crystal media URLs. Before production cutover, these files will be inventoried, optimized, uploaded to the new Blob Storage account and replaced at build time through `ASSET_BASE_URL`.
+The original scripts use Materialize, jQuery and AOS. These are retained for behavior parity. GSAP is installed to honor the requested stack, but new animations are not introduced. The source does not implement a dark theme. The original declared fonts are Brandon Grotesque and Neue Helvetica; no replacement brand typeface is introduced.
 
-## Azure target
+Run `python3 scripts/audit_site.py` after building to validate local links, assets, primary headings and SEO files. The one-time Python source importer is a development audit utility requiring BeautifulSoup and Pillow; normal build and runtime do not use Python.
 
-- Linux App Service.
-- Blob Storage for public website media and documents.
-- Regional VNet integration.
-- NAT Gateway with one static public IP for MasterBase allowlisting.
-- Key Vault references and system-assigned managed identity.
-- HTTPS only, TLS 1.2+, FTPS disabled, remote debugging disabled.
+## Contact and safety
+
+The original fields are `dirigido`, `nombre`, `apellido`, `email`, `empresa`, `mensaje`, `idioma`, and personal-data consent. JSON validation enforces source length limits, department values and consent. MasterBase uses authenticated SMTP 587, mandatory STARTTLS and TLS >=1.2. The two configured internal recipients receive all fields; the visitor receives the existing repository's localized confirmation.
+
+Requests require a configured Origin. Rate limiting defaults to eight attempts per IP/hour, including invalid requests. Honeypot, 32 KiB body limit, length validation, text normalization, HTML escaping and generic errors protect the endpoint. Turnstile is activated when both keys are configured; the site key must also be available at build time. Logs omit form fields, SMTP errors and credential values.
+
+CSP authorizes exact inline event-handler hashes and local scripts. Source inline styles require `style-src 'unsafe-inline'`; JavaScript does not broadly allow unsafe-inline/eval. External maps, existing PQRS integration, GTM and Turnstile have narrowly specified origins. PDF rendering uses the recovered original library with JavaScript expression evaluation disabled and a local worker; review that legacy vendor separately from npm dependency auditing.
+
+## Deployment
+
+See `docs/azure.md`. LFS objects must be uploaded before a branch can be published successfully. Do not push pointers whose binary objects have not been uploaded. Do not force push, rewrite history, create extra branches, or merge into `main` until Lucas explicitly approves visual parity.
+
+## Review status
+
+This package is a review candidate, not an approved production replacement. See `docs/Informe_Migracion.md` and the JSON evidence. The audit intentionally blocks deployment while the original corrupt ethical-program image is retained. Live MasterBase, external widgets and the Azure DevOps deployment require validation in the configured development environment. Neither remote branch has been modified.

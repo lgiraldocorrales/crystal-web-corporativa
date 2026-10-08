@@ -1,0 +1,2354 @@
+[
+  {
+    "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+    "local": "/assets/vendor/0de5e5bb3196b2c5.js",
+    "bytes": 87533,
+    "dependencies": []
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.385/build/pdf.min.js",
+    "local": "/assets/vendor/337c5e09941dbc8d.js",
+    "bytes": 282574,
+    "dependencies": []
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+    "local": "/assets/vendor/4b4b530e64ec63e0.css",
+    "bytes": 30944,
+    "dependencies": []
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
+    "local": "/assets/vendor/c8dc98a6aff552aa.css",
+    "bytes": 141829,
+    "dependencies": []
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
+    "local": "/assets/vendor/11d9ccbb8da3c7bb.js",
+    "bytes": 181109,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/Certificaciones.png",
+    "local": "/static/store/images/Empresa/Certificaciones.png",
+    "bytes": 819503,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/Sostenibilidad_CrystalSAS.png",
+    "local": "/static/store/images/Empresa/Sostenibilidad_CrystalSAS.png",
+    "bytes": 1390276,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/Sostenibilidad_CrystalSAS_Ingles.png",
+    "local": "/static/store/images/Empresa/Sostenibilidad_CrystalSAS_Ingles.png",
+    "bytes": 1390276,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/quienes-somos-3333.png",
+    "local": "/static/store/images/Empresa/quienes-somos-3333.png",
+    "bytes": 572980,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/reconocimientos.jpg",
+    "local": "/static/store/images/Empresa/reconocimientos.jpg",
+    "bytes": 269065,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/sobre-nosotros.png",
+    "local": "/static/store/images/Empresa/sobre-nosotros.png",
+    "bytes": 12812398,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/sostenibilidad_informe.png",
+    "local": "/static/store/images/Empresa/sostenibilidad_informe.png",
+    "bytes": 889530,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Empresa/sostenibilidad_informe_Ingles.png",
+    "local": "/static/store/images/Empresa/sostenibilidad_informe_Ingles.png",
+    "bytes": 890968,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/BANNERHOME_BF.jpg",
+    "local": "/static/store/images/Home/BANNERHOME_BF.jpg",
+    "bytes": 143984,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/BANNERHOME_GALAX.jpg",
+    "local": "/static/store/images/Home/BANNERHOME_GALAX.jpg",
+    "bytes": 153358,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/BANNERHOME_GEF.jpg",
+    "local": "/static/store/images/Home/BANNERHOME_GEF.jpg",
+    "bytes": 153357,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/BANNERHOME_PB.jpg",
+    "local": "/static/store/images/Home/BANNERHOME_PB.jpg",
+    "bytes": 152004,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/BANNERHOME_PBA.jpg",
+    "local": "/static/store/images/Home/BANNERHOME_PBA.jpg",
+    "bytes": 630481,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/Nuestra_Esencia-inicio.jpeg",
+    "local": "/static/store/images/Home/Nuestra_Esencia-inicio.jpeg",
+    "bytes": 4086295,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/asi-somos-textura.jpg",
+    "local": "/static/store/images/Home/asi-somos-textura.jpg",
+    "bytes": 125638,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/dotacion-y-proteccion-333.png",
+    "local": "/static/store/images/Home/dotacion-y-proteccion-333.png",
+    "bytes": 162154,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/dotacion-y-proteccion.jpg",
+    "local": "/static/store/images/Home/dotacion-y-proteccion.jpg",
+    "bytes": 22799,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/paquete_completo.jpg",
+    "local": "/static/store/images/Home/paquete_completo.jpg",
+    "bytes": 110662,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Home/proposito-y-esencia-inicio.jpeg",
+    "local": "/static/store/images/Home/proposito-y-esencia-inicio.jpeg",
+    "bytes": 310763,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/BASC1.png",
+    "local": "/static/store/images/Logos/BASC1.png",
+    "bytes": 45338,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Bureau_Veritas.png",
+    "local": "/static/store/images/Logos/Bureau_Veritas.png",
+    "bytes": 19068,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/CTPAT.png",
+    "local": "/static/store/images/Logos/CTPAT.png",
+    "bytes": 44942,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Intertek_Logo.png",
+    "local": "/static/store/images/Logos/Intertek_Logo.png",
+    "bytes": 25487,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Logo-crystal-transparente.png",
+    "local": "/static/store/images/Logos/Logo-crystal-transparente.png",
+    "bytes": 14861,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Logo-crystal.png",
+    "local": "/static/store/images/Logos/Logo-crystal.png",
+    "bytes": 2541,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Logo-multimarca-redondo.png",
+    "local": "/static/store/images/Logos/Logo-multimarca-redondo.png",
+    "bytes": 105904,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/LogoBabyF.PNG",
+    "local": "/static/store/images/Logos/LogoBabyF.PNG",
+    "bytes": 9958,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/LogoGalax.PNG",
+    "local": "/static/store/images/Logos/LogoGalax.PNG",
+    "bytes": 7773,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/LogoPuntoB.PNG",
+    "local": "/static/store/images/Logos/LogoPuntoB.PNG",
+    "bytes": 6184,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Logo_parfois.PNG",
+    "local": "/static/store/images/Logos/Logo_parfois.PNG",
+    "bytes": 23176,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/OEA.png",
+    "local": "/static/store/images/Logos/OEA.png",
+    "bytes": 60703,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Progresa_1.png",
+    "local": "/static/store/images/Logos/Progresa_1.png",
+    "bytes": 50972,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/Sello_Energia_Verde_EPM.jpg",
+    "local": "/static/store/images/Logos/Sello_Energia_Verde_EPM.jpg",
+    "bytes": 212263,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/centros-distribucion.png",
+    "local": "/static/store/images/Logos/centros-distribucion.png",
+    "bytes": 5155,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/crystal-sas.png",
+    "local": "/static/store/images/Logos/crystal-sas.png",
+    "bytes": 573,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/facebook.png",
+    "local": "/static/store/images/Logos/facebook.png",
+    "bytes": 6135,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/ic-group-logo.png",
+    "local": "/static/store/images/Logos/ic-group-logo.png",
+    "bytes": 32098,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-facebook-bf.png",
+    "local": "/static/store/images/Logos/icono-facebook-bf.png",
+    "bytes": 832,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-facebook-gef.png",
+    "local": "/static/store/images/Logos/icono-facebook-gef.png",
+    "bytes": 919,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-facebook-glx.png",
+    "local": "/static/store/images/Logos/icono-facebook-glx.png",
+    "bytes": 930,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-facebook-pb.png",
+    "local": "/static/store/images/Logos/icono-facebook-pb.png",
+    "bytes": 14365,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-facebook.png",
+    "local": "/static/store/images/Logos/icono-facebook.png",
+    "bytes": 2643,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-instagram-bf.png",
+    "local": "/static/store/images/Logos/icono-instagram-bf.png",
+    "bytes": 1866,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-instagram-gef.png",
+    "local": "/static/store/images/Logos/icono-instagram-gef.png",
+    "bytes": 1518,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-instagram-glx.png",
+    "local": "/static/store/images/Logos/icono-instagram-glx.png",
+    "bytes": 1222,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-instagram-pb.png",
+    "local": "/static/store/images/Logos/icono-instagram-pb.png",
+    "bytes": 15021,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-instagram.png",
+    "local": "/static/store/images/Logos/icono-instagram.png",
+    "bytes": 3701,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-spotify.png",
+    "local": "/static/store/images/Logos/icono-spotify.png",
+    "bytes": 1140,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-tiktok-bf.png",
+    "local": "/static/store/images/Logos/icono-tiktok-bf.png",
+    "bytes": 1162,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-tiktok-gef.png",
+    "local": "/static/store/images/Logos/icono-tiktok-gef.png",
+    "bytes": 961,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-tiktok-glx.png",
+    "local": "/static/store/images/Logos/icono-tiktok-glx.png",
+    "bytes": 1070,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/icono-tiktok-pb.png",
+    "local": "/static/store/images/Logos/icono-tiktok-pb.png",
+    "bytes": 14667,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/img_casino.png",
+    "local": "/static/store/images/Logos/img_casino.png",
+    "bytes": 17299,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/instagram.png",
+    "local": "/static/store/images/Logos/instagram.png",
+    "bytes": 59903,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/linkedin.png",
+    "local": "/static/store/images/Logos/linkedin.png",
+    "bytes": 30083,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/logo-dian.png",
+    "local": "/static/store/images/Logos/logo-dian.png",
+    "bytes": 5546,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/logoGef.PNG",
+    "local": "/static/store/images/Logos/logoGef.PNG",
+    "bytes": 12734,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/logo_Aduana_Americana1.png",
+    "local": "/static/store/images/Logos/logo_Aduana_Americana1.png",
+    "bytes": 147566,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/logo_cornare.png",
+    "local": "/static/store/images/Logos/logo_cornare.png",
+    "bytes": 8175,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/plantas.png",
+    "local": "/static/store/images/Logos/plantas.png",
+    "bytes": 5134,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/puntoBlanco-Athletic.png",
+    "local": "/static/store/images/Logos/puntoBlanco-Athletic.png",
+    "bytes": 20099,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/tiendas.png",
+    "local": "/static/store/images/Logos/tiendas.png",
+    "bytes": 2780,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/Logos/vimeo.png",
+    "local": "/static/store/images/Logos/vimeo.png",
+    "bytes": 15201,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/Agua.png",
+    "local": "/static/store/images/compromisoAmbiental/Agua.png",
+    "bytes": 411433,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/Cambio_Climatico1.png",
+    "local": "/static/store/images/compromisoAmbiental/Cambio_Climatico1.png",
+    "bytes": 607746,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/Cambio_Climatico2.png",
+    "local": "/static/store/images/compromisoAmbiental/Cambio_Climatico2.png",
+    "bytes": 415613,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/Compromiso_con_el_medio_ambiente.png",
+    "local": "/static/store/images/compromisoAmbiental/Compromiso_con_el_medio_ambiente.png",
+    "bytes": 161252,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/Gestion_ambiental_con_sentido_social.png",
+    "local": "/static/store/images/compromisoAmbiental/Gestion_ambiental_con_sentido_social.png",
+    "bytes": 501406,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/Productos.png",
+    "local": "/static/store/images/compromisoAmbiental/Productos.png",
+    "bytes": 267574,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoAmbiental/SOSTENIBILIDAD_COMPROMISOAMBIENTAL.png",
+    "local": "/static/store/images/compromisoAmbiental/SOSTENIBILIDAD_COMPROMISOAMBIENTAL.png",
+    "bytes": 632691,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoSocial/Comprometidos_con_las_personas.jpg",
+    "local": "/static/store/images/compromisoSocial/Comprometidos_con_las_personas.jpg",
+    "bytes": 91863,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoSocial/Nuestra_Comunidad.jpeg",
+    "local": "/static/store/images/compromisoSocial/Nuestra_Comunidad.jpeg",
+    "bytes": 121650,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoSocial/Nuestros_empleados.jpg",
+    "local": "/static/store/images/compromisoSocial/Nuestros_empleados.jpg",
+    "bytes": 8716367,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/compromisoSocial/SOSTENIBILIDAD_COMPROMISOSOCIAL.png",
+    "local": "/static/store/images/compromisoSocial/SOSTENIBILIDAD_COMPROMISOSOCIAL.png",
+    "bytes": 951621,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/cumplimiento/Banner_Gobierno_Corporativo.png",
+    "local": "/static/store/images/cumplimiento/Banner_Gobierno_Corporativo.png",
+    "bytes": 1046775,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/cumplimiento/Banner_Politicas1.png",
+    "local": "/static/store/images/cumplimiento/Banner_Politicas1.png",
+    "bytes": 1044879,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png",
+    "local": "/static/store/images/cumplimiento/banner_programa_etico1.png",
+    "bytes": 463211,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/hilanderia/OEA.png",
+    "local": "/static/store/images/hilanderia/OEA.png",
+    "bytes": 60703,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/hilanderia/better-cotton.png",
+    "local": "/static/store/images/hilanderia/better-cotton.png",
+    "bytes": 46267,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/hilanderia/certificado_uster.png",
+    "local": "/static/store/images/hilanderia/certificado_uster.png",
+    "bytes": 36815,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/hilanderia/tela-hilande.png",
+    "local": "/static/store/images/hilanderia/tela-hilande.png",
+    "bytes": 604496,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/hilanderia/us-cotton.png",
+    "local": "/static/store/images/hilanderia/us-cotton.png",
+    "bytes": 32050,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_BF.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_BF.jpg",
+    "bytes": 137624,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_CASINO.png",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_CASINO.png",
+    "bytes": 539244,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_GALAX.png",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_GALAX.png",
+    "bytes": 641769,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_GEF.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_GEF.jpg",
+    "bytes": 143120,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_PARFOIS.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_PARFOIS.jpg",
+    "bytes": 370673,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_PB.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_PB.jpg",
+    "bytes": 148642,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_PBA.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_PBA.jpg",
+    "bytes": 443018,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BF1.jpg",
+    "local": "/static/store/images/marcas/BF1.jpg",
+    "bytes": 28019232,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/BF2.jpg",
+    "local": "/static/store/images/marcas/BF2.jpg",
+    "bytes": 29938145,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/GEF1.jpg",
+    "local": "/static/store/images/marcas/GEF1.jpg",
+    "bytes": 7828509,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/GEF2.jpg",
+    "local": "/static/store/images/marcas/GEF2.jpg",
+    "bytes": 11285029,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/Galax11.png",
+    "local": "/static/store/images/marcas/Galax11.png",
+    "bytes": 8911161,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/Galax22.png",
+    "local": "/static/store/images/marcas/Galax22.png",
+    "bytes": 8449168,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/PB1.jpg",
+    "local": "/static/store/images/marcas/PB1.jpg",
+    "bytes": 11157274,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/PB2.jpg",
+    "local": "/static/store/images/marcas/PB2.jpg",
+    "bytes": 8683867,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/PBA1.jpg",
+    "local": "/static/store/images/marcas/PBA1.jpg",
+    "bytes": 6367401,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/PBA2.jpg",
+    "local": "/static/store/images/marcas/PBA2.jpg",
+    "bytes": 5734973,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/Parfois1.jpg",
+    "local": "/static/store/images/marcas/Parfois1.jpg",
+    "bytes": 6190085,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/marcas/Parfois2.jpg",
+    "local": "/static/store/images/marcas/Parfois2.jpg",
+    "bytes": 7074875,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Calceteria.png",
+    "local": "/static/store/images/paqueteCompleto/Calceteria.png",
+    "bytes": 446794,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Calceteria7.png",
+    "local": "/static/store/images/paqueteCompleto/Calceteria7.png",
+    "bytes": 370394,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Calceteria8.png",
+    "local": "/static/store/images/paqueteCompleto/Calceteria8.png",
+    "bytes": 395986,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Confeccion_1.png",
+    "local": "/static/store/images/paqueteCompleto/Confeccion_1.png",
+    "bytes": 409271,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Confeccion_2.png",
+    "local": "/static/store/images/paqueteCompleto/Confeccion_2.png",
+    "bytes": 461636,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Confeccion_3.png",
+    "local": "/static/store/images/paqueteCompleto/Confeccion_3.png",
+    "bytes": 424998,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Confeccion_4.png",
+    "local": "/static/store/images/paqueteCompleto/Confeccion_4.png",
+    "bytes": 255091,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Confeccion_5.png",
+    "local": "/static/store/images/paqueteCompleto/Confeccion_5.png",
+    "bytes": 283630,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Corte11.png",
+    "local": "/static/store/images/paqueteCompleto/Corte11.png",
+    "bytes": 371209,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Corte12.png",
+    "local": "/static/store/images/paqueteCompleto/Corte12.png",
+    "bytes": 384575,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Marinilla_2.png",
+    "local": "/static/store/images/paqueteCompleto/Marinilla_2.png",
+    "bytes": 400902,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Marinilla_3.png",
+    "local": "/static/store/images/paqueteCompleto/Marinilla_3.png",
+    "bytes": 364409,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Marinilla_4.jpg",
+    "local": "/static/store/images/paqueteCompleto/Marinilla_4.jpg",
+    "bytes": 171182,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Marinilla_6.png",
+    "local": "/static/store/images/paqueteCompleto/Marinilla_6.png",
+    "bytes": 337366,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Paquete_valor_1.jpg",
+    "local": "/static/store/images/paqueteCompleto/Paquete_valor_1.jpg",
+    "bytes": 6473572,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Paquete_valor_1.png",
+    "local": "/static/store/images/paqueteCompleto/Paquete_valor_1.png",
+    "bytes": 424938,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Planta_Rionegroo.png",
+    "local": "/static/store/images/paqueteCompleto/Planta_Rionegroo.png",
+    "bytes": 337069,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless.png",
+    "bytes": 400248,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless2.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless2.png",
+    "bytes": 428533,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless3.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless3.png",
+    "bytes": 327216,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless4.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless4.png",
+    "bytes": 295299,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_1.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_1.png",
+    "bytes": 349791,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_2.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_2.png",
+    "bytes": 407323,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_4.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_4.png",
+    "bytes": 338762,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_5.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_5.png",
+    "bytes": 365912,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_6.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_6.png",
+    "bytes": 255056,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_7.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_7.png",
+    "bytes": 107833,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Seamless_Pasillo.png",
+    "local": "/static/store/images/paqueteCompleto/Seamless_Pasillo.png",
+    "bytes": 351332,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_10_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_10_nueva.png",
+    "bytes": 301844,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_1_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_1_nueva.png",
+    "bytes": 402787,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_2_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_2_nueva.png",
+    "bytes": 388368,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_3_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_3_nueva.png",
+    "bytes": 387732,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_4_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_4_nueva.png",
+    "bytes": 393570,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_5_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_5_nueva.png",
+    "bytes": 378490,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_6_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_6_nueva.png",
+    "bytes": 352651,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_7_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_7_nueva.png",
+    "bytes": 397876,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_8_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_8_nueva.png",
+    "bytes": 373170,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Textil_9_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/Textil_9_nueva.png",
+    "bytes": 339555,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/Verticalidad_Es.png",
+    "local": "/static/store/images/paqueteCompleto/Verticalidad_Es.png",
+    "bytes": 1333300,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/calceteria_3.png",
+    "local": "/static/store/images/paqueteCompleto/calceteria_3.png",
+    "bytes": 322395,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/calceteria_5.png",
+    "local": "/static/store/images/paqueteCompleto/calceteria_5.png",
+    "bytes": 362618,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/calceteria_6.png",
+    "local": "/static/store/images/paqueteCompleto/calceteria_6.png",
+    "bytes": 420008,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Calceteria.png",
+    "local": "/static/store/images/paqueteCompleto/en/Calceteria.png",
+    "bytes": 301650,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Calceteria7.png",
+    "local": "/static/store/images/paqueteCompleto/en/Calceteria7.png",
+    "bytes": 199644,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Calceteria8.png",
+    "local": "/static/store/images/paqueteCompleto/en/Calceteria8.png",
+    "bytes": 210269,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Confeccion_1.png",
+    "local": "/static/store/images/paqueteCompleto/en/Confeccion_1.png",
+    "bytes": 220622,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Confeccion_2.png",
+    "local": "/static/store/images/paqueteCompleto/en/Confeccion_2.png",
+    "bytes": 251921,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Confeccion_3.png",
+    "local": "/static/store/images/paqueteCompleto/en/Confeccion_3.png",
+    "bytes": 209847,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Confeccion_4.png",
+    "local": "/static/store/images/paqueteCompleto/en/Confeccion_4.png",
+    "bytes": 112194,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Confeccion_5.png",
+    "local": "/static/store/images/paqueteCompleto/en/Confeccion_5.png",
+    "bytes": 124669,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Corte11.png",
+    "local": "/static/store/images/paqueteCompleto/en/Corte11.png",
+    "bytes": 199535,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Corte12.png",
+    "local": "/static/store/images/paqueteCompleto/en/Corte12.png",
+    "bytes": 226591,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Laboratorio_de_Calidad.png",
+    "local": "/static/store/images/paqueteCompleto/en/Laboratorio_de_Calidad.png",
+    "bytes": 312876,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Laboratorio_de_color.png",
+    "local": "/static/store/images/paqueteCompleto/en/Laboratorio_de_color.png",
+    "bytes": 295129,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Marinilla_2.png",
+    "local": "/static/store/images/paqueteCompleto/en/Marinilla_2.png",
+    "bytes": 222356,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Marinilla_3.png",
+    "local": "/static/store/images/paqueteCompleto/en/Marinilla_3.png",
+    "bytes": 195126,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Marinilla_4.jpg",
+    "local": "/static/store/images/paqueteCompleto/en/Marinilla_4.jpg",
+    "bytes": 171182,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Marinilla_6.png",
+    "local": "/static/store/images/paqueteCompleto/en/Marinilla_6.png",
+    "bytes": 156980,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Planta_Rionegroo.png",
+    "local": "/static/store/images/paqueteCompleto/en/Planta_Rionegroo.png",
+    "bytes": 156843,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless.png",
+    "bytes": 400248,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless2.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless2.png",
+    "bytes": 428533,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless3.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless3.png",
+    "bytes": 327216,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless4.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless4.png",
+    "bytes": 295299,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_1.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_1.png",
+    "bytes": 168343,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_2.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_2.png",
+    "bytes": 199956,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_4.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_4.png",
+    "bytes": 339623,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_5.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_5.png",
+    "bytes": 179192,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_6.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_6.png",
+    "bytes": 123235,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_7.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_7.png",
+    "bytes": 107833,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Seamless_Pasillo.png",
+    "local": "/static/store/images/paqueteCompleto/en/Seamless_Pasillo.png",
+    "bytes": 351332,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_10_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_10_nueva.png",
+    "bytes": 141215,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_1_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_1_nueva.png",
+    "bytes": 402881,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_2_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_2_nueva.png",
+    "bytes": 388468,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_3_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_3_nueva.png",
+    "bytes": 387609,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_4_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_4_nueva.png",
+    "bytes": 393344,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_5_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_5_nueva.png",
+    "bytes": 378263,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_6_nueva.jpg",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_6_nueva.jpg",
+    "bytes": 177323,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_7_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_7_nueva.png",
+    "bytes": 206279,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_8_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_8_nueva.png",
+    "bytes": 186277,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Textil_9_nueva.png",
+    "local": "/static/store/images/paqueteCompleto/en/Textil_9_nueva.png",
+    "bytes": 165495,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/Verticalidad_Ingles.png",
+    "local": "/static/store/images/paqueteCompleto/en/Verticalidad_Ingles.png",
+    "bytes": 3033758,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/calceteria_3.png",
+    "local": "/static/store/images/paqueteCompleto/en/calceteria_3.png",
+    "bytes": 151061,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/calceteria_5.png",
+    "local": "/static/store/images/paqueteCompleto/en/calceteria_5.png",
+    "bytes": 176080,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/calceteria_6.png",
+    "local": "/static/store/images/paqueteCompleto/en/calceteria_6.png",
+    "bytes": 419488,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/enconadoo.png",
+    "local": "/static/store/images/paqueteCompleto/en/enconadoo.png",
+    "bytes": 160711,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/hiladoo.png",
+    "local": "/static/store/images/paqueteCompleto/en/hiladoo.png",
+    "bytes": 382358,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/hiladoss.png",
+    "local": "/static/store/images/paqueteCompleto/en/hiladoss.png",
+    "bytes": 272267,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/portada_calceteria.png",
+    "local": "/static/store/images/paqueteCompleto/en/portada_calceteria.png",
+    "bytes": 237495,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/en/portada_tejido.png",
+    "local": "/static/store/images/paqueteCompleto/en/portada_tejido.png",
+    "bytes": 190815,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/enconadoo.png",
+    "local": "/static/store/images/paqueteCompleto/enconadoo.png",
+    "bytes": 339100,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/hiladoo.png",
+    "local": "/static/store/images/paqueteCompleto/hiladoo.png",
+    "bytes": 382079,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/hiladoss.png",
+    "local": "/static/store/images/paqueteCompleto/hiladoss.png",
+    "bytes": 272160,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/3D-clo.png",
+    "local": "/static/store/images/paqueteCompleto/otros/3D-clo.png",
+    "bytes": 639009,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/Centros_%20Distribucion_Es.png",
+    "local": "/static/store/images/paqueteCompleto/otros/Centros_%20Distribucion_Es.png",
+    "bytes": 260783,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/Centros_%20Distribucion_Ingles.png",
+    "local": "/static/store/images/paqueteCompleto/otros/Centros_%20Distribucion_Ingles.png",
+    "bytes": 256056,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-2-1.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-2-1.jpg",
+    "bytes": 34609,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-2-2.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-2-2.jpg",
+    "bytes": 28438,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-2.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-2.jpg",
+    "bytes": 88516,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-4-1.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-4-1.jpg",
+    "bytes": 30355,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-4-2.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-4-2.jpg",
+    "bytes": 27895,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-4.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-4.jpg",
+    "bytes": 78764,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-5-1.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-5-1.jpg",
+    "bytes": 41918,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-5-2.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-5-2.jpg",
+    "bytes": 39788,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-5.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-5.jpg",
+    "bytes": 114268,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-6-1.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-6-1.jpg",
+    "bytes": 31250,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-6-2.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-6-2.jpg",
+    "bytes": 26651,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/IMAGEN-6.jpg",
+    "local": "/static/store/images/paqueteCompleto/otros/IMAGEN-6.jpg",
+    "bytes": 66238,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/Laboratorio_de_Calidad.png",
+    "local": "/static/store/images/paqueteCompleto/otros/Laboratorio_de_Calidad.png",
+    "bytes": 312876,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/Laboratorio_de_color.png",
+    "local": "/static/store/images/paqueteCompleto/otros/Laboratorio_de_color.png",
+    "bytes": 295129,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/Tlc_Es.png",
+    "local": "/static/store/images/paqueteCompleto/otros/Tlc_Es.png",
+    "bytes": 1194707,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/Tlc_Ingles.png",
+    "local": "/static/store/images/paqueteCompleto/otros/Tlc_Ingles.png",
+    "bytes": 1179247,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/clo-1.png",
+    "local": "/static/store/images/paqueteCompleto/otros/clo-1.png",
+    "bytes": 129873,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/clo-2.png",
+    "local": "/static/store/images/paqueteCompleto/otros/clo-2.png",
+    "bytes": 40044,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/clo-3.png",
+    "local": "/static/store/images/paqueteCompleto/otros/clo-3.png",
+    "bytes": 149880,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/clo-4.png",
+    "local": "/static/store/images/paqueteCompleto/otros/clo-4.png",
+    "bytes": 185474,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/otros/clo-5.png",
+    "local": "/static/store/images/paqueteCompleto/otros/clo-5.png",
+    "bytes": 138054,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/portada_calceteria.png",
+    "local": "/static/store/images/paqueteCompleto/portada_calceteria.png",
+    "bytes": 237649,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/paqueteCompleto/portada_tejido.png",
+    "local": "/static/store/images/paqueteCompleto/portada_tejido.png",
+    "bytes": 373129,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/pqrs/BANNERMARCASCRYSTAL.jpg",
+    "local": "/static/store/images/pqrs/BANNERMARCASCRYSTAL.jpg",
+    "bytes": 218853,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/pqrs/BANNERMARCASCRYSTALMOBILE.jpg",
+    "local": "/static/store/images/pqrs/BANNERMARCASCRYSTALMOBILE.jpg",
+    "bytes": 106665,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Carlos_Manuel_Echavarria_Toro.png",
+    "local": "/static/store/images/quienesSomos/Carlos_Manuel_Echavarria_Toro.png",
+    "bytes": 773496,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Juan_Carlos_Echavarria_Zuluaga.png",
+    "local": "/static/store/images/quienesSomos/Juan_Carlos_Echavarria_Zuluaga.png",
+    "bytes": 879037,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Julio_Echavarria_Hernandez.png",
+    "local": "/static/store/images/quienesSomos/Julio_Echavarria_Hernandez.png",
+    "bytes": 668327,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Luis_Fernando_Restrepo_Echavarria.png",
+    "local": "/static/store/images/quienesSomos/Luis_Fernando_Restrepo_Echavarria.png",
+    "bytes": 654747,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Nuestra_Esencia.jpeg",
+    "local": "/static/store/images/quienesSomos/Nuestra_Esencia.jpeg",
+    "bytes": 233271,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Octavio_Echavarria_Hernandez.png",
+    "local": "/static/store/images/quienesSomos/Octavio_Echavarria_Hernandez.png",
+    "bytes": 341235,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/Ubicacion.png",
+    "local": "/static/store/images/quienesSomos/Ubicacion.png",
+    "bytes": 897444,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/1994-1995.png",
+    "local": "/static/store/images/quienesSomos/historia/1994-1995.png",
+    "bytes": 368846,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2000-1.png",
+    "local": "/static/store/images/quienesSomos/historia/2000-1.png",
+    "bytes": 369760,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2001-2011.png",
+    "local": "/static/store/images/quienesSomos/historia/2001-2011.png",
+    "bytes": 427350,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2013_1.png",
+    "local": "/static/store/images/quienesSomos/historia/2013_1.png",
+    "bytes": 391220,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2014-2015.png",
+    "local": "/static/store/images/quienesSomos/historia/2014-2015.png",
+    "bytes": 414234,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2018v1.png",
+    "local": "/static/store/images/quienesSomos/historia/2018v1.png",
+    "bytes": 320348,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2020.jpg",
+    "local": "/static/store/images/quienesSomos/historia/2020.jpg",
+    "bytes": 185834,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/2022.jpg",
+    "local": "/static/store/images/quienesSomos/historia/2022.jpg",
+    "bytes": 471919,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/h-1938-1948.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1938-1948.jpg",
+    "bytes": 173926,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/h-1953-1964.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1953-1964.jpg",
+    "bytes": 164328,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/h-1969.png",
+    "local": "/static/store/images/quienesSomos/historia/h-1969.png",
+    "bytes": 265095,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/h-1989.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1989.jpg",
+    "bytes": 162932,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/h-1991.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1991.jpg",
+    "bytes": 106330,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/historia/h-2025.png",
+    "local": "/static/store/images/quienesSomos/historia/h-2025.png",
+    "bytes": 418063,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/proposito-y-esencia-1111.jpg",
+    "local": "/static/store/images/quienesSomos/proposito-y-esencia-1111.jpg",
+    "bytes": 30192698,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/quienesSomos/quienes-somos-3333.png",
+    "local": "/static/store/images/quienesSomos/quienes-somos-3333.png",
+    "bytes": 772933,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/Asi_somos_corte_final.mp4",
+    "local": "/static/store/images/videos/Asi_somos_corte_final.mp4",
+    "bytes": 287188043,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/BabyFresh_sostenible_2021.mp4",
+    "local": "/static/store/images/videos/BabyFresh_sostenible_2021.mp4",
+    "bytes": 76707606,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/Crystal_sostenible_2021.mp4",
+    "local": "/static/store/images/videos/Crystal_sostenible_2021.mp4",
+    "bytes": 151232209,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/Crystal_sostenible_ingles.mp4",
+    "local": "/static/store/images/videos/Crystal_sostenible_ingles.mp4",
+    "bytes": 63957540,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/GLX_Sostenible_video_marcas.mp4",
+    "local": "/static/store/images/videos/GLX_Sostenible_video_marcas.mp4",
+    "bytes": 34183246,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/Gef_sostenible_2021_horizontal.mp4",
+    "local": "/static/store/images/videos/Gef_sostenible_2021_horizontal.mp4",
+    "bytes": 39619819,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/images/videos/PB_sostenible_2021_horizontal.mp4",
+    "local": "/static/store/images/videos/PB_sostenible_2021_horizontal.mp4",
+    "bytes": 114765405,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/js/home.js",
+    "local": "/static/store/js/home.js",
+    "bytes": 60,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/js/main.js",
+    "local": "/static/store/js/main.js",
+    "bytes": 2804,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/CTPAT_RECOGNITION_CERTIFICATE.pdf",
+    "local": "/static/store/pdf/CTPAT_RECOGNITION_CERTIFICATE.pdf",
+    "bytes": 146876,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Certificado_BASC_2023.pdf",
+    "local": "/static/store/pdf/Certificado_BASC_2023.pdf",
+    "bytes": 315492,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Certificado_OEA_Hilanderia.pdf",
+    "local": "/static/store/pdf/Certificado_OEA_Hilanderia.pdf",
+    "bytes": 316546,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Certificado__OEA_Crystal_SAS.pdf",
+    "local": "/static/store/pdf/Certificado__OEA_Crystal_SAS.pdf",
+    "bytes": 455349,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Certificado_de_energia_renovable.pdf",
+    "local": "/static/store/pdf/Certificado_de_energia_renovable.pdf",
+    "bytes": 566525,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Codigo_de_conducta_Crystal.pdf",
+    "local": "/static/store/pdf/Codigo_de_conducta_Crystal.pdf",
+    "bytes": 8876943,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Crystal_code_of_conduct.pdf",
+    "local": "/static/store/pdf/Crystal_code_of_conduct.pdf",
+    "bytes": 2067153,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Diploma_U.S_Cotton.pdf",
+    "local": "/static/store/pdf/Diploma_U.S_Cotton.pdf",
+    "bytes": 170639,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Diploma__Uster.pdf",
+    "local": "/static/store/pdf/Diploma__Uster.pdf",
+    "bytes": 130305,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Personal_data_processing_policy.pdf",
+    "local": "/static/store/pdf/Personal_data_processing_policy.pdf",
+    "bytes": 283302,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Personal_data_processing_policy_.pdf",
+    "local": "/static/store/pdf/Personal_data_processing_policy_.pdf",
+    "bytes": 112761,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Politica_de_tratamiento_de_datos_personales.pdf",
+    "local": "/static/store/pdf/Politica_de_tratamiento_de_datos_personales.pdf",
+    "bytes": 283302,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf",
+    "local": "/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf",
+    "bytes": 99650,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Politica_de_tratamiento_de_datos_personales_en.pdf",
+    "local": "/static/store/pdf/Politica_de_tratamiento_de_datos_personales_en.pdf",
+    "bytes": 1500484,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Resolucion%20_Gran_Lider%20_Progresa.pdf",
+    "local": "/static/store/pdf/Resolucion%20_Gran_Lider%20_Progresa.pdf",
+    "bytes": 517854,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Terminos_y_condiciones_.pdf",
+    "local": "/static/store/pdf/Terminos_y_condiciones_.pdf",
+    "bytes": 130476,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/Terms_and_Conditions_.pdf",
+    "local": "/static/store/pdf/Terms_and_Conditions_.pdf",
+    "bytes": 131329,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/codigo-de-conducta-proveedores-final-V2-Ingles.pdf",
+    "local": "/static/store/pdf/codigo-de-conducta-proveedores-final-V2-Ingles.pdf",
+    "bytes": 1349894,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/codigo-de-conducta-proveedores-final-V2.pdf",
+    "local": "/static/store/pdf/codigo-de-conducta-proveedores-final-V2.pdf",
+    "bytes": 6201339,
+    "dependencies": []
+  },
+  {
+    "url": "https://crystal.com.co/static/store/pdf/manual-de-gobierno-corporativo-crystal.pdf",
+    "local": "/static/store/pdf/manual-de-gobierno-corporativo-crystal.pdf",
+    "bytes": 106350,
+    "dependencies": []
+  },
+  {
+    "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+    "local": "/assets/vendor/65db03ecf48e2c4b.css",
+    "bytes": 433,
+    "dependencies": []
+  },
+  {
+    "url": "https://unpkg.com/aos@2.3.1/dist/aos.css",
+    "local": "/assets/vendor/2e8ca68208a7feb6.css",
+    "bytes": 26053,
+    "dependencies": []
+  },
+  {
+    "url": "https://unpkg.com/aos@2.3.1/dist/aos.js",
+    "local": "/assets/vendor/4dc952d76a63597a.js",
+    "bytes": 14239,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/css/pdf-preview.css",
+    "local": "/static/store/css/pdf-preview.css",
+    "bytes": 617,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Empresa/reconocimientos.jpg",
+    "local": "/static/store/images/Empresa/reconocimientos.jpg",
+    "bytes": 269065,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Home/asi-somos-textura.jpg",
+    "local": "/static/store/images/Home/asi-somos-textura.jpg",
+    "bytes": 125638,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/Logo-crystal-transparente.png",
+    "local": "/static/store/images/Logos/Logo-crystal-transparente.png",
+    "bytes": 14861,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/Logo-crystal.png",
+    "local": "/static/store/images/Logos/Logo-crystal.png",
+    "bytes": 2541,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/Logo-multimarca-redondo.png",
+    "local": "/static/store/images/Logos/Logo-multimarca-redondo.png",
+    "bytes": 105904,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/LogoBabyF.PNG",
+    "local": "/static/store/images/Logos/LogoBabyF.PNG",
+    "bytes": 9958,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/LogoGalax.PNG",
+    "local": "/static/store/images/Logos/LogoGalax.PNG",
+    "bytes": 7773,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/LogoPuntoB.PNG",
+    "local": "/static/store/images/Logos/LogoPuntoB.PNG",
+    "bytes": 6184,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/Logo_parfois.PNG",
+    "local": "/static/store/images/Logos/Logo_parfois.PNG",
+    "bytes": 23176,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/crystal-sas.png",
+    "local": "/static/store/images/Logos/crystal-sas.png",
+    "bytes": 573,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/facebook.png",
+    "local": "/static/store/images/Logos/facebook.png",
+    "bytes": 6135,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-facebook-bf.png",
+    "local": "/static/store/images/Logos/icono-facebook-bf.png",
+    "bytes": 832,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-facebook-gef.png",
+    "local": "/static/store/images/Logos/icono-facebook-gef.png",
+    "bytes": 919,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-facebook-glx.png",
+    "local": "/static/store/images/Logos/icono-facebook-glx.png",
+    "bytes": 930,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-facebook-pb.png",
+    "local": "/static/store/images/Logos/icono-facebook-pb.png",
+    "bytes": 14365,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-facebook.png",
+    "local": "/static/store/images/Logos/icono-facebook.png",
+    "bytes": 2643,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-instagram-bf.png",
+    "local": "/static/store/images/Logos/icono-instagram-bf.png",
+    "bytes": 1866,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-instagram-gef.png",
+    "local": "/static/store/images/Logos/icono-instagram-gef.png",
+    "bytes": 1518,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-instagram-glx.png",
+    "local": "/static/store/images/Logos/icono-instagram-glx.png",
+    "bytes": 1222,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-instagram-pb.png",
+    "local": "/static/store/images/Logos/icono-instagram-pb.png",
+    "bytes": 15021,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-instagram.png",
+    "local": "/static/store/images/Logos/icono-instagram.png",
+    "bytes": 3701,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-spotify.png",
+    "local": "/static/store/images/Logos/icono-spotify.png",
+    "bytes": 1140,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-tiktok-bf.png",
+    "local": "/static/store/images/Logos/icono-tiktok-bf.png",
+    "bytes": 1162,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-tiktok-gef.png",
+    "local": "/static/store/images/Logos/icono-tiktok-gef.png",
+    "bytes": 961,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-tiktok-glx.png",
+    "local": "/static/store/images/Logos/icono-tiktok-glx.png",
+    "bytes": 1070,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/icono-tiktok-pb.png",
+    "local": "/static/store/images/Logos/icono-tiktok-pb.png",
+    "bytes": 14667,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/img_casino.png",
+    "local": "/static/store/images/Logos/img_casino.png",
+    "bytes": 17299,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/instagram.png",
+    "local": "/static/store/images/Logos/instagram.png",
+    "bytes": 59903,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/linkedin.png",
+    "local": "/static/store/images/Logos/linkedin.png",
+    "bytes": 30083,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/logoGef.PNG",
+    "local": "/static/store/images/Logos/logoGef.PNG",
+    "bytes": 12734,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/puntoBlanco-Athletic.png",
+    "local": "/static/store/images/Logos/puntoBlanco-Athletic.png",
+    "bytes": 20099,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/Logos/vimeo.png",
+    "local": "/static/store/images/Logos/vimeo.png",
+    "bytes": 15201,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/compromisoAmbiental/Sostenibilidad_2.png",
+    "local": "/static/store/images/compromisoAmbiental/Sostenibilidad_2.png",
+    "bytes": 1162189,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/compromisoSocial/Otros_beneficios.png",
+    "local": "/static/store/images/compromisoSocial/Otros_beneficios.png",
+    "bytes": 329597,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/compromisoSocial/Sostenibilidad_3.png",
+    "local": "/static/store/images/compromisoSocial/Sostenibilidad_3.png",
+    "bytes": 907448,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/cumplimiento/banner_programa_etico1.png",
+    "local": "/static/store/images/cumplimiento/banner_programa_etico1.png",
+    "bytes": 463211,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/Open-end1.jpg",
+    "local": "/static/store/images/hilanderia/Open-end1.jpg",
+    "bytes": 70557,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/Ring-spun-pima.png",
+    "local": "/static/store/images/hilanderia/Ring-spun-pima.png",
+    "bytes": 4947,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/Ring-spun1.jpg",
+    "local": "/static/store/images/hilanderia/Ring-spun1.jpg",
+    "bytes": 81511,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/Speciality-th.jpg",
+    "local": "/static/store/images/hilanderia/Speciality-th.jpg",
+    "bytes": 38610,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/medida-Open-end.png",
+    "local": "/static/store/images/hilanderia/medida-Open-end.png",
+    "bytes": 4515,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/medida-Ring-spun.png",
+    "local": "/static/store/images/hilanderia/medida-Ring-spun.png",
+    "bytes": 4815,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/medida-Speciality.png",
+    "local": "/static/store/images/hilanderia/medida-Speciality.png",
+    "bytes": 4618,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/open--portada.png",
+    "local": "/static/store/images/hilanderia/open--portada.png",
+    "bytes": 427173,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/portada-especiality.jpg",
+    "local": "/static/store/images/hilanderia/portada-especiality.jpg",
+    "bytes": 67018,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/ring-spun-1.jpg",
+    "local": "/static/store/images/hilanderia/ring-spun-1.jpg",
+    "bytes": 244131,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/sobre-nosotros.png",
+    "local": "/static/store/images/hilanderia/sobre-nosotros.png",
+    "bytes": 12812398,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-bedding-sheets.png",
+    "local": "/static/store/images/hilanderia/yarn--type-bedding-sheets.png",
+    "bytes": 2014,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-fashion-jersey.png",
+    "local": "/static/store/images/hilanderia/yarn--type-fashion-jersey.png",
+    "bytes": 2856,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-fleece.png",
+    "local": "/static/store/images/hilanderia/yarn--type-fleece.png",
+    "bytes": 2573,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-military-fabric.png",
+    "local": "/static/store/images/hilanderia/yarn--type-military-fabric.png",
+    "bytes": 2124,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-performance-fabric.png",
+    "local": "/static/store/images/hilanderia/yarn--type-performance-fabric.png",
+    "bytes": 2926,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-siro.png",
+    "local": "/static/store/images/hilanderia/yarn--type-siro.png",
+    "bytes": 2916,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-socks.png",
+    "local": "/static/store/images/hilanderia/yarn--type-socks.png",
+    "bytes": 2461,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-towels.png",
+    "local": "/static/store/images/hilanderia/yarn--type-towels.png",
+    "bytes": 2791,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/hilanderia/yarn--type-underwear.png",
+    "local": "/static/store/images/hilanderia/yarn--type-underwear.png",
+    "bytes": 2449,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_BF.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_BF.jpg",
+    "bytes": 137624,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_CASINO.png",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_CASINO.png",
+    "bytes": 539244,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_GALAX.png",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_GALAX.png",
+    "bytes": 641769,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_GEF.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_GEF.jpg",
+    "bytes": 143120,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_PARFOIS.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_PARFOIS.jpg",
+    "bytes": 370673,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_PB.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_PB.jpg",
+    "bytes": 148642,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BANNERNUESTRASMARCAS_PBA.jpg",
+    "local": "/static/store/images/marcas/BANNERNUESTRASMARCAS_PBA.jpg",
+    "bytes": 443018,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BF1.jpg",
+    "local": "/static/store/images/marcas/BF1.jpg",
+    "bytes": 28019232,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/BF2.jpg",
+    "local": "/static/store/images/marcas/BF2.jpg",
+    "bytes": 29938145,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/GEF1.jpg",
+    "local": "/static/store/images/marcas/GEF1.jpg",
+    "bytes": 7828509,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/GEF2.jpg",
+    "local": "/static/store/images/marcas/GEF2.jpg",
+    "bytes": 11285029,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/Galax11.png",
+    "local": "/static/store/images/marcas/Galax11.png",
+    "bytes": 8911161,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/Galax22.png",
+    "local": "/static/store/images/marcas/Galax22.png",
+    "bytes": 8449168,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/PB1.jpg",
+    "local": "/static/store/images/marcas/PB1.jpg",
+    "bytes": 11157274,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/PB2.jpg",
+    "local": "/static/store/images/marcas/PB2.jpg",
+    "bytes": 8683867,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/PBA1.jpg",
+    "local": "/static/store/images/marcas/PBA1.jpg",
+    "bytes": 6367401,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/PBA2.jpg",
+    "local": "/static/store/images/marcas/PBA2.jpg",
+    "bytes": 5734973,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/Parfois1.jpg",
+    "local": "/static/store/images/marcas/Parfois1.jpg",
+    "bytes": 6190085,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/marcas/Parfois2.jpg",
+    "local": "/static/store/images/marcas/Parfois2.jpg",
+    "bytes": 7074875,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/1994-1995.png",
+    "local": "/static/store/images/quienesSomos/historia/1994-1995.png",
+    "bytes": 368846,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2000-1.png",
+    "local": "/static/store/images/quienesSomos/historia/2000-1.png",
+    "bytes": 369760,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2001-2011.png",
+    "local": "/static/store/images/quienesSomos/historia/2001-2011.png",
+    "bytes": 427350,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2013_1.png",
+    "local": "/static/store/images/quienesSomos/historia/2013_1.png",
+    "bytes": 391220,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2014-2015.png",
+    "local": "/static/store/images/quienesSomos/historia/2014-2015.png",
+    "bytes": 414234,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2018v1.png",
+    "local": "/static/store/images/quienesSomos/historia/2018v1.png",
+    "bytes": 320348,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2020.jpg",
+    "local": "/static/store/images/quienesSomos/historia/2020.jpg",
+    "bytes": 185834,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/2022.jpg",
+    "local": "/static/store/images/quienesSomos/historia/2022.jpg",
+    "bytes": 471919,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/h-1938-1948.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1938-1948.jpg",
+    "bytes": 173926,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/h-1953-1964.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1953-1964.jpg",
+    "bytes": 164328,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/h-1969.png",
+    "local": "/static/store/images/quienesSomos/historia/h-1969.png",
+    "bytes": 265095,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/h-1989.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1989.jpg",
+    "bytes": 162932,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/h-1991.jpg",
+    "local": "/static/store/images/quienesSomos/historia/h-1991.jpg",
+    "bytes": 106330,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/historia/h-2025.png",
+    "local": "/static/store/images/quienesSomos/historia/h-2025.png",
+    "bytes": 418063,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/quienesSomos/quienes-somos-3333.png",
+    "local": "/static/store/images/quienesSomos/quienes-somos-3333.png",
+    "bytes": 772933,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/videos/BabyFresh_sostenible_2021.mp4",
+    "local": "/static/store/images/videos/BabyFresh_sostenible_2021.mp4",
+    "bytes": 76707606,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/videos/GLX_Sostenible_video_marcas.mp4",
+    "local": "/static/store/images/videos/GLX_Sostenible_video_marcas.mp4",
+    "bytes": 34183246,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/videos/Gef_sostenible_2021_horizontal.mp4",
+    "local": "/static/store/images/videos/Gef_sostenible_2021_horizontal.mp4",
+    "bytes": 39619819,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/images/videos/PB_sostenible_2021_horizontal.mp4",
+    "local": "/static/store/images/videos/PB_sostenible_2021_horizontal.mp4",
+    "bytes": 114765405,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/js/main.js",
+    "local": "/static/store/js/main.js",
+    "bytes": 2804,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/js/pdfPreviewRender.js",
+    "local": "/static/store/js/pdfPreviewRender.js",
+    "bytes": 1315,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2021_1.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2021_1.pdf",
+    "bytes": 11990063,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2021_Ingles.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2021_Ingles.pdf",
+    "bytes": 11990063,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2022_1.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2022_1.pdf",
+    "bytes": 4840758,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2022_Ingles.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2022_Ingles.pdf",
+    "bytes": 7119903,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2023_1.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2023_1.pdf",
+    "bytes": 18483583,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2023_Ingles.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2023_Ingles.pdf",
+    "bytes": 23396411,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2024_1.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2024_1.pdf",
+    "bytes": 29116907,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2024_Ingles.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2024_Ingles.pdf",
+    "bytes": 27927239,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2025_1.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2025_1.pdf",
+    "bytes": 13979517,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/InformeDeSostenibilidad2025_Ingles.pdf",
+    "local": "/static/store/pdf/InformeDeSostenibilidad2025_Ingles.pdf",
+    "bytes": 14767966,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/Personal_data_processing_policy_.pdf",
+    "local": "/static/store/pdf/Personal_data_processing_policy_.pdf",
+    "bytes": 112761,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf",
+    "local": "/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf",
+    "bytes": 99650,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/Terminos_y_condiciones_.pdf",
+    "local": "/static/store/pdf/Terminos_y_condiciones_.pdf",
+    "bytes": 130476,
+    "dependencies": []
+  },
+  {
+    "url": "https://www.crystal.com.co/static/store/pdf/Terms_and_Conditions_.pdf",
+    "local": "/static/store/pdf/Terms_and_Conditions_.pdf",
+    "bytes": 131329,
+    "dependencies": []
+  }
+]

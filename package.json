@@ -1,14 +1,35 @@
 {
-  "name": "crystal-corporate-web",
-  "version": "0.1.0",
+  "name": "crystal-web-corporativa",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs && node scripts/theme-check.mjs && node scripts/design-check.mjs"
+    "dev": "node --import tsx --watch server/app.ts --dev",
+    "build": "astro build && tsc -p tsconfig.server.json",
+    "check": "astro check && tsc --noEmit -p tsconfig.server.json",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "start": "node --env-file-if-exists=.env server-dist/app.js",
+    "audit:site": "python scripts/audit_site.py"
   },
   "dependencies": {
-    "@fontsource-variable/raleway": "5.3.0",
-    "gsap": "3.13.0"
+    "@fastify/helmet": "^13.0.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/static": "^10.1.5",
+    "astro": "7.3.7",
+    "dotenv": "^17.2.0",
+    "fastify": "^5.6.0",
+    "gsap": "^3.13.0",
+    "nodemailer": "^10.0.16"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^24.0.0",
+    "@types/nodemailer": "^7.0.0",
+    "playwright": "1.55.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
   }
 }

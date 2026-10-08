@@ -1,0 +1,20 @@
+[
+  {
+    "file": "Crystal_Assets_01.zip",
+    "bytes": 415970421,
+    "asset_count": 6,
+    "sha256": "983d96b34bbc2e1aed91da7dcc99a58beba8442f175ba05ea905588ba3ce001d"
+  },
+  {
+    "file": "Crystal_Assets_02.zip",
+    "bytes": 416333729,
+    "asset_count": 9,
+    "sha256": "0e6ba712e6301a3f25fc149a2d3de7c951e50cad1950072ca9014ddcd81e441e"
+  },
+  {
+    "file": "Crystal_Assets_03.zip",
+    "bytes": 392287242,
+    "asset_count": 293,
+    "sha256": "412efb9d4dfa54188de0e629c1bfd62d61b4a5b218fe7d32eda3cf2967627ed8"
+  }
+]

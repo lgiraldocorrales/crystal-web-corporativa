@@ -1,0 +1,4 @@
+# Original media stay local at checkout; LFS stores the unchanged source bytes.
+public/static/** filter=lfs diff=lfs merge=lfs -text
+public/assets/vendor/*.ttf filter=lfs diff=lfs merge=lfs -text
+public/assets/vendor/*.woff* filter=lfs diff=lfs merge=lfs -text

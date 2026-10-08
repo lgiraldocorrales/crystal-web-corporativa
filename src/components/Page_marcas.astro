@@ -1,0 +1,774 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import DesktopFooterEs10dff320 from '../components/DesktopFooterEs10dff320.astro';
+import DesktopHeaderEs839d9f70 from '../components/DesktopHeaderEs839d9f70.astro';
+import MobileFooterEs151ccb19 from '../components/MobileFooterEs151ccb19.astro';
+import MobileHeaderEsa33418c2 from '../components/MobileHeaderEsa33418c2.astro';
+/** Static page. No client hydration is required. */
+interface Props {}
+// Content comes from the audited HTML; SEO and locale are resolved centrally.
+---
+<OriginalLayout route="/marcas">
+<Fragment slot="head">
+
+<script is:inline src="/assets/scripts/3c07777ae45ede42.js"></script>
+
+<meta charset="utf-8"/>
+<link href="/static/store/images/Logos/crystal-sas.png" rel="shortcut icon"/>
+<link href="/assets/vendor/c8dc98a6aff552aa.css" rel="stylesheet"/>
+<link href="/assets/vendor/4b4b530e64ec63e0.css" rel="stylesheet"/>
+<link href="/assets/vendor/65db03ecf48e2c4b.css" rel="stylesheet"/>
+<link href="/assets/vendor/2e8ca68208a7feb6.css" rel="stylesheet"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" name="viewport"/>
+<script is:inline src="/assets/vendor/0de5e5bb3196b2c5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/scripts/7db742effbd3b8dc.js" type="text/javascript"></script>
+<style is:inline>
+        .box {
+            padding: 0px 3px;
+            text-align: center;
+        } 
+        .container-fluid.box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            margin-bottom: 3%;
+        }
+        .btn-floating.next{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.next:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            right: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .btn-floating.prev{
+            opacity: .5;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            background-color:dimgray;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating.prev:hover{
+            background-color: rgb(65, 42, 42);
+            color: #fff;
+            text-align: center;
+            left: 1%;
+            position: absolute;
+            top: 38%;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 5;
+        }
+        .btn-floating{
+            z-index: 5;
+        }
+        .mouse:hover{
+            color: red;
+        }
+        .mouse{
+            color: black;
+        }
+        .mouse-compromiso:hover{
+            color: red;
+        }
+        .mouse-compromiso{
+            color: gray;
+        }
+        .sostenibilidad:hover{
+            color: red;
+        }
+        .gobierno-hover:hover{
+            color: red;
+        }
+        #myVideo {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            min-height: 100%;
+            filter: brightness(100%);
+        }
+        #myVideoMarcas {
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100%; 
+            max-height: 100%;
+            filter: brightness(100%);
+        }
+        .titulo-imagen-principales{ 
+            margin-block-end: 10%;
+            color: white;
+            text-transform: capitalize;
+            font-family: Neue helvetica® pro 45, sans-serif;
+            letter-spacing: 1px;
+        }
+        .estilo-imagenes-general{
+            background-color: black;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .imagen-certificaciones-sostenibilidad{
+            background-image: url("/static/store/images/Empresa/reconocimientos.jpg")");
+        }
+        .body{
+            font-family: Neue helvetica® pro 45, sans-serif;
+        }
+        @media screen and (max-width: 600px){
+            .unidades-img{
+                margin-top: -18%;
+            }
+            .unidades-img-otros{
+                margin-top: -23%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .unidades-img{
+                margin-top: -20%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            .unidades-img{
+                margin-top: -11%;
+            }
+            .unidades-img-otros{
+                margin-top: -14%;
+            }
+        }
+        .tabs .tab a{
+            color:#8A8A89;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#eee;;
+            color:#000;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8A8A89;
+        }
+        .tabs .tab a:focus.active {
+            background-color:#eee;
+        }
+        .cerrar {
+            display: block;
+            background: #fff;
+            width: 95px;
+            height: 12px;
+            margin: 1px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4c4c4c;
+            padding: 0px;
+        }
+		.dropdown-nested {
+            overflow-y: visible;
+        }
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/ /*drop hacia la izquierda*/
+            left: -100%; /*drop hacia la derecha*/
+            /* left: auto;*/ /*drop hacia el centro*/
+        }
+        .hidden{
+            display: none!important;
+        }
+
+        .nav.ul.li.a{
+            display: inline-tableblock;
+        }
+
+        .miga-de-pan{
+            color: #4c4c4c;
+        }
+        .form-field{
+            width:250px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .logo-crystal{
+            text-align: center;
+            padding: 0.5%;
+        }
+        .carrito{
+            color: black;
+            position: absolute;
+            right: 7px;
+        }
+        .carrito-detalle-mobile{
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .carrito-detalle{
+            position: absolute;
+            top: 16%;
+            right: 27%;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .letra-mobile{
+            font-weight: 300;
+            color: black;
+        }
+        .div-idioma-mobile{
+            margin-top: 8%;
+            margin-block-end: 8%;
+        }
+        .fondoF{
+            background-color: black;
+        }
+        .cabeza{
+            height:33vw;
+            padding: 0%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background: black;
+        }
+        .imagen-cabeza{
+            width: 100%;
+            height:100%;
+            opacity: 0.5;
+        }
+        .titulo-cabeza{
+            font-family: Neue helvetica® pro 45, sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            font-size: 5vw;
+            color: white;
+        }
+        .nav-wrapper{
+            border-bottom: 2px solid black;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+        }
+            
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+        }
+        
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 4 / span 4;
+            grid-column-start: 3;
+        }
+        
+        .div3 {
+            grid-column: span 4 / span 4;
+            grid-row-start: 5;
+        }
+ 
+        @media screen and (max-width:960px)
+        {
+            .footer-desktop{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:960px)
+        {
+            .footer-mobile{
+                display:none;
+            }
+        }
+
+    </style>
+</Fragment>
+
+
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZJGXM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<DesktopHeaderEs839d9f70 />
+<MobileHeaderEsa33418c2 />
+<head>
+
+</head>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style="padding: 1%; font-weight: 300; ">
+<a href="/" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Inicio / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Sobre nosotros / </a>
+<a onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Modelo de negocio / </a>
+<a href="/marcas" onmouseout="this.style.color='#4c4c4c'" onmouseover="this.style.color='#c1bbbb'" style="color: #4c4c4c;font-size: large;">Marcas</a>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="font-size: x-large;">
+<h1 class="source-h2" id="main-content" style="margin-top: 0%;margin-block-end: 3%;margin-left: 2%;" tabindex="-1"> Marcas</h1>
+</div>
+<div class="col s12 fixed">
+<ul class="tabs">
+<li class="tab col l2"><a class="active" href="#m-gef" style="font-weight: 300;text-transform: capitalize;font-size: large;">Gef</a></li>
+<li class="tab col l2"><a href="#m-punto" style="font-weight: 300;text-transform: capitalize;font-size: large;">Punto Blanco</a></li>
+<li class="tab col l2"><a href="#m-baby" style="font-weight: 300;text-transform: capitalize;font-size: large;">Baby Fresh</a></li>
+<li class="tab col l2"><a href="#m-galax" style="font-weight: 300;text-transform: capitalize;font-size: large;">Galax</a></li>
+<li class="tab col l2"><a href="#m-parfois" style="font-weight: 300;text-transform: capitalize;font-size: large;">Parfois</a></li>
+<li class="tab col l2"><a href="#m-casino" style="font-weight: 300;text-transform: capitalize;font-size: large;">Casino</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="col s12" id="m-gef" style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12" style=" padding-left: 3%; padding-right: 3%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_GEF.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                     Es música, es color… es GEF. Ayudamos a las personas a expresar su esencia a través de la moda, con looks pensados para los 7 días de la semana. Nuestro portafolio crece cada vez más, ofreciendo propuestas ideales para todos los momentos. En GEF tenemos lo que necesitas: desde básicos y mucho DENIM, hasta las prendas en tendencia, looks deportivos y la ropa ideal para el verano.  
+                                    <br/>
+                                     Nos sentimos cercanos, con un espíritu joven y alegre, siendo parte de la cotidianidad y una fuente de inspiración para que las personas se expresen a través de nuestras colecciones. Nuestros clientes son todos, desde KIDS hasta adultos, porque en cada colección entendemos sus necesidades y estilos de vida, ayudándoles a encontrar el look perfecto.   
+                                    </p>
+</div>
+<div class="col l4 m4 s12 center" style="padding-top: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/logoGef.PNG" style="height: 40%; width: 40%;"/>
+</div>
+<div class="row">
+<a class="mouse" href="https://www.gef.co/" style="color: black;" target="_blank"><strong><u>CONOCE MÁS</u></strong></a>
+</div>
+<div class="row">
+<a href="https://www.facebook.com/gef/" target="_blank"><img src="/static/store/images/Logos/icono-facebook-gef.png"/></a>
+<a href="https://www.instagram.com/geffrance/" target="_blank"><img src="/static/store/images/Logos/icono-instagram-gef.png"/></a>
+<a href="https://www.tiktok.com/@geffrance" target="_blank"><img src="/static/store/images/Logos/icono-tiktok-gef.png"/></a>
+</div>
+</div>
+<div class="col l12 m12 s12" style="padding-left:3%;padding-right: 3%;">
+<div>
+<h3>Nuestras tiendas</h3>
+<p style="font-size: large;">
+                                            Tenemos tiendas en Colombia, Aruba, Bolivia, Bonaire, Costa Rica, Curazao, México y Perú. Conoce su ubicación <a class="mouse" href="https://www.gef.co/Localiza-tienda" target="_blank"><u><b>aquí:</b></u></a> </p>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/GEF1.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/GEF2.jpg" style="height: 100%; width: 100%;"/>
+</div>
+</div>
+<div class="col l12 m12 s12" style="padding: 3%;background-color: #fafafa;">
+<h4>Nuestro sueño es un mundo mucho más Green...</h4><br/>
+<div class="row center">
+<video class="col l12 m12 s12" controls="" style="padding: 0%;">
+<source src="/static/store/images/videos/Gef_sostenible_2021_horizontal.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12" id="m-punto" style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div style="text-align:justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="padding-left: 3%; padding-right: 3%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_PB.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                        Punto Blanco es una marca premium que inspira una vida más con-siente y equilibrada, promoviendo el bienestar integral a través de prendas, productos y experiencias que combinan comodidad, frescura y estilo.  
+                                        <br/>
+                                        Somos reconocidos por nuestras icónicas siluetas de texturas suaves que se sienten como una segunda piel. Diseñamos moda interior, exterior y deportiva, tomando lo mejor de las tendencias globales para crear esenciales contemporáneos. Nuestra propuesta ofrece un balance perfecto entre innovación y confort, conectando con nuestros consumidores y su bienestar en cada momento.
+                                        </p>
+</div>
+<div class="col l4 m4 s12 center" style="padding: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/LogoPuntoB.PNG" style="height: 60%; width: 60%;"/>
+</div>
+<div class="row">
+<a class="mouse" href="https://www.puntoblanco.co/" style="color: black;" target="_blank"><strong><u>CONOCE MÁS</u></strong></a>
+</div>
+<div class="row">
+<a href="https://www.facebook.com/puntoblancoficial" target="_blank"><img src="/static/store/images/Logos/icono-facebook-pb.png"/></a>
+<a href="https://www.instagram.com/puntoblancooficial/" target="_blank"><img src="/static/store/images/Logos/icono-instagram-pb.png"/></a>
+<a href="https://www.tiktok.com/@puntoblanco.oficial" target="_blank"><img src="/static/store/images/Logos/icono-tiktok-pb.png"/></a>
+<a href="https://open.spotify.com/show/1HLe2mts00Gb9GyXNAp01I?si=uAk4vvLdR2ScspVJLaOX7Q" target="_blank"><img src="/static/store/images/Logos/icono-spotify.png"/></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="padding-left: 3%; padding-right: 3%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_PBA.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                        Una marca deportiva que invita al bienestar a través del ejercicio, ofreciendo prendas de alto valor en diseño y tejidos inteligentes para mejorar el desempeño de hombres y mujeres durante el entrenamiento. En moda deportiva, Punto Blanco Athletic, brinda prendas de alto valor en diseño y tejidos inteligentes para mejorar el desempeño de hombres y mujeres durante sus entrenamientos o prácticas físicas con prendas cuyos beneficios como el secado rápido, el acabado antibacterial y los sistemas de ventilación se encargan de darle al cuerpo el máximo confort.  
+                                        <br/>
+                                        Si practicas disciplinas como yoga, pilates, running, crossfit o cycling, encontrarás en Punto Blanco Athletic los mejores aliados para vencer tus retos.
+                                        </p>
+</div>
+<div class="col l4 m4 s12 center" style="padding: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/puntoBlanco-Athletic.png" style="height: 100%; width: 100%;"/>
+</div>
+<div class="row">
+<a class="mouse" href="https://www.puntoblanco.co/" style="color: black;" target="_blank"><strong><u>CONOCE MÁS</u></strong></a>
+</div>
+
+<div class="row">
+<a href="https://instagram.com/puntoblancocon_siente" target="_blank"><img src="/static/store/images/Logos/icono-instagram.png"/></a>
+</div>
+</div>
+<div class="col l12 m12 s12" style="padding-left:3%;padding-right: 3%;">
+<div class="col l12">
+<h3 style="margin-top: 0%;">Nuestras tiendas</h3>
+<p style="font-size: large;">
+                                                Contamos con tiendas en Colombia, Aruba, Bolivia, Bonaire, Chile, Curazao, Ecuador, México y Perú. Conoce la ubicación de nuestras tiendas <a class="mouse" href="https://www.puntoblanco.com.co/tienda/es-co/pbc/Encuentra-tu-tienda" target="_blank"><u><b>aquí:</b></u></a><p>
+</p></p></div>
+<div class="col l6">
+<img src="/static/store/images/marcas/PB1.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/PB2.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/PBA1.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/PBA2.jpg" style="height: 100%; width: 100%;"/>
+</div>
+</div>
+<div class="col s12" style="padding: 3%;background-color: #fafafa;">
+<h4>Buscamos dar bienestar a través de una vida Con-Siente...</h4><br/>
+<div class="row center">
+<video class="col l12 m12 s12" controls="" style="padding: 0%;">
+<source src="/static/store/images/videos/PB_sostenible_2021_horizontal.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12" id="m-baby" style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div style="text-align:justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style=" padding-left: 3%; padding-right: 3%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_BF.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                        Baby Fresh es la marca que nació para acompañar a las familias en las primeras etapas de sus bebés, con productos diseñados para pequeños entre 0 y 6 años. Desde su origen, Baby Fresh se ha centrado en ofrecer prendas que priorizan la comodidad, practicidad y seguridad. Todo su portafolio cuenta con un por qué y un para qué, estando en todas las ocasiones de uso, desde productos de moda interior, exterior, pijamas, ropa de playa y accesorios. 
+                                        <br/>
+                                        Además, entienden las diferentes necesidades de los niños y por eso está cuidadosamente segmentado en líneas para bebés (0 a 24 meses) y toddlers (1 a 6 años), haciendo que las necesidades por etapa estén cubiertas y que para papá y mamá, vestir sea fácil y práctico, mientras brinda libertad de movimiento y frescura a los niños.
+                                        </p>
+</div>
+<div class="col l4 m4 s12 center" style="padding: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/LogoBabyF.PNG" style="height: 60%; width: 60%;"/>
+</div>
+<div class="row">
+<a class="mouse" href="https://www.babyfresh.co/" style="color: black;" target="_blank"><strong><u>CONOCE MÁS</u></strong></a>
+</div>
+<div class="row">
+<a href="https://www.facebook.com/Babyfreshoficial" target="_blank"><img src="/static/store/images/Logos/icono-facebook-bf.png"/></a>
+<a href="https://www.instagram.com/babyfreshoficial/" target="_blank"><img src="/static/store/images/Logos/icono-instagram-bf.png"/></a>
+<a href="https://www.tiktok.com/@babyfresh.oficial" target="_blank"><img src="/static/store/images/Logos/icono-tiktok-bf.png"/></a>
+</div>
+</div>
+<div class="col l12 m12 s12" style="padding-left:3%;padding-right: 3%;">
+<div class="col l12">
+<h3 style="margin-top: 0%;">Nuestras tiendas</h3>
+<p style="font-size: large;">
+                                                Tenemos tiendas en Colombia, Aruba, Bolivia, Costa Rica, Curazao, Guatemala y México. Conoce su ubicación <a href="https://tienda.babyfresh.com.co/tienda/es-co/bbf/Encuentra-tu-tienda" style="color: black;" target="_blank"><u><b>aquí:</b></u></a> </p>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/BF1.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/BF2.jpg" style="height: 100%; width: 100%;"/>
+</div>
+</div>
+<div class="col s12" style="padding: 3%;background-color: #fafafa;">
+<h4>Sembrando juntos, ayudamos a crear un mundo mejor...</h4><br/>
+<div class="row center">
+<video class="col l12 m12 s12" controls="" style="padding: 0%;">
+<source src="/static/store/images/videos/BabyFresh_sostenible_2021.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12" id="m-galax" style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div style="text-align:justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style=" padding-left: 3%; padding-right: 3%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_GALAX.png" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                        Galax es la marca que no deja nada a medias. Somos una marca divertida y llena de actitud que acompaña cada paso con la mejor energía. Tenemos dos cosas muy claras: las medias divertidas están de moda, y lo más cool es mostrar las medias. Galax te acompaña 24/7, con productos pensados para llenarte de diversión de pies a cabeza. Ofrecemos las medias perfectas para dormir, hacer deporte, el día a día, e incluso para momentos especiales.
+                                        <br/>
+                                        Nuestros clientes son todos, porque ¿quién no necesita medias? Tenemos el par perfecto para bebés, niños, jóvenes y adultos, para cada momento e inspiradas en lo que está de moda.
+                                        </p>
+</div>
+<div class="col l4 m4 s12 center" style="padding: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/LogoGalax.PNG" style="height: 60%; width: 60%;"/>
+</div>
+<div class="row">
+<a class="mouse" href="https://www.galax.co/" style="color: black;" target="_blank"><strong><u>CONOCE MÁS</u></strong></a>
+</div>
+<div class="row">
+<a href="https://www.facebook.com/galaxcolombia" target="_blank"><img src="/static/store/images/Logos/icono-facebook-glx.png"/></a>
+<a href="https://www.instagram.com/galaxoficial/" target="_blank"><img src="/static/store/images/Logos/icono-instagram-glx.png"/></a>
+<a href="https://www.tiktok.com/@galaxoficial" target="_blank"><img src="/static/store/images/Logos/icono-tiktok-glx.png"/></a>
+</div>
+</div>
+<div class="col l12 m12 s12" style="padding-left:3%;padding-right: 3%;">
+<div class="col l12">
+<h3 style="margin-top: 0%;">Nuestras tiendas</h3>
+<p style="font-size: large;">
+                                                Contamos con tiendas en Colombia. Conoce la ubicación de nuestras tiendas <a href="https://www.galax.co/tienda/es-co/glx/Localiza-tienda" style="color: black;" target="_blank"><u><b>aquí:</b></u></a> </p>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/Galax11.png" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/Galax22.png" style="height: 100%; width: 100%;"/>
+</div>
+</div>
+<div class="col s12" style="padding: 3%;background-color: #fafafa;">
+<h4>Porque la vida se disfruta mejor de a dos... pares de medias</h4><br/>
+<div class="row center">
+<video class="col l12 m12 s12" controls="" style="padding: 0%;">
+<source src="/static/store/images/videos/GLX_Sostenible_video_marcas.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12" id="m-parfois" style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div style="text-align:justify; ">
+<div class="container-fluid">
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style="padding-left: 2%; padding-right: 2%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_PARFOIS.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                        Desde Portugal, traemos la franquicia de Parfois a Colombia.
+                                        <br/>
+                                        Una marca para personas que aman la moda, la bisutería, los accesorios y los complementos. Parfois te invita a darle un espacio en tu clóset a bolsos, pañuelos, anillos, pulseras, aretes y gafas, entre otros. Diseños creativos y llenos de estilo, inspirados en tendencias actuales, perfectos para darle un toque único a cada look.     
+                                        </p>
+</div>
+<div class="col l4 m4 s12 center" style="padding: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/Logo_parfois.PNG" style="height: 100%; width: 100%;"/>
+</div>
+<div class="row">
+<a href="https://www.facebook.com/ParfoisCol/" target="_blank"><img src="/static/store/images/Logos/icono-facebook.png"/></a>
+<a href="https://www.instagram.com/parfois_col/" target="_blank"><img src="/static/store/images/Logos/icono-instagram.png"/></a>
+
+</div>
+</div>
+<div class="col l12 m12 s12" style="padding-left:2%;padding-right: 2%;">
+<div class="col l12">
+<h3 style="margin-top: 0%;">Nuestras tiendas</h3>
+<p style="font-size: large;">
+                                                Conoce aquí la ubicación de nuestras tiendas en Colombia:
+                                        </p></div>
+<div class="col l6">
+<img src="/static/store/images/marcas/Parfois1.jpg" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l6">
+<img src="/static/store/images/marcas/Parfois2.jpg" style="height: 100%; width: 100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col s12" id="m-casino" style="font-family: Neue helvetica® pro 45, sans-serif; font-weight: 300; ">
+<div style="text-align:justify;">
+<div class="container-fluid">
+<div class="row">
+<div class="col l12 m12 s12">
+<div class="container-fluid">
+<div class="row">
+<div class="col s12" style=" padding-left: 2%; padding-right: 2%;">
+<img src="/static/store/images/marcas/BANNERNUESTRASMARCAS_CASINO.png" style="height: 100%; width: 100%;"/>
+</div>
+<div class="col l8 m8 s12 right" style="padding-top: 5%;padding-right: 5%;text-align: justify;">
+<p style="font-size: large;">
+                                        Es una marca de tradición creada para acompañar a las familias de Centroamérica con medias, calcetines y ropa interior de alta calidad para cada ocasión. 
+                                        <br/>
+                                        Hombres, mujeres y niños encuentran en nuestras prendas diseños atemporales, básicos y en tendencia para vivir la moda y disfrutar su estilo. 
+                                        </p>           
+                                    </div>
+<div class="col l4 m4 s12 center" style="padding: 5%;">
+<div class="row">
+<img src="/static/store/images/Logos/img_casino.png" style="height: 50%; width: 50%;"/>
+</div>
+<div class="row">
+<a class="mouse" href="https://www.mediascasino.com/" style="color: black;" target="_blank"><strong><u>CONOCE MÁS</u></strong></a>
+</div>
+<div class="row">
+<a href="https://www.facebook.com/casinocostarica/" target="_blank"><img src="/static/store/images/Logos/icono-facebook.png"/></a>
+<a href="https://www.instagram.com/mediascasinocr/" target="_blank"><img src="/static/store/images/Logos/icono-instagram.png"/></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<DesktopFooterEs10dff320 />
+<MobileFooterEs151ccb19 />
+<div class="container-fluid">
+<div class="row" style="margin-block-end: 0%;">
+<div class="col s12 lighten-2" style="background-color: #eaeaea;">
+<div class="container-fluid">
+<div class="row" style="margin-block-end:0%;">
+<div class="col l2 m2 s12">
+<a href="/"><img alt="Categoria Accesorios" src="/static/store/images/Logos/Logo-crystal-transparente.png" style="width:100%; margin-top:4%;"/></a>
+</div>
+<div class="col l5 m5 s12" style="margin-top:2%;margin-right: 0%;">
+<strong style="color:grey">Colombia | © 2021 Crystal S.A.S | </strong>
+<a href="/static/store/pdf/Terminos_y_condiciones_.pdf" target="_blank"><strong style="color:grey">Términos y condiciones | </strong></a>
+<a href="/static/store/pdf/Politica_de_tratamiento_de_datos_personales_.pdf" target="_blank"><strong style="color:grey">Política y aviso de privacidad</strong></a>
+</div>
+<div class="col l5 m5 s12">
+<div class="container-fluid" style="margin-top:3%;">
+<div class="row">
+<div class="col s12">
+<img src="/static/store/images/Logos/Logo-multimarca-redondo.png" style="width:100%;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script is:inline src="/static/store/js/main.js" type="text/javascript"></script>
+<script is:inline src="/assets/scripts/9d486dc55f9265e5.js"></script>
+<script is:inline src="/assets/vendor/11d9ccbb8da3c7bb.js"></script>
+<script is:inline src="/assets/vendor/4dc952d76a63597a.js"></script>
+<script is:inline src="/assets/scripts/9b709d1ac66f8c77.js"></script>
+<script is:inline src="/assets/scripts/2404b22bca80259e.js"></script>
+<script is:inline src="/assets/scripts/849c457502864fb4.js"></script>
+<script is:inline src="/assets/scripts/fdce676a93e67120.js"></script>
+<script is:inline src="/assets/scripts/c5ad9b9386414904.js"></script>
+<script is:inline src="/assets/scripts/9f7e5c892298db14.js"></script>
+<script is:inline src="/assets/scripts/4f15f36846cf7ef7.js"></script>
+<script is:inline src="/assets/scripts/ee7dde3730af4618.js"></script>
+<script is:inline src="/assets/scripts/53a2b2d0966a2a8d.js"></script>
+<script is:inline src="/assets/scripts/5eb300e1d8fcba40.js"></script>
+
+</OriginalLayout>

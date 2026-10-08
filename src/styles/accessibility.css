@@ -1,0 +1,11 @@
+/* Additions affect focus/reduced motion only; source styling stays unchanged. */
+:root { --crystal-focus: #005fcc; --crystal-black: #000; --crystal-white: #fff; }
+.skip-link { position:fixed;left:1rem;top:-5rem;z-index:10000;padding:.7rem;background:#fff;color:#000; }
+.skip-link:focus { top:1rem; }
+.sr-only { position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important; }
+:focus-visible { outline:2px solid var(--crystal-focus);outline-offset:3px; }
+.source-h5 { font-size:1.64rem;line-height:110%;margin:1.0933333333rem 0 .656rem; }
+.source-h4 { font-size:2.28rem;line-height:110%;margin:1.52rem 0 .912rem; }
+.source-h3 { font-size:2.92rem;line-height:110%;margin:1.9466666667rem 0 1.168rem; }
+.source-h2 { font-size:3.56rem;line-height:110%;margin:2.3733333333rem 0 1.424rem; }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important; } [data-aos] { opacity:1!important;transform:none!important; } }
