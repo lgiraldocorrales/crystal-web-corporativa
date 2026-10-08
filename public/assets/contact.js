@@ -23,6 +23,12 @@ if (siteKey && form) {
 form?.addEventListener('submit', async event => {
   event.preventDefault();
   if (!form.reportValidity()) return;
+  if (document.querySelector('meta[name="crystal-preview"]')?.content === 'pages') {
+    document.getElementById('contact-status').textContent = form.querySelector('#idioma').value === 'en'
+      ? 'Static preview: this form does not send emails.'
+      : 'Vista previa estática: este formulario no envía correos.';
+    return;
+  }
   const button = document.getElementById('form-button');
   const loader = document.getElementById('load');
   const english = form.querySelector('#idioma').value === 'en';
@@ -45,3 +51,4 @@ form?.addEventListener('submit', async event => {
     button.classList.remove('hidden');loader?.classList.add('hidden');
   }
 });
+
