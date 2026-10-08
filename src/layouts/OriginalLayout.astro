@@ -11,7 +11,6 @@ const page = routes.find(page => page.route === route)!;
 const site = (import.meta.env.PUBLIC_SITE_URL || 'https://www.crystal.com.co').replace(/\/$/, '');
 const counterpart = routes.find(candidate => candidate.route === page.alternate);
 const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
-const staticPreview = import.meta.env.PUBLIC_STATIC_PREVIEW === 'true';
 // This layout remains static: original progressive scripts implement interactions.
 ---
 <!doctype html>
@@ -32,7 +31,6 @@ const staticPreview = import.meta.env.PUBLIC_STATIC_PREVIEW === 'true';
     <meta name="twitter:title" content={page.title} />
     <meta name="twitter:description" content={page.description} />
     <meta name="contact-turnstile-key" content={turnstileKey} />
-    <meta name="static-preview" content={String(staticPreview)} />
   </head>
   <body>
     <a class="skip-link" href="#main-content">{page.language === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a>

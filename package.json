@@ -9,11 +9,11 @@
   "scripts": {
     "dev": "node --import tsx --watch server/app.ts --dev",
     "build": "astro build && tsc -p tsconfig.server.json",
-    "build:pages": "astro build --site https://lgiraldocorrales.github.io --base /crystal-web-corporativa && node scripts/prepare-pages.mjs",
     "check": "astro check && tsc --noEmit -p tsconfig.server.json",
     "test": "node --import tsx --test tests/*.test.ts",
     "start": "node --env-file-if-exists=.env server-dist/app.js",
-    "audit:site": "python scripts/audit_site.py"
+    "audit:site": "python scripts/audit_site.py",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "@fastify/helmet": "^13.0.0",

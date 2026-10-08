@@ -20,8 +20,11 @@ jobs:
     steps:
       - name: Checkout repository and LFS assets
         uses: actions/checkout@v5
-        with:
-          lfs: true
+        env:
+          GIT_LFS_SKIP_SMUDGE: '1'
+
+      - name: Fetch assets except videos
+        run: git lfs pull --exclude="public/static/store/images/videos/**"
 
       - name: Use Node.js 24
         uses: actions/setup-node@v5
@@ -32,11 +35,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate source
+        run: npm run check
+
       - name: Build static preview
         run: npm run build:pages
         env:
           PUBLIC_SITE_URL: https://lgiraldocorrales.github.io/crystal-web-corporativa
-          PUBLIC_STATIC_PREVIEW: 'true'
+          PAGES_BASE_PATH: /crystal-web-corporativa
+          PAGES_VIDEO_ORIGIN: https://www.crystal.com.co
+
+      - name: Test preview and backend contracts
+        run: npm test
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

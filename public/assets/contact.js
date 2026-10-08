@@ -1,6 +1,5 @@
 /* Preserve source fields, toasts and four-second confirmation behavior. */
 const form = document.getElementById('form');
-const staticPreview = document.querySelector('meta[name="static-preview"]')?.content === 'true';
 function ShowSelectedDirigido() {
   const field = document.getElementById('dirigido');
   field.style.background = field.value ? '#e8f0fe' : 'white';
@@ -24,16 +23,16 @@ if (siteKey && form) {
 form?.addEventListener('submit', async event => {
   event.preventDefault();
   if (!form.reportValidity()) return;
+  if (document.querySelector('meta[name="crystal-preview"]')?.content === 'pages') {
+    document.getElementById('contact-status').textContent = form.querySelector('#idioma').value === 'en'
+      ? 'Static preview: this form does not send emails.'
+      : 'Vista previa estática: este formulario no envía correos.';
+    return;
+  }
   const button = document.getElementById('form-button');
   const loader = document.getElementById('load');
   const english = form.querySelector('#idioma').value === 'en';
   const status = document.getElementById('contact-status');
-  if (staticPreview) {
-    status.textContent = english
-      ? 'This temporary preview cannot send messages. The form will be available in the production environment.'
-      : 'Esta vista temporal no puede enviar mensajes. El formulario estará disponible en el entorno productivo.';
-    return;
-  }
   button.classList.add('hidden');loader?.classList.remove('hidden');
   const payload = Object.fromEntries(new FormData(form));
   payload.datosPers = document.getElementById('datosPers').checked;
@@ -52,3 +51,4 @@ form?.addEventListener('submit', async event => {
     button.classList.remove('hidden');loader?.classList.add('hidden');
   }
 });
+

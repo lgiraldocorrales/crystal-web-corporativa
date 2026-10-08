@@ -49,9 +49,9 @@ See `docs/azure.md`. LFS objects must be uploaded before a branch can be publish
 
 ### Temporary GitHub Pages preview
 
-The workflow in `.github/workflows/pages.yml` publishes `main` as a static review site. In **Settings → Pages**, select **GitHub Actions** as the source once. The workflow uses the repository base path, prevents search indexing and omits the large videos so the artifact remains below GitHub Pages' 1 GB limit.
+The workflow in `.github/workflows/pages.yml` publishes `main` as a static review site. In **Settings → Pages**, select **GitHub Actions** as the source once. The workflow uses the repository base path, prevents search indexing and excludes local video copies so the artifact remains below GitHub Pages' 1 GB limit. During this temporary preview, those videos load from their current HTTPS URLs on `www.crystal.com.co`.
 
-GitHub Pages cannot run Fastify or access App Service secrets. Therefore `/api/contact`, `/health`, SMTP delivery and Turnstile verification remain exclusive to the Node/Azure deployment; the contact form explains this limitation when used in the preview. Run `PUBLIC_STATIC_PREVIEW=true npm run build:pages` on Linux/macOS to reproduce the Pages artifact locally.
+GitHub Pages cannot run Fastify or access App Service secrets. Therefore `/api/contact`, `/health`, SMTP delivery and Turnstile verification remain exclusive to the Node/Azure deployment; the contact form explains this limitation when used in the preview. Run `npm run build:pages` to reproduce the Pages artifact locally on Windows, macOS or Linux.
 
 ## Review status
 
