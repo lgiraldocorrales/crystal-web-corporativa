@@ -1,5 +1,6 @@
 /* Preserve source fields, toasts and four-second confirmation behavior. */
 const form = document.getElementById('form');
+const staticPreview = document.querySelector('meta[name="static-preview"]')?.content === 'true';
 function ShowSelectedDirigido() {
   const field = document.getElementById('dirigido');
   field.style.background = field.value ? '#e8f0fe' : 'white';
@@ -27,6 +28,12 @@ form?.addEventListener('submit', async event => {
   const loader = document.getElementById('load');
   const english = form.querySelector('#idioma').value === 'en';
   const status = document.getElementById('contact-status');
+  if (staticPreview) {
+    status.textContent = english
+      ? 'This temporary preview cannot send messages. The form will be available in the production environment.'
+      : 'Esta vista temporal no puede enviar mensajes. El formulario estará disponible en el entorno productivo.';
+    return;
+  }
   button.classList.add('hidden');loader?.classList.remove('hidden');
   const payload = Object.fromEntries(new FormData(form));
   payload.datosPers = document.getElementById('datosPers').checked;

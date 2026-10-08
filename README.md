@@ -47,6 +47,12 @@ CSP authorizes exact inline event-handler hashes and local scripts. Source inlin
 
 See `docs/azure.md`. LFS objects must be uploaded before a branch can be published successfully. Do not push pointers whose binary objects have not been uploaded. Do not force push, rewrite history, create extra branches, or merge into `main` until Lucas explicitly approves visual parity.
 
+### Temporary GitHub Pages preview
+
+The workflow in `.github/workflows/pages.yml` publishes `main` as a static review site. In **Settings → Pages**, select **GitHub Actions** as the source once. The workflow uses the repository base path, prevents search indexing and omits the large videos so the artifact remains below GitHub Pages' 1 GB limit.
+
+GitHub Pages cannot run Fastify or access App Service secrets. Therefore `/api/contact`, `/health`, SMTP delivery and Turnstile verification remain exclusive to the Node/Azure deployment; the contact form explains this limitation when used in the preview. Run `PUBLIC_STATIC_PREVIEW=true npm run build:pages` on Linux/macOS to reproduce the Pages artifact locally.
+
 ## Review status
 
 This package is a review candidate, not an approved production replacement. See `docs/Informe_Migracion.md` and the JSON evidence. The audit intentionally blocks deployment while the original corrupt ethical-program image is retained. Live MasterBase, external widgets and the Azure DevOps deployment require validation in the configured development environment. Neither remote branch has been modified.
